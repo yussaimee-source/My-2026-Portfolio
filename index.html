@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer, 15+ years across FMCG, Finance Publishing, Events, Tech and AI-enhanced design. Based in Petaling Jaya, Malaysia.">
+  <meta name="author" content="Yussaimee Ahmad">
+  <meta property="og:title" content="Yussaimee Ahmad — Senior Graphic Designer">
+  <meta property="og:description" content="15+ years across FMCG, Finance, Events, Tech and AI-enhanced design. Malaysia.">
+  <meta property="og:type" content="website">
+  <title>Yussaimee Ahmad — Senior Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Syne:wght@400;700;800&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23d94f2b'/><text y='.85em' x='18' font-size='80' fill='white' font-family='serif'>Y</text></svg>">
+</head>
+<body>
+
+<div id="loader"><div class="loader-inner"><span class="loader-text"><span>Yussaimee Ahmad</span></span><div class="loader-bar"></div></div></div>
+<div id="cursor"></div>
+
+<nav id="nav">
+  <a href="#" class="nav-logo" onclick="goHome();return false;">Yussaimee <em>Ahmad</em></a>
+  <div class="nav-links">
+    <a class="nav-link" href="#" onclick="goHome('portfolio-section');return false;">Work</a>
+    <a class="nav-link" href="#" onclick="goHome('cases-section');return false;">Cases</a>
+    <a class="nav-link" href="#" onclick="goHome('skills-section');return false;">Skills</a>
+    <a class="nav-link" href="#" onclick="goHome('exp-section');return false;">Experience</a>
+    <a class="nav-link" href="#" onclick="goHome('contact-section');return false;">Contact</a>
+    <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">CV ↗</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="nav-mobile" class="nav-mobile">
+  <a class="nav-link" href="#" onclick="goHome('portfolio-section');closeMob();return false;">Work</a>
+  <a class="nav-link" href="#" onclick="goHome('cases-section');closeMob();return false;">Cases</a>
+  <a class="nav-link" href="#" onclick="goHome('skills-section');closeMob();return false;">Skills</a>
+  <a class="nav-link" href="#" onclick="goHome('exp-section');closeMob();return false;">Experience</a>
+  <a class="nav-link" href="#" onclick="goHome('contact-section');closeMob();return false;">Contact</a>
+  <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener" onclick="closeMob()">Download CV ↗</a>
+</div>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+
+<section class="hero">
+  <div class="hero-main">
+    <p class="hero-eyebrow">Senior Graphic Designer · 15+ Years · Petaling Jaya, Malaysia</p>
+    <h1 class="hero-title">Design<br>that <em>earns</em><br>attention.</h1>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-bio"><strong>Yussaimee Ahmad</strong> — Senior Graphic Designer with 15+ years across FMCG, international finance publishing, events, tech, and creative agencies. Currently integrating <strong>generative AI, video AI, and web development</strong> into production workflows — delivering higher output without sacrificing craft.</p>
+    <div></div>
+    <div class="hero-ctas">
+      <button class="btn-dark" onclick="document.getElementById('portfolio-section').scrollIntoView({behavior:'smooth'})">View Work ↓</button>
+      <a class="btn-outline" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-wrap"><div class="marquee-track" id="mtrack"></div></div>
+
+<div class="stats-row">
+  <div class="stat reveal"><div class="stat-n"><em>15</em>+</div><div class="stat-l">Years experience</div></div>
+  <div class="stat reveal d1"><div class="stat-n"><em>5</em>+</div><div class="stat-l">Industries</div></div>
+  <div class="stat reveal d2"><div class="stat-n"><em>AI</em></div><div class="stat-l">Workflow integrated</div></div>
+  <div class="stat reveal d3"><div class="stat-n"><em>0</em></div><div class="stat-l">Print recalls</div></div>
+</div>
+
+<section id="portfolio-section" class="port-section">
+  <div class="port-header">
+    <div class="sec-label reveal">Selected Work</div>
+    <h2 class="sec-title reveal d1">Portfolio by <em>Industry</em></h2>
+    <p class="sec-intro reveal d2">Click any industry to explore projects — organised by sector so you reach relevant work in one click.</p>
+  </div>
+  <ul class="industry-list">
+    <li class="irow reveal"    onclick="showSub('finance')" tabindex="0" onkeypress="if(event.key==='Enter')showSub('finance')"><span class="ir-num">01</span><span class="ir-title">Finance &amp; Publishing <span class="ir-arrow">→</span><span class="ir-tags"><span>Social Media</span><span>Publication</span><span>Events</span></span></span><span class="ir-count">6 projects</span></li>
+    <li class="irow reveal d1" onclick="showSub('fmcg')"    tabindex="0" onkeypress="if(event.key==='Enter')showSub('fmcg')"><span class="ir-num">02</span><span class="ir-title">FMCG &amp; Retail <span class="ir-arrow">→</span><span class="ir-tags"><span>Catalogue</span><span>POSM</span><span>Packaging</span></span></span><span class="ir-count">5 projects</span></li>
+    <li class="irow reveal d2" onclick="showSub('events')"  tabindex="0" onkeypress="if(event.key==='Enter')showSub('events')"><span class="ir-num">03</span><span class="ir-title">Events &amp; Activation <span class="ir-arrow">→</span><span class="ir-tags"><span>Signage</span><span>Print</span><span>Digital</span></span></span><span class="ir-count">5 projects</span></li>
+    <li class="irow reveal d3" onclick="showSub('ai')"      tabindex="0" onkeypress="if(event.key==='Enter')showSub('ai')"><span class="ir-num">04</span><span class="ir-title">AI &amp; Video AI <span class="ir-arrow">→</span><span class="ir-tags"><span>Generative</span><span>Video AI</span><span>Workflow</span></span></span><span class="ir-count">4 projects</span></li>
+    <li class="irow reveal d4" onclick="showSub('tech')"    tabindex="0" onkeypress="if(event.key==='Enter')showSub('tech')"><span class="ir-num">05</span><span class="ir-title">Tech &amp; Web <span class="ir-arrow">→</span><span class="ir-tags"><span>Web Design</span><span>CMS</span><span>E-learning</span></span></span><span class="ir-count">4 projects</span></li>
+  </ul>
+</section>
+
+<section id="skills-section" class="skills-section">
+  <div class="sec-label reveal">Capabilities</div>
+  <h2 class="sec-title reveal d1">Skills &amp; <em>Tools</em></h2>
+  <div class="ai-block">
+    <div class="reveal d1">
+      <p class="ai-pull">The differentiator most senior designers cannot match — a fully integrated AI + Video AI + Web production stack, running in live client workflows today.</p>
+      <p class="ai-desc">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems — this stack cuts production time and expands creative range simultaneously.</p>
+    </div>
+    <div class="tools-grid reveal d2">
+      <div class="tc"><span>🎨</span><div><b>Midjourney</b><small>Image AI</small></div></div>
+      <div class="tc"><span>🔥</span><div><b>Firefly</b><small>Image AI</small></div></div>
+      <div class="tc"><span>🖼️</span><div><b>DALL-E</b><small>Image AI</small></div></div>
+      <div class="tc"><span>🎬</span><div><b>Runway ML</b><small>Video AI</small></div></div>
+      <div class="tc"><span>🎥</span><div><b>Kling AI</b><small>Video AI</small></div></div>
+      <div class="tc"><span>🌊</span><div><b>Sora</b><small>Video AI</small></div></div>
+      <div class="tc"><span>🤖</span><div><b>Claude.ai</b><small>AI Assistant</small></div></div>
+      <div class="tc"><span>💬</span><div><b>ChatGPT</b><small>AI Assistant</small></div></div>
+      <div class="tc"><span>🐙</span><div><b>GitHub</b><small>Dev / Version</small></div></div>
+      <div class="tc"><span>💻</span><div><b>HTML/CSS/JS</b><small>Web Dev</small></div></div>
+      <div class="tc"><span>🌐</span><div><b>Webflow</b><small>Web Builder</small></div></div>
+      <div class="tc"><span>⚡</span><div><b>Netlify</b><small>Web Deploy</small></div></div>
+      <div class="tc"><span>🎵</span><div><b>ElevenLabs</b><small>Voice AI</small></div></div>
+      <div class="tc"><span>📊</span><div><b>AI Analytics</b><small>Insights</small></div></div>
+      <div class="tc"><span>✏️</span><div><b>Notion AI</b><small>Productivity</small></div></div>
+      <div class="tc"><span>⚙️</span><div><b>Prompt Eng.</b><small>AI Workflow</small></div></div>
+    </div>
+  </div>
+  <div class="sk3col reveal">
+    <div class="sk-col"><div class="sk-head">Adobe Creative Suite</div><div class="sk-row">Photoshop<span class="sk-e">Expert</span></div><div class="sk-row">Illustrator<span class="sk-e">Expert</span></div><div class="sk-row">InDesign<span class="sk-e">Expert</span></div><div class="sk-row">Premiere Pro<span class="sk-p">Proficient</span></div><div class="sk-row">After Effects<span class="sk-p">Proficient</span></div></div>
+    <div class="sk-col"><div class="sk-head">Production &amp; Media</div><div class="sk-row">Print &amp; Large Format<span class="sk-e">Expert</span></div><div class="sk-row">POSM &amp; Retail<span class="sk-e">Expert</span></div><div class="sk-row">Publication Layout<span class="sk-e">Expert</span></div><div class="sk-row">Photography<span class="sk-p">Proficient</span></div><div class="sk-row">Videography<span class="sk-p">Proficient</span></div></div>
+    <div class="sk-col"><div class="sk-head">Strategy &amp; Web</div><div class="sk-row">Social Media Design<span class="sk-e">Expert</span></div><div class="sk-row">Brand Systems<span class="sk-p">Proficient</span></div><div class="sk-row">Web Design<span class="sk-p">Proficient</span></div><div class="sk-row">CMS Management<span class="sk-p">Proficient</span></div><div class="sk-row">GitHub / Version Ctrl<span class="sk-w">Working</span></div></div>
+  </div>
+</section>
+
+<section id="cases-section" class="cases-section">
+  <div style="padding:0 5vw 3rem">
+    <div class="sec-label reveal">Process &amp; Thinking</div>
+    <h2 class="sec-title reveal d1">Case <em>Studies</em></h2>
+    <p class="sec-intro reveal d2">Senior designers get hired for process, not just output. Here's the thinking behind two key projects.</p>
+  </div>
+  <div class="case-list">
+    <article class="case-card reveal">
+      <div class="case-n">01</div>
+      <div>
+        <div class="case-ind">Finance &amp; Publishing</div>
+        <h3 class="case-title">Scaling TAB Global's Social Design System for 4 International Platforms</h3>
+        <ul class="case-steps">
+          <li><span class="cs-l">Brief</span><span class="cs-v">Consistent visual identity across LinkedIn, WeChat, Instagram, and email for 4 publishing brands with different tones and global C-suite audiences.</span></li>
+          <li><span class="cs-l">Challenge</span><span class="cs-v">50–80 posts/month with a small team, zero template system, brand inconsistency damaging credibility with global finance leaders.</span></li>
+          <li><span class="cs-l">Approach</span><span class="cs-v">Audited all 4 brand identities, built a modular InDesign template library with locked brand zones, integrated Adobe Firefly for rapid asset generation.</span></li>
+          <li><span class="cs-l">Outcome</span><span class="cs-v">Reduced per-post production time, improved cross-platform consistency, system adopted company-wide across all 4 brands.</span></li>
+        </ul>
+      </div>
+      <div class="case-metric"><div class="cm-n">4×</div><div class="cm-d">Brands unified — The Asian Banker, TABInsights, Wealth &amp; Society, The Banking Academy</div></div>
+    </article>
+    <article class="case-card reveal d1">
+      <div class="case-n">02</div>
+      <div>
+        <div class="case-ind">FMCG &amp; Retail</div>
+        <h3 class="case-title">Nutrimetics Monthly POSM Pipeline — Concept to Shelf in 7 Days</h3>
+        <ul class="case-steps">
+          <li><span class="cs-l">Brief</span><span class="cs-v">Full POSM suite monthly — catalogue, packaging, brochure, displays — with aggressive deadlines and senior stakeholder sign-off required.</span></li>
+          <li><span class="cs-l">Challenge</span><span class="cs-v">Co-ordinating across Art Director, General Manager, and external printers within a rigid 7-day cycle for a global beauty brand.</span></li>
+          <li><span class="cs-l">Approach</span><span class="cs-v">Established a repeatable design-to-print workflow, created master templates with swappable photography zones, managed product photography in-house.</span></li>
+          <li><span class="cs-l">Outcome</span><span class="cs-v">Consistent on-time POSM launches across all monthly promotional periods with zero print recalls during entire tenure.</span></li>
+        </ul>
+      </div>
+      <div class="case-metric"><div class="cm-n">0</div><div class="cm-d">Print recalls during entire tenure — quality control on every monthly POSM cycle</div></div>
+    </article>
+  </div>
+</section>
+
+<section id="exp-section" class="exp-section">
+  <div style="padding:0 5vw 3rem">
+    <div class="sec-label reveal">Career History</div>
+    <h2 class="sec-title reveal d1"><em>15+ Years</em> of Experience</h2>
+    <p class="sec-intro reveal d2">Across agencies, FMCG, retail, and international publishing — growing responsibility at every stage.</p>
+  </div>
+  <div class="exp-list">
+    <div class="exp-row reveal"><div class="exp-period">2018 – Present</div><div><div class="exp-role">Senior Graphic Designer</div><div class="exp-co">Innotribe Solutions Sdn Bhd (TAB Global) · Selangor</div><ul class="exp-pts"><li>Lead designer for TAB Global — international finance publishing group, C-suite audiences in 30+ countries.</li><li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, and The Banking Academy.</li><li>Pioneered AI integration — generative design tools and AI analytics for high-volume publishing layouts.</li></ul></div></div>
+    <div class="exp-row reveal"><div class="exp-period">2020 – 2021</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Alliance Teamwork Marketing · Petaling Jaya</div><ul class="exp-pts"><li>POSM design suite — brochures, booklets, magazines, and event collateral.</li><li>Content development and translation for marketing materials.</li></ul></div></div>
+    <div class="exp-row reveal"><div class="exp-period">2012 – 2018</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">Macy Home Furnishings · Selangor</div><ul class="exp-pts"><li>Retail campaigns across digital and print; e-commerce website UX and product photography.</li></ul></div></div>
+    <div class="exp-row reveal"><div class="exp-period">2009 – 2010</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Nutrimetics Worldwide (M) Sdn Bhd · Selangor</div><ul class="exp-pts"><li>Monthly catalogues, packaging, and POSM for a global beauty brand.</li><li>Collaborated directly with Art Director and General Manager on all design concepts.</li></ul></div></div>
+    <div class="exp-row reveal"><div class="exp-period">2008 – 2009</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">ATN Media &amp; Advertising Sdn Bhd · Selangor</div><ul class="exp-pts"><li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li></ul></div></div>
+    <div class="exp-row reveal"><div class="exp-period">2002 – 2007</div><div><div class="exp-role">Copywriter / Instructional Designer / Graphic Designer</div><div class="exp-co">Wannastation · Selangor</div><ul class="exp-pts"><li>E-learning modules for Telekom Smart School. E-Terjemah literacy platform for rural students.</li></ul></div></div>
+  </div>
+</section>
+
+<section class="quote-section reveal">
+  <span class="q-mark">"</span>
+  <blockquote class="q-text">Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote>
+  <p class="q-attr">— Colleague, TAB Global · LinkedIn Recommendation</p>
+</section>
+
+<section id="contact-section" class="contact-section">
+  <div class="sec-label reveal">Get In Touch</div>
+  <h2 class="sec-title reveal d1">Let's work <em>together.</em></h2>
+  <p class="sec-intro reveal d2">Open to senior roles targeting RM6,000+, freelance projects, and brand consulting across FMCG, Finance, Events, Tech, and AI-enhanced creative work.</p>
+  <div class="contact-wrap">
+    <div class="reveal">
+      <ul class="c-list">
+        <li><span class="c-lbl">Phone</span><a href="tel:+60112360 8193">011 2360 8193</a></li>
+        <li><span class="c-lbl">Email</span><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></li>
+        <li><span class="c-lbl">LinkedIn</span><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></li>
+        <li><span class="c-lbl">GitHub</span><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></li>
+        <li><span class="c-lbl">Location</span><span>Petaling Jaya, Selangor, Malaysia</span></li>
+        <li><span class="c-lbl">Resume</span><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF ↗</a></li>
+      </ul>
+    </div>
+    <form class="c-form reveal d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="c-2col">
+        <div><label>First Name</label><input type="text" name="first_name" placeholder="Sarah" required></div>
+        <div><label>Last Name</label><input type="text" name="last_name" placeholder="Tan" required></div>
+      </div>
+      <div><label>Email</label><input type="email" name="email" placeholder="hiring@company.com" required></div>
+      <div><label>Enquiry Type</label><select name="enquiry_type"><option>Full-time Role</option><option>Freelance Project</option><option>Brand Consulting</option><option>AI Design Project</option><option>Collaboration</option></select></div>
+      <div><label>Message</label><textarea name="message" placeholder="Tell me about the role or project..." required></textarea></div>
+      <button type="submit" class="btn-dark" style="width:100%;justify-content:center;border:none;">Send Message →</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span class="f-name">Yussaimee Ahmad</span>
+  <span>© 2026 · Senior Graphic Designer · Malaysia</span>
+  <span><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a> · <a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GitHub</a></span>
+</footer>
+</div><!-- /page-home -->
+
+<!-- SUBPAGE -->
+<div id="page-sub" class="page"><div id="sub-inner"></div></div>
+
+<script>
+const D={finance:{label:'Finance & Publishing',title:'Finance & <em>Publishing</em>',bg:'Banking',accent:'#1a6fb5',sug:['fmcg','events','ai'],p:[{i:'📊',n:'50–80 posts/month system',t:'The Asian Banker — LinkedIn Campaign System',d:'Modular social media template system enabling consistent, high-volume publishing across LinkedIn, WeChat, Instagram, and email for TAB Global\'s flagship finance publication.',tags:['Social Media','Template System','InDesign','Digital']},{i:'📰',n:'Multi-issue layout system',t:'TABInsights — Digital Magazine Layout',d:'High-frequency digital magazine design including master layout templates and a full infographic system for translating complex financial data into clear visual stories.',tags:['Publication','InDesign','Infographics','Typography']},{i:'🏦',n:'End-to-end event identity',t:'Wealth & Society Forum — Event Branding Suite',d:'Full event branding for an international wealth management summit — from digital pre-event promotion through to on-site signage, delegate packs, and post-event recap content.',tags:['Event Branding','Print','Signage','Digital']},{i:'🎓',n:'Scalable template architecture',t:'The Banking Academy — Course Visual System',d:'Visual design system for e-learning course covers, certification materials, and slide deck templates for an international banking training platform in 20+ countries.',tags:['E-learning','Branding','Print','Digital']},{i:'✈️',n:'Cross-channel campaign',t:'AI Finance Study Tour — Multi-City Promotion',d:'Complete promotional suite for a multi-city AI and finance executive study tour — social graphics, HTML email banners, digital display ads, and print collateral.',tags:['Campaign','Social Media','Print','Email']},{i:'📖',n:'Premium print publication',t:'Wealth & Society Magazine — Editorial Design',d:'End-to-end layout and editorial design of a premium wealth management print publication — cover concept through to advertorial and editorial spreads.',tags:['Magazine','Editorial','InDesign','Photography']}]},fmcg:{label:'FMCG & Retail',title:'FMCG & <em>Retail</em>',bg:'Retail',accent:'#b8700a',sug:['finance','events','tech'],p:[{i:'💄',n:'Monthly cycle zero recalls',t:'Nutrimetics — Monthly Product Catalogue',d:'End-to-end monthly catalogue design for a global beauty brand — concept, layout, in-house product photography, photo editing, and print production on a strict 7-day cycle.',tags:['Catalogue','Print','Photography','FMCG']},{i:'📦',n:'Senior stakeholder collaboration',t:'Nutrimetics — Full POSM & Packaging Suite',d:'Complete POSM suite including product packaging redesigns, brochures, pamphlets, fliers, and in-store display materials. Briefed directly by Art Director and General Manager.',tags:['POSM','Packaging','Print','Retail']},{i:'🛋️',n:'Full-channel seasonal campaign',t:'Macy Home — Seasonal Retail Campaign',d:'Comprehensive seasonal campaigns spanning digital banners, social media graphics, e-commerce product photography, in-store visual merchandising, and print media.',tags:['Retail','Digital','Photography','Campaign']},{i:'🌐',n:'UX-led improvement',t:'Macy Home — E-Commerce Website Redesign',d:'Redesigned and maintained the Macy Home corporate website — improving UX flow, updating product imagery to e-commerce standards, and enhancing conversion page layouts.',tags:['Web Design','E-Commerce','UX','CMS']},{i:'📋',n:'Scalable print system',t:'Alliance Teamwork — Direct Sales POSM System',d:'Full marketing POSM suite including brochures, fliers, booklets, and magazine-style materials for a direct sales marketing organisation\'s product launch campaigns.',tags:['POSM','Brochure','Print','Marketing']}]},events:{label:'Events & Activation',title:'Events & <em>Activation</em>',bg:'Events',accent:'#c0391e',sug:['finance','fmcg','ai'],p:[{i:'🎯',n:'Multi-city all-channel',t:'AI Finance Study Tour — Full Campaign Suite',d:'Every touchpoint for a multi-city executive study tour: social media graphics, HTML email banners, digital display ads, print collateral, and on-site signage.',tags:['Campaign','Social Media','Print','Email']},{i:'🎪',n:'End-to-end venue identity',t:'Wealth & Society Forum — Venue Branding',d:'Complete venue branding for an international finance summit — entrance backdrops, directional signage, table-top materials, stage graphics, and post-event social content.',tags:['Event','Large Format','Signage','Print']},{i:'🖼️',n:'Supervised full installation',t:'ATN Media — Large Format Print Production',d:'Design and full production management of large-format outdoor campaigns — billboards, banners, buntings, and backdrops for multiple clients. Supervised on-site installation.',tags:['Large Format','Billboard','Print Production','Signage']},{i:'📁',n:'Full delegate experience',t:'Banking Conference — Delegate Pack Design',d:'Complete delegate experience pack — name cards, lanyards, event programmes, branded notepads, and in-app event guide visual guidelines for an international banking conference.',tags:['Print','Event','Collateral','Branding']},{i:'🚀',n:'Real-time social content',t:'Product Launch Activation — In-Store Event',d:'In-store product launch activation design — pop-up display structures, promotional POSM, sampling station graphics, and social media content for live event coverage.',tags:['Activation','POSM','Retail','Social Media']}]},ai:{label:'AI & Video AI',title:'AI & <em>Video AI</em>',bg:'AI',accent:'#6b3fb5',sug:['tech','finance','events'],p:[{i:'🎨',n:'Full workflow documentation',t:'Midjourney + Firefly — Brand Concepting Workflow',d:'Documented end-to-end prompt engineering workflow from brief to final brand concept. Midjourney for creative ideation, Adobe Firefly for production-safe, IP-clean final assets in Adobe CC.',tags:['Midjourney','Firefly','Workflow','Brand']},{i:'🎬',n:'Live production deployment',t:'Runway ML — Social Video Content Pipeline',d:'Used Runway ML to generate short-form video clips and social content animations for TAB Global platforms, significantly cutting motion production time for regular social output.',tags:['Runway ML','Video AI','Social Media','Motion']},{i:'✍️',n:'Human-in-loop AI workflow',t:'Claude.ai — Campaign Copywriting Integration',d:'Integrated Claude.ai into creative briefs — generating initial copy frameworks, headlines, and content strategy scaffolds refined by human editorial direction before client delivery.',tags:['Claude.ai','Copywriting','AI Workflow','Campaign']},{i:'📈',n:'Data-driven decisions',t:'AI Analytics — Social Content Optimisation',d:'Used AI-driven analytics tools to test and iteratively optimise social media post formats, visual styles, and timing across TAB Global\'s LinkedIn and Instagram accounts.',tags:['Analytics','AI','Social Media','Optimisation']}]},tech:{label:'Tech & Web',title:'Tech & <em>Web</em>',bg:'Digital',accent:'#1a7a3a',sug:['ai','finance','fmcg'],p:[{i:'🏫',n:'Social impact project',t:'E-Terjemah — Educational Community Website',d:'Designed and built a community website to improve English literacy for rural primary school students. Curated and translated content aligned with the national curriculum.',tags:['Web Design','E-learning','UX','Education']},{i:'💻',n:'Government collaboration',t:'Telekom Smart School — E-Learning Modules',d:'Developed storyboards, interactive content layouts, and visual assets for Telekom Malaysia\'s Smart School e-learning modules. Edited and proofread all text and visual elements.',tags:['E-learning','Storyboard','Interactive','Content']},{i:'🛠️',n:'UX and conversion focus',t:'Macy Home — Website Redesign & CMS',d:'Full website redesign and ongoing CMS management — improved UX flow, updated product imagery to e-commerce standards, and enhanced category and conversion page layouts.',tags:['Web Design','UX','CMS','E-Commerce']},{i:'🐙',n:'Team productivity system',t:'GitHub Design Asset Version Control',d:'Set up and maintained a GitHub-based version control workflow for design assets, brand guidelines, and template files — enabling seamless team collaboration and rollback capability.',tags:['GitHub','Asset Management','Workflow','Collaboration']}]}};
+const LBL={finance:'Finance & Publishing',fmcg:'FMCG & Retail',events:'Events & Activation',ai:'AI & Video AI',tech:'Tech & Web'};
+const ICO={finance:'📊',fmcg:'📦',events:'🎯',ai:'🎨',tech:'💻'};
+
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
+function goHome(sec){showPage('page-home');if(sec)setTimeout(()=>{const el=document.getElementById(sec);if(el)el.scrollIntoView({behavior:'smooth'});},80);setTimeout(initReveal,60);}
+function showSub(key){
+  const d=D[key];if(!d)return;
+  const ph=d.p.map(p=>`<div class="sp-card reveal"><div class="sp-thumb"><span>${p.i}</span><span class="sp-tnote">${p.n}</span></div><div class="sp-body"><div class="sp-ind" style="color:${d.accent}">${d.label}</div><h3 class="sp-ptitle">${p.t}</h3><p class="sp-pdesc">${p.d}</p><div class="sp-tags">${p.tags.map(t=>`<span class="sp-tag">${t}</span>`).join('')}</div></div></div>`).join('');
+  const sh=d.sug.map(k=>`<div class="sug-card" onclick="showSub('${k}')" tabindex="0" onkeypress="if(event.key==='Enter')showSub('${k}')"><div class="sug-ico">${ICO[k]}</div><div class="sug-ind">${LBL[k]}</div><div class="sug-title">${LBL[k]} →</div></div>`).join('');
+  document.getElementById('sub-inner').innerHTML=`<div><div class="sp-header"><div class="sp-bgword">${d.bg}</div><button class="sp-back" onclick="goHome('portfolio-section')">← Back to Work</button><div class="sec-label">${d.label}</div><h2 class="sp-title">${d.title}</h2></div><div class="sp-projects">${ph}</div><div class="sp-suggested"><div class="sp-sug-label">→ You might also explore</div><div class="sug-grid">${sh}</div></div><footer><span class="f-name">Yussaimee Ahmad</span><span>© 2026 · Senior Graphic Designer · Malaysia</span><span><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></footer></div>`;
+  showPage('page-sub');setTimeout(initReveal,60);
+}
+// Marquee
+(function(){const items=['Finance Publishing','FMCG & Retail','Event Activation','AI Integration','Video AI','Brand Systems','Print & Digital','POSM Design','Senior Designer','15+ Years','Petaling Jaya','Generative AI','Web Development','GitHub','Motion Design'];const t=document.getElementById('mtrack');if(!t)return;[...items,...items,...items,...items].forEach(s=>{const el=document.createElement('span');el.className='marquee-item';el.innerHTML=s+'<span class="mdot"></span>';t.appendChild(el);});})();
+// Reveal
+let ro=null;function initReveal(){if(ro)ro.disconnect();ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');}),{threshold:0.08});document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));}
+initReveal();
+// Nav scroll
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40);},{passive:true});
+// Mobile menu
+const hbtn=document.getElementById('hamburger');const nmob=document.getElementById('nav-mobile');
+hbtn.addEventListener('click',()=>{const o=nmob.classList.toggle('open');hbtn.classList.toggle('open',o);hbtn.setAttribute('aria-expanded',o);});
+function closeMob(){nmob.classList.remove('open');hbtn.classList.remove('open');hbtn.setAttribute('aria-expanded',false);}
+// Cursor
+(function(){const c=document.getElementById('cursor');if(!c||window.matchMedia('(hover:none)').matches)return;let cx=0,cy=0,tx=0,ty=0;document.addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;});(function loop(){cx+=(tx-cx)*.13;cy+=(ty-cy)*.13;c.style.left=cx+'px';c.style.top=cy+'px';requestAnimationFrame(loop);})();document.querySelectorAll('a,button,.irow,.sp-card,.sug-card,.stat,.tc').forEach(el=>{el.addEventListener('mouseenter',()=>c.classList.add('grow'));el.addEventListener('mouseleave',()=>c.classList.remove('grow'));});})();
+// Loader
+window.addEventListener('load',()=>{setTimeout(()=>{const l=document.getElementById('loader');if(l)l.classList.add('done');document.querySelectorAll('#page-home .reveal').forEach(el=>setTimeout(()=>el.classList.add('in'),150));},900);});
+</script>
+</body>
+</html>
