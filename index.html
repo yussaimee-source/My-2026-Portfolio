@@ -3,939 +3,657 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer. 15+ years across FMCG, Finance, Events, AI. Petaling Jaya, Malaysia.">
+<meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer with 15+ years across FMCG, Finance Publishing, Events, Tech and AI-enhanced design. Petaling Jaya, Malaysia.">
 <meta property="og:title" content="Yussaimee Ahmad — Senior Graphic Designer">
-<meta property="og:description" content="15+ years. FMCG · Finance · Events · AI Design. Open to work.">
+<meta property="og:description" content="15+ years. FMCG · Finance · Events · AI Design. Open to work. RM6,000+">
+<meta property="og:image" content="me.png">
 <title>Yussaimee Ahmad — Senior Graphic Designer</title>
+
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,700;0,900;1,700&family=Barlow:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='8' fill='%2300ff88'/><text y='.88em' x='12' font-size='82' fill='%23000' font-family='sans-serif' font-weight='900'>Y</text></svg>">
-<style>
-/* ═══════════════════════════════════════════════════
-   TOKENS
-═══════════════════════════════════════════════════ */
-:root {
-  --bg:   #080808;
-  --s1:   #0f0f0f;
-  --s2:   #141414;
-  --s3:   #1a1a1a;
-  --ink:  #efefec;
-  --mut:  #888580;
-  --dim:  #444240;
-  --rul:  #1f1f1f;
-  --grn:  #00ff88;
-  --grn2: #00cc6a;
-  --cond: 'Barlow Condensed', sans-serif;
-  --body: 'Barlow', sans-serif;
-  --mono: 'IBM Plex Mono', monospace;
-  --ease: cubic-bezier(.25,.46,.45,.94);
-  --expo: cubic-bezier(.77,0,.18,1);
-}
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-/* ═══════════════════════════════════════════════════
-   BASE RESET
-═══════════════════════════════════════════════════ */
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--body);background:var(--bg);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--grn);color:#000}
-a{text-decoration:none;color:inherit}
-ul{list-style:none}
-button{font-family:var(--cond);cursor:pointer}
-.mono{font-family:var(--mono)}
-.pg{display:none}
-.pg.on{display:block}
+<!-- Stylesheet — same folder as this file -->
+<link rel="stylesheet" href="style.css">
 
-/* ═══════════════════════════════════════════════════
-   NAV
-═══════════════════════════════════════════════════ */
-#nav{
-  position:fixed;inset:0 0 auto;z-index:900;
-  height:58px;padding:0 5vw;
-  display:flex;align-items:center;justify-content:space-between;
-  background:rgba(8,8,8,.94);
-  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
-  border-bottom:1px solid transparent;transition:border-color .3s;
-}
-#nav.nb{border-color:var(--rul)}
-.nl{
-  font-family:var(--cond);font-size:22px;font-weight:900;
-  letter-spacing:.06em;cursor:pointer;
-  color:var(--ink);transition:color .2s;
-}
-.nl:hover,.nl em{color:var(--grn)}
-.nl em{font-style:normal}
-.nm{display:flex;gap:2.5rem;align-items:center}
-.nm a{
-  font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--dim);transition:color .2s;cursor:pointer;
-}
-.nm a:hover{color:var(--grn)}
-.ncv{
-  display:flex;align-items:center;gap:6px;
-  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
-  padding:7px 16px;border:1px solid var(--grn);border-radius:2px;
-  color:var(--grn);transition:background .2s,color .2s;
-}
-.ncv:hover{background:var(--grn);color:#000}
-.nbtn{
-  display:none;flex-direction:column;gap:5px;
-  background:none;border:none;padding:4px;
-}
-.nbtn span{display:block;width:22px;height:1.5px;background:var(--ink);transition:transform .3s,opacity .3s}
-.nbtn.x span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-.nbtn.x span:nth-child(2){opacity:0}
-.nbtn.x span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-#mob{
-  display:none;position:fixed;top:58px;left:0;right:0;z-index:899;
-  background:var(--s1);border-bottom:1px solid var(--rul);
-  padding:1.5rem 5vw;flex-direction:column;gap:.75rem;
-}
-#mob.show{display:flex}
-#mob a{
-  font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--mut);padding:8px 0;border-bottom:1px solid var(--rul);cursor:pointer;
-  transition:color .2s;
-}
-#mob a:hover{color:var(--grn)}
-
-/* ═══════════════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════════════ */
-.hero{
-  min-height:100svh;padding-top:58px;
-  display:flex;flex-direction:column;
-  border-bottom:1px solid var(--rul);overflow:hidden;position:relative;
-}
-.htop{
-  display:flex;justify-content:space-between;align-items:center;
-  padding:1.5rem 5vw;border-bottom:1px solid var(--rul);
-}
-.htag{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
-.havail{
-  display:flex;align-items:center;gap:8px;
-  font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);
-}
-.dot{
-  width:7px;height:7px;border-radius:50%;background:var(--grn);flex-shrink:0;
-  animation:blink 2.2s ease infinite;
-}
-@keyframes blink{0%,100%{opacity:1}55%{opacity:.2}}
-
-.hbig{
-  flex:1;display:flex;align-items:center;
-  padding:2rem 5vw;
-}
-h1.htitle{
-  font-family:var(--cond);
-  font-size:clamp(68px,13.5vw,182px);
-  font-weight:900;line-height:.9;
-  letter-spacing:-.025em;text-transform:uppercase;
-}
-.hw{display:block;overflow:hidden}
-.hw span{
-  display:block;
-  animation:lu .75s var(--expo) both;
-}
-.hw:nth-child(1) span{animation-delay:.08s}
-.hw:nth-child(2) span{animation-delay:.2s}
-.hw:nth-child(3) span{animation-delay:.32s;color:var(--grn)}
-@keyframes lu{from{transform:translateY(105%)}to{transform:translateY(0)}}
-
-.hbot{
-  display:grid;grid-template-columns:1fr 1fr auto;
-  gap:2rem;align-items:end;
-  padding:2rem 5vw 2.5rem;
-  border-top:1px solid var(--rul);
-}
-.hmeta{display:flex;gap:2.5rem;flex-wrap:wrap}
-.hml{font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
-.hmv{font-family:var(--cond);font-size:20px;font-weight:700;letter-spacing:.02em}
-.hbio{font-size:14px;line-height:1.85;color:var(--mut);max-width:480px;align-self:end}
-.hbio strong{color:var(--ink);font-weight:500}
-.hcta{display:flex;gap:10px;flex-wrap:wrap;align-self:end;justify-content:flex-end}
-
-.ghost-num{
-  position:absolute;right:-1vw;bottom:0;
-  font-family:var(--cond);font-weight:900;font-size:clamp(200px,40vw,520px);
-  line-height:.85;color:rgba(255,255,255,.018);pointer-events:none;user-select:none;
-  animation:lu .9s var(--expo) .5s both;
-}
-
-/* ═══════════════════════════════════════════════════
-   TICKER
-═══════════════════════════════════════════════════ */
-.ticker-outer{overflow:hidden;border-bottom:1px solid var(--rul);background:var(--s1);padding:11px 0}
-.ticker-outer:hover .ticker-inner{animation-play-state:paused}
-.ticker-inner{display:flex;width:max-content;animation:tick 32s linear infinite}
-.ti-item{
-  white-space:nowrap;font-family:var(--mono);font-size:10px;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--dim);padding:0 2rem;
-}
-.ti-item em{color:var(--grn);font-style:normal}
-@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-33.333%)}}
-
-/* ═══════════════════════════════════════════════════
-   STATS
-═══════════════════════════════════════════════════ */
-.sbar{
-  display:flex;border-bottom:1px solid var(--rul);
-  background:var(--s1);overflow-x:auto;
-}
-.si{
-  flex-shrink:0;padding:2rem 3vw;
-  border-right:1px solid var(--rul);
-  transition:background .22s;
-}
-.si:last-child{border-right:none}
-.si:hover{background:var(--s2)}
-.sn{
-  font-family:var(--cond);font-size:clamp(40px,5.5vw,64px);
-  font-weight:900;line-height:1;color:var(--ink);
-}
-.sn sup{font-size:.55em;color:var(--grn);vertical-align:super}
-.sn.g{color:var(--grn)}
-.sl{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:4px}
-
-/* ═══════════════════════════════════════════════════
-   WORK
-═══════════════════════════════════════════════════ */
-.wsec{background:var(--bg);border-bottom:1px solid var(--rul)}
-.wsh{
-  padding:5rem 5vw 3rem;
-  border-bottom:1px solid var(--rul);
-  display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:1rem;
-}
-.wsl{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dim);margin-bottom:8px}
-h2.wst{
-  font-family:var(--cond);font-size:clamp(38px,7vw,86px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;
-}
-h2.wst em{font-style:italic;color:var(--grn)}
-.wgrid{
-  display:grid;grid-template-columns:repeat(3,1fr);
-  gap:1px;background:var(--rul);
-}
-.wcard{
-  position:relative;overflow:hidden;
-  aspect-ratio:1/1.05;cursor:pointer;
-  background:var(--s1);
-}
-.wcbg{
-  position:absolute;inset:0;
-  background:linear-gradient(140deg,var(--c1) 0%,var(--c2) 100%);
-  opacity:.55;transition:opacity .4s var(--ease);
-}
-.wcard:hover .wcbg{opacity:1}
-.wcnum{
-  position:absolute;top:18px;left:20px;z-index:2;
-  font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:rgba(255,255,255,.25);
-}
-.wcc{
-  position:absolute;inset:0;z-index:2;
-  display:flex;flex-direction:column;justify-content:flex-end;
-  padding:22px;
-}
-.wccat{font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:rgba(255,255,255,.45);margin-bottom:10px}
-.wcname{
-  font-family:var(--cond);font-size:clamp(15px,2vw,22px);
-  font-weight:700;line-height:1.2;color:#fff;margin-bottom:14px;
-  transform:translateY(6px);transition:transform .3s var(--ease);
-}
-.wcard:hover .wcname{transform:none}
-.wcf{display:flex;justify-content:space-between;align-items:center}
-.wcc2{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:rgba(255,255,255,.35)}
-.wcarr{
-  font-size:18px;color:var(--grn);
-  opacity:0;transform:translateX(-6px);
-  transition:opacity .25s,transform .25s var(--expo);
-}
-.wcard:hover .wcarr{opacity:1;transform:none}
-
-/* ═══════════════════════════════════════════════════
-   PROCESS
-═══════════════════════════════════════════════════ */
-.psec{background:var(--s1);border-top:1px solid var(--rul)}
-.psh{padding:5rem 5vw 3rem;border-bottom:1px solid var(--rul)}
-.psl{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dim);margin-bottom:8px}
-h2.pst{
-  font-family:var(--cond);font-size:clamp(38px,7vw,86px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;
-}
-h2.pst em{font-style:italic;color:var(--grn)}
-.psub{font-size:14px;color:var(--mut);max-width:520px;margin-top:1rem;line-height:1.8}
-
-.cpair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rul)}
-.case{background:var(--s1);padding:3rem 5vw;transition:background .25s}
-.case:hover{background:var(--s2)}
-.ctop{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem}
-.cnum{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:var(--grn)}
-.ctag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--dim)}
-h3.ch{
-  font-family:var(--cond);font-size:clamp(19px,2.5vw,28px);
-  font-weight:700;text-transform:uppercase;line-height:1.15;margin-bottom:2rem;
-}
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem}
-.cgl{font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--grn);margin-bottom:5px}
-.cgv{font-size:13px;color:var(--mut);line-height:1.75}
-.cmet{
-  display:flex;align-items:center;gap:1.25rem;
-  padding:14px 18px;border:1px solid rgba(0,255,136,.18);border-radius:2px;
-}
-.cmb{font-family:var(--cond);font-size:56px;font-weight:900;color:var(--grn);line-height:1}
-.cmd{font-size:12px;color:var(--mut);line-height:1.6}
-
-/* ═══════════════════════════════════════════════════
-   STACK
-═══════════════════════════════════════════════════ */
-.stsec{padding:5rem 5vw;background:var(--bg);border-top:1px solid var(--rul)}
-.stsl{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dim);margin-bottom:8px}
-h2.stst{
-  font-family:var(--cond);font-size:clamp(38px,7vw,86px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;margin-bottom:2rem;
-}
-h2.stst em{font-style:italic;color:var(--grn)}
-.stintro{
-  font-size:15px;color:var(--mut);max-width:640px;line-height:1.85;
-  margin-bottom:3rem;padding-left:14px;border-left:2px solid var(--grn);
-}
-.stintro strong{color:var(--ink);font-weight:500}
-
-.aigrid{
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
-  gap:1px;background:var(--rul);margin-bottom:3rem;
-}
-.aicat{background:var(--s1);padding:1.5rem 2rem;transition:background .22s}
-.aicat:hover{background:var(--s2)}
-.ach{
-  font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--mut);display:flex;align-items:center;gap:7px;margin-bottom:1rem;
-}
-.ach .adi{color:var(--grn)}
-.achips{display:flex;flex-wrap:wrap;gap:6px}
-.achips span{
-  font-family:var(--body);font-size:12px;font-weight:500;
-  padding:4px 10px;background:var(--s2);border:1px solid var(--rul);
-  border-radius:2px;color:var(--ink);transition:border-color .2s;
-}
-.aicat:hover .achips span{border-color:rgba(0,255,136,.3)}
-
-.sktbl{border:1px solid var(--rul);border-radius:2px;overflow:hidden}
-.skth{
-  display:grid;grid-template-columns:1fr 180px 80px;
-  padding:9px 16px;background:var(--s2);border-bottom:1px solid var(--rul);
-  font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
-}
-.skr{
-  display:grid;grid-template-columns:1fr 180px 80px;
-  padding:11px 16px;align-items:center;font-size:13px;
-  border-bottom:1px solid var(--rul);transition:background .2s;
-}
-.skr:last-child{border-bottom:none}
-.skr:hover{background:var(--s1)}
-.bw{height:3px;background:var(--rul);border-radius:2px;overflow:hidden}
-.bar{height:100%;width:0;background:var(--ink);border-radius:2px;transition:width 1.4s var(--ease) .2s}
-.gbar{background:var(--grn)}
-.slv{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-align:right;color:var(--dim)}
-.glv{color:var(--grn)}
-
-/* ═══════════════════════════════════════════════════
-   EXPERIENCE
-═══════════════════════════════════════════════════ */
-.exsec{background:var(--s1);border-top:1px solid var(--rul)}
-.exsh{padding:5rem 5vw 3rem}
-.exsl{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dim);margin-bottom:8px}
-h2.exst{
-  font-family:var(--cond);font-size:clamp(38px,7vw,86px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;
-}
-h2.exst em{font-style:italic;color:var(--grn)}
-.extbl{border-top:1px solid var(--rul)}
-.exth{
-  display:grid;grid-template-columns:140px 1fr 1fr 1fr;gap:2rem;
-  padding:10px 5vw;background:var(--s2);border-bottom:1px solid var(--rul);
-  font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);
-}
-.exr{
-  display:grid;grid-template-columns:140px 1fr 1fr 1fr;gap:2rem;
-  padding:1.4rem 5vw;border-bottom:1px solid var(--rul);
-  align-items:start;transition:background .22s;font-size:14px;
-}
-.exr:last-child{border-bottom:none}
-.exr:hover{background:var(--s2)}
-.exr.cur{background:var(--s2)}
-.exr.cur .ep{color:var(--grn)}
-.ep{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em;padding-top:2px}
-.erl{font-family:var(--cond);font-size:18px;font-weight:700;text-transform:uppercase;line-height:1.15}
-.eco{font-size:13px;color:var(--mut)}
-.efoc{font-size:12px;color:var(--dim);line-height:1.65}
-
-/* ═══════════════════════════════════════════════════
-   QUOTE
-═══════════════════════════════════════════════════ */
-.qsec{
-  padding:6rem 5vw;background:var(--bg);
-  border-top:1px solid var(--rul);
-  display:grid;place-items:center;
-}
-.qwrap{max-width:840px;text-align:center}
-.qmark{
-  font-family:var(--cond);font-size:80px;font-weight:900;
-  color:var(--grn);line-height:.5;display:block;margin-bottom:1.5rem;
-}
-blockquote{
-  font-family:var(--cond);font-size:clamp(22px,3.5vw,36px);
-  font-weight:300;font-style:italic;line-height:1.5;
-  color:rgba(239,239,236,.75);margin-bottom:1.5rem;
-}
-.qattr{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
-
-/* ═══════════════════════════════════════════════════
-   CONTACT
-═══════════════════════════════════════════════════ */
-.ctsec{
-  padding:5rem 5vw;background:var(--s1);border-top:1px solid var(--rul);
-  display:grid;grid-template-columns:1fr 1fr;gap:5vw;
-}
-.ctsl{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--dim);margin-bottom:8px}
-h2.ctst{
-  font-family:var(--cond);font-size:clamp(38px,7vw,86px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.88;margin-bottom:1.25rem;
-}
-h2.ctst em{font-style:italic;color:var(--grn)}
-.ctsub{font-size:14px;color:var(--mut);line-height:1.8;margin-bottom:2rem;max-width:380px}
-.ctlinks{display:flex;flex-direction:column;gap:2px}
-.ctlink{
-  display:flex;align-items:center;gap:1.25rem;
-  padding:11px 0;border-bottom:1px solid var(--rul);
-  transition:padding-left .2s;
-}
-.ctlink:hover{padding-left:6px}
-.ctl{font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);min-width:72px;flex-shrink:0;transition:color .2s}
-.ctlink:hover .ctl{color:var(--grn)}
-.ctlink span:last-child,.ctlink a{font-size:14px;color:var(--mut);transition:color .2s}
-.ctlink:hover span:last-child,.ctlink:hover a{color:var(--ink)}
-
-.ctform{display:grid;gap:14px}
-.cff{display:flex;flex-direction:column;gap:5px}
-.cff label{font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
-.cff input,.cff textarea,.cff select{
-  background:var(--s2);border:1px solid var(--rul);border-radius:2px;
-  padding:10px 14px;font-family:var(--body);font-size:14px;color:var(--ink);
-  outline:none;transition:border-color .2s;
-}
-.cff input:focus,.cff textarea:focus,.cff select:focus{border-color:var(--grn)}
-.cff textarea{resize:vertical;min-height:96px}
-.cff select option{background:var(--s2)}
-.cf2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-
-/* ═══════════════════════════════════════════════════
-   BUTTONS
-═══════════════════════════════════════════════════ */
-.bg{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:12px 28px;background:var(--grn);color:#000;
-  font-family:var(--cond);font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  border:none;border-radius:2px;transition:background .2s,transform .15s;
-}
-.bg:hover{background:var(--grn2);transform:translateY(-2px)}
-.bw{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:12px 28px;background:transparent;color:var(--ink);
-  font-family:var(--cond);font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  border:1px solid var(--rul);border-radius:2px;transition:border-color .2s,transform .15s;
-}
-.bw:hover{border-color:var(--mut);transform:translateY(-2px)}
-
-/* ═══════════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════════ */
-footer{
-  background:var(--bg);border-top:1px solid var(--rul);
-  padding:22px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
-}
-.flogo{font-family:var(--cond);font-size:22px;font-weight:900;color:var(--ink)}
-.flogo em{color:var(--grn);font-style:normal}
-.fcopy{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
-.flinks{display:flex;gap:1.5rem}
-.flinks a{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);transition:color .2s}
-.flinks a:hover{color:var(--grn)}
-
-/* ═══════════════════════════════════════════════════
-   SUBPAGE
-═══════════════════════════════════════════════════ */
-.spnav{
-  position:sticky;top:58px;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 5vw;height:48px;
-  background:rgba(8,8,8,.96);backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--rul);
-}
-.spback{
-  font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--mut);background:none;border:none;transition:color .2s;padding:0;
-}
-.spback:hover{color:var(--grn)}
-.sphero{
-  padding:5rem 5vw 3rem;border-bottom:1px solid var(--rul);
-  background:var(--s1);position:relative;overflow:hidden;
-}
-.spbg{
-  position:absolute;right:2vw;top:50%;transform:translateY(-50%);
-  font-family:var(--cond);font-size:clamp(80px,18vw,220px);font-weight:900;
-  color:rgba(255,255,255,.025);pointer-events:none;user-select:none;letter-spacing:.04em;
-}
-.spcat{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:8px;position:relative;z-index:1}
-h2.spbig{
-  font-family:var(--cond);font-size:clamp(40px,8vw,100px);
-  font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;
-  position:relative;z-index:1;margin-bottom:.75rem;
-}
-.spn{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);position:relative;z-index:1}
-
-.splist{background:var(--rul);display:grid;gap:1px}
-.sprow{
-  background:var(--s1);
-  display:grid;grid-template-columns:72px 1fr;
-  gap:2rem;padding:2.5rem 5vw;transition:background .25s;
-}
-.sprow:hover{background:var(--s2)}
-.spico{font-size:36px;display:flex;align-items:flex-start;padding-top:2px;flex-shrink:0}
-.spnt{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--grn);margin-bottom:5px}
-.spttl{
-  font-family:var(--cond);font-size:clamp(17px,2.5vw,24px);
-  font-weight:700;text-transform:uppercase;margin-bottom:.75rem;line-height:1.2;
-}
-.spdsc{font-size:13px;color:var(--mut);line-height:1.75;margin-bottom:1rem}
-.sptags{display:flex;flex-wrap:wrap;gap:6px}
-.sptags span{
-  font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
-  padding:3px 9px;border:1px solid var(--rul);border-radius:2px;color:var(--dim);
-}
-.spmore{padding:3rem 5vw;background:var(--s1);border-top:1px solid var(--rul)}
-.spmh{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1.25rem}
-.sugrow{display:flex;gap:12px;flex-wrap:wrap}
-.sugcard{
-  flex:1;min-width:180px;padding:14px 18px;
-  border:1px solid var(--rul);border-radius:2px;background:var(--s2);
-  cursor:pointer;transition:border-color .2s,transform .2s;
-}
-.sugcard:hover{border-color:var(--grn);transform:translateY(-2px)}
-.sugind{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);margin-bottom:4px}
-.sugtit{font-family:var(--cond);font-size:15px;font-weight:700;text-transform:uppercase}
-
-/* ═══════════════════════════════════════════════════
-   REVEAL
-═══════════════════════════════════════════════════ */
-.rev{opacity:0;transform:translateY(26px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
-.rev.in{opacity:1;transform:none}
-.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
-
-/* ═══════════════════════════════════════════════════
-   RESPONSIVE
-═══════════════════════════════════════════════════ */
-@media(max-width:1100px){
-  .wgrid{grid-template-columns:repeat(2,1fr)}
-  .exth,.exr{grid-template-columns:120px 1fr 1fr}
-  .exr .efoc{display:none}
-}
-@media(max-width:900px){
-  .hbot{grid-template-columns:1fr;gap:1.5rem}
-  .hcta{justify-content:flex-start}
-  .ghost-num{display:none}
-  .cpair{grid-template-columns:1fr}
-  .cgrid{grid-template-columns:1fr}
-  .ctsec{grid-template-columns:1fr}
-  .skth,.skr{grid-template-columns:1fr 140px 72px}
-}
-@media(max-width:640px){
-  .nm{display:none}
-  .ncv{display:none}
-  .nbtn{display:flex}
-  .wgrid{grid-template-columns:1fr}
-  .wcard{aspect-ratio:auto;min-height:180px}
-  .sbar,.sbar *{overflow-x:auto}
-  .si{padding:1.5rem 2.5vw}
-  .exth{display:none}
-  .exr{grid-template-columns:1fr;gap:.4rem;padding:1.25rem 5vw}
-  .exr .efoc{display:block}
-  .skth,.skr{grid-template-columns:1fr 100px}
-  .skth span:first-child,.skr span:first-child{display:none}
-  .cf2{grid-template-columns:1fr}
-  .sprow{grid-template-columns:1fr}
-  .spico{display:none}
-  .sugrow{flex-direction:column}
-}
-</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231b2a4a'/><text y='.85em' x='18' font-size='72' fill='%23e8800a' font-family='serif' font-weight='700'>Y</text></svg>">
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ══ NAV ══ -->
 <nav id="nav">
-  <span class="nl" onclick="gH()">YA<em>.</em></span>
-  <div class="nm">
-    <a onclick="gH('s-work')">Work</a>
+  <span class="nav-logo" onclick="gH()">Yussaimee<span>.</span></span>
+  <div class="nav-links">
+    <a onclick="gH('s-portfolio')">Portfolio</a>
     <a onclick="gH('s-process')">Process</a>
-    <a onclick="gH('s-stack')">Stack</a>
-    <a onclick="gH('s-exp')">History</a>
+    <a onclick="gH('s-skills')">Stack</a>
+    <a onclick="gH('s-exp')">Experience</a>
     <a onclick="gH('s-contact')">Contact</a>
   </div>
-  <a class="ncv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">
-    Resume <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.5"/></svg>
+  <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">
+    Download CV
+    <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg>
   </a>
-  <button class="nbtn" id="nbtn" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="nav-burger" id="nbtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
 </nav>
-<div id="mob">
-  <a onclick="gH('s-work');cM()">Work</a>
+
+<!-- Mobile menu -->
+<div id="mob-menu">
+  <a onclick="gH('s-portfolio');cM()">Portfolio</a>
   <a onclick="gH('s-process');cM()">Process</a>
-  <a onclick="gH('s-stack');cM()">Stack</a>
-  <a onclick="gH('s-exp');cM()">History</a>
+  <a onclick="gH('s-skills');cM()">Stack</a>
+  <a onclick="gH('s-exp');cM()">Experience</a>
   <a onclick="gH('s-contact');cM()">Contact</a>
-  <a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" onclick="cM()">Resume ↗</a>
+  <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" onclick="cM()">Download CV ↗</a>
 </div>
 
-<!-- ══════════ HOME ══════════ -->
+<!-- ══════════════════════════════════
+     HOME PAGE
+══════════════════════════════════ -->
 <div id="pg-home" class="pg on">
 
 <!-- HERO -->
 <section class="hero">
-  <div class="htop">
-    <span class="htag mono">SGD-001 · PORTFOLIO 2026</span>
-    <span class="havail"><span class="dot"></span>Available for hire</span>
-  </div>
-  <div class="hbig">
-    <h1 class="htitle">
-      <span class="hw"><span>SENIOR</span></span>
-      <span class="hw"><span>GRAPHIC</span></span>
-      <span class="hw"><span>DESIGNER</span></span>
-    </h1>
-  </div>
-  <div class="hbot">
-    <div class="hmeta">
-      <div><div class="hml mono">LOCATION</div><div class="hmv">Petaling Jaya, MY</div></div>
-      <div><div class="hml mono">EXP.</div><div class="hmv">15+ Years</div></div>
-      <div><div class="hml mono">STATUS</div><div class="hmv" style="color:var(--grn)">Open to Work</div></div>
-      <div><div class="hml mono">TARGET</div><div class="hmv">RM 6,000+</div></div>
+  <div class="hero-inner">
+
+    <!-- LEFT: Text -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Available for Senior Roles · RM 6,000+
+      </div>
+
+      <h1 class="hero-title">
+        Senior Graphic<br>
+        Designer &amp;<br>
+        <em>AI Integrator</em>
+      </h1>
+
+      <p class="hero-tagline">
+        <strong>Yussaimee Ahmad</strong> — 15+ years crafting high-impact visual systems
+        for global finance publishers, FMCG brands, and large-scale events.
+        Now integrating <strong>Generative AI, Video AI &amp; Web</strong> into live production workflows.
+      </p>
+
+      <div class="hero-meta">
+        <div class="hm-item">
+          <span class="hm-label">Location</span>
+          <span class="hm-val">Petaling Jaya, Malaysia</span>
+        </div>
+        <div class="hm-item">
+          <span class="hm-label">Experience</span>
+          <span class="hm-val">15+ Years</span>
+        </div>
+        <div class="hm-item">
+          <span class="hm-label">Industries</span>
+          <span class="hm-val">5+ Sectors</span>
+        </div>
+        <div class="hm-item">
+          <span class="hm-label">AI Stack</span>
+          <span class="hm-val amber">16+ Active Tools</span>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="sTo('s-portfolio')">View My Work</button>
+        <button class="btn-secondary" onclick="sTo('s-contact')">Get In Touch</button>
+      </div>
     </div>
-    <p class="hbio"><strong>Yussaimee Ahmad</strong> — Senior Graphic Designer across FMCG, finance publishing, events &amp; tech. Now with a fully integrated <strong>AI + Video AI + Web production pipeline</strong> running on live client work.</p>
-    <div class="hcta">
-      <button class="bg" onclick="sTo('s-work')">VIEW WORK</button>
-      <button class="bw" onclick="sTo('s-contact')">GET IN TOUCH</button>
+
+    <!-- RIGHT: Photo -->
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <!-- Upload me.png to your GitHub repo root folder -->
+        <img src="me.png" alt="Yussaimee Ahmad — Senior Graphic Designer" class="hero-photo" onerror="this.style.display='none'">
+      </div>
+      <div class="hero-photo-overlay"></div>
+      <div class="hero-photo-label">
+        <div class="hpl-name">Yussaimee Ahmad</div>
+        <div class="hpl-role">Senior Graphic Designer · Petaling Jaya, MY</div>
+      </div>
+      <div class="hero-amber-bar"></div>
     </div>
+
   </div>
-  <div class="ghost-num" aria-hidden="true">15</div>
 </section>
 
-<!-- TICKER -->
-<div class="ticker-outer">
-  <div class="ticker-inner" id="tkr"></div>
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat rev"><div class="stat-n">15+</div><div class="stat-l">Years Experience</div></div>
+  <div class="stat rev d1"><div class="stat-n">5+</div><div class="stat-l">Industries</div></div>
+  <div class="stat rev d2"><div class="stat-n">4×</div><div class="stat-l">Brands Unified at TAB Global</div></div>
+  <div class="stat rev d3"><div class="stat-n">0</div><div class="stat-l">Print Recalls — Nutrimetics</div></div>
+  <div class="stat rev d4"><div class="stat-n">16+</div><div class="stat-l">AI Tools Active</div></div>
 </div>
 
-<!-- STATS -->
-<div class="sbar">
-  <div class="si rev"><div class="sn"><sup>+</sup>15</div><div class="sl">Years</div></div>
-  <div class="si rev d1"><div class="sn"><sup>+</sup>5</div><div class="sl">Industries</div></div>
-  <div class="si rev d2"><div class="sn"><sup>×</sup>4</div><div class="sl">Brands Unified</div></div>
-  <div class="si rev d3"><div class="sn g">0</div><div class="sl">Print Recalls</div></div>
-  <div class="si rev d4"><div class="sn"><sup>+</sup>16</div><div class="sl">AI Tools Active</div></div>
-</div>
+<!-- ═══ PORTFOLIO ═══ -->
+<section id="s-portfolio" style="background:var(--white)">
+  <div class="sec-eyebrow rev">Selected Work</div>
+  <h2 class="sec-title rev d1">Real Work. <em>Real Clients.</em></h2>
+  <p class="sec-lead rev d2">Browse actual projects delivered for international clients across finance, events, and publishing — using Photoshop, Illustrator, InDesign, and AI-enhanced tools.</p>
 
-<!-- WORK -->
-<section id="s-work" class="wsec">
-  <div class="wsh">
-    <div>
-      <div class="wsl mono rev">002 / SELECTED WORK</div>
-      <h2 class="wst rev d1">INDUSTRY <em>EXPERTISE</em></h2>
-    </div>
+  <!-- TABS -->
+  <div class="port-tabs">
+    <button class="ptab act" onclick="switchTab(this,'t-social')">Social Media</button>
+    <button class="ptab" onclick="switchTab(this,'t-digital')">Digital Banners</button>
+    <button class="ptab" onclick="switchTab(this,'t-print')">Print Materials</button>
+    <button class="ptab" onclick="switchTab(this,'t-all')">All Industries</button>
   </div>
-  <div class="wgrid">
-    <div class="wcard rev" onclick="gS('finance')" style="--c1:#071428;--c2:#0d2d5e">
-      <div class="wcbg"></div><div class="wcnum mono">01</div>
-      <div class="wcc"><div class="wccat mono">FINANCE &amp; PUBLISHING</div><div class="wcname">TAB GLOBAL · THE ASIAN BANKER · WEALTH &amp; SOCIETY</div><div class="wcf"><span class="wcc2 mono">6 PROJECTS</span><span class="wcarr">→</span></div></div>
-    </div>
-    <div class="wcard rev d1" onclick="gS('fmcg')" style="--c1:#180a00;--c2:#3d2200">
-      <div class="wcbg"></div><div class="wcnum mono">02</div>
-      <div class="wcc"><div class="wccat mono">FMCG &amp; RETAIL</div><div class="wcname">NUTRIMETICS · MACY HOME · ALLIANCE</div><div class="wcf"><span class="wcc2 mono">5 PROJECTS</span><span class="wcarr">→</span></div></div>
-    </div>
-    <div class="wcard rev d2" onclick="gS('events')" style="--c1:#180300;--c2:#400d00">
-      <div class="wcbg"></div><div class="wcnum mono">03</div>
-      <div class="wcc"><div class="wccat mono">EVENTS &amp; ACTIVATION</div><div class="wcname">SUMMITS · LARGE FORMAT · ACTIVATION</div><div class="wcf"><span class="wcc2 mono">5 PROJECTS</span><span class="wcarr">→</span></div></div>
-    </div>
-    <div class="wcard rev d3" onclick="gS('ai')" style="--c1:#07001a;--c2:#180040">
-      <div class="wcbg"></div><div class="wcnum mono">04</div>
-      <div class="wcc"><div class="wccat mono">AI &amp; VIDEO AI</div><div class="wcname">MIDJOURNEY · RUNWAY ML · CLAUDE.AI</div><div class="wcf"><span class="wcc2 mono">4 PROJECTS</span><span class="wcarr">→</span></div></div>
-    </div>
-    <div class="wcard rev d4" onclick="gS('tech')" style="--c1:#001a0a;--c2:#003d1a">
-      <div class="wcbg"></div><div class="wcnum mono">05</div>
-      <div class="wcc"><div class="wccat mono">TECH &amp; WEB</div><div class="wcname">WEB DESIGN · GITHUB · E-LEARNING</div><div class="wcf"><span class="wcc2 mono">4 PROJECTS</span><span class="wcarr">→</span></div></div>
-    </div>
-    <div class="wcard rev d4" onclick="sTo('s-stack')" style="--c1:#001f0e;--c2:#003d1c">
-      <div class="wcbg" style="opacity:.8"></div><div class="wcnum mono" style="color:var(--grn)">AI</div>
-      <div class="wcc"><div class="wccat mono" style="color:rgba(0,255,136,.5)">CURRENT DIFFERENTIATOR</div><div class="wcname" style="color:var(--grn)">16+ ACTIVE AI TOOLS</div><div class="wcf"><span class="wcc2 mono" style="color:rgba(0,255,136,.4)">VIEW FULL STACK</span><span class="wcarr" style="color:var(--grn)">→</span></div></div>
-    </div>
-  </div>
-</section>
 
-<!-- PROCESS -->
-<section id="s-process" class="psec">
-  <div class="psh">
-    <div class="psl mono rev">003 / PROCESS</div>
-    <h2 class="pst rev d1">HOW I <em>THINK</em></h2>
-    <p class="psub rev d2">Senior designers are hired for process, not just output. Two projects — brief to outcome.</p>
-  </div>
-  <div class="cpair">
-    <div class="case rev">
-      <div class="ctop"><span class="cnum mono">CS/01</span><span class="ctag mono">FINANCE · PUBLISHING</span></div>
-      <h3 class="ch">Scaling TAB Global's Design System Across 4 International Platforms</h3>
-      <div class="cgrid">
-        <div><div class="cgl mono">BRIEF</div><div class="cgv">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands — each with different tones and global C-suite audiences.</div></div>
-        <div><div class="cgl mono">CHALLENGE</div><div class="cgv">50–80 posts/month, one designer, zero template system. Brand inconsistency eroding credibility with senior banking professionals worldwide.</div></div>
-        <div><div class="cgl mono">APPROACH</div><div class="cgv">Audited all 4 brand identities. Built modular InDesign template library with locked brand zones. Integrated Adobe Firefly for rapid IP-safe image generation.</div></div>
-        <div><div class="cgl mono">RESULT</div><div class="cgv">Per-post production time cut dramatically. Visual consistency restored. System adopted company-wide across all 4 brands and still in use.</div></div>
+  <!-- TAB: SOCIAL MEDIA -->
+  <div id="t-social" class="port-panel act">
+    <div class="port-intro rev">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Social Media Design</h3>
+        <p class="port-intro-text">Designed to stand out. Crafted to connect. Social media graphics for global finance and tech brands including TAB Global, Transwarp, MYbank, Huawei, Douyin, and Dingtalk.</p>
       </div>
-      <div class="cmet"><div class="cmb">4×</div><div class="cmd">Brands unified under one modular design system</div></div>
-    </div>
-    <div class="case rev d1">
-      <div class="ctop"><span class="cnum mono">CS/02</span><span class="ctag mono">FMCG · RETAIL</span></div>
-      <h3 class="ch">Nutrimetics Monthly POSM Pipeline — Shelf-Ready in 7 Days</h3>
-      <div class="cgrid">
-        <div><div class="cgl mono">BRIEF</div><div class="cgv">Monthly full POSM suite — catalogue, packaging, brochure, displays — with aggressive deadlines and Art Director + GM sign-off required every cycle.</div></div>
-        <div><div class="cgl mono">CHALLENGE</div><div class="cgv">Coordinating across Art Director, General Manager, and print vendors in a rigid 7-day cycle. Zero margin for error on a global beauty brand.</div></div>
-        <div><div class="cgl mono">APPROACH</div><div class="cgv">Built a repeatable design-to-print workflow. Created master templates with swappable photography zones. Brought photography in-house to kill delays.</div></div>
-        <div><div class="cgl mono">RESULT</div><div class="cgv">Every monthly cycle delivered on time. Zero print recalls across entire tenure — the strongest quality record possible in high-volume FMCG production.</div></div>
+      <div>
+        <div class="port-tags">
+          <span class="ptag">Finance Publishing</span><span class="ptag">Tech Brands</span>
+          <span class="ptag">Adobe Photoshop</span><span class="ptag">Illustrator</span>
+          <span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span>
+        </div>
       </div>
-      <div class="cmet"><div class="cmb">0</div><div class="cmd">Print recalls across full tenure at Nutrimetics</div></div>
+    </div>
+    <div class="port-gallery">
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global Social Media" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Global — Social Media</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Transwarp</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">MYbank</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei Shanghai Qingpu R&D Centre" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Huawei Shanghai R&D Centre</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Douyin</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Dingtalk</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai Tour - Decision Maker" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA Shanghai Tour — Decision Maker</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Shanghai Tour - Retreat" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA Shanghai Tour — Retreat &amp; Peer Exchange</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp Asia" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA AI Bootcamp Asia</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026 Patrick Quote" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Summit 2026 — Quote Card</div></div>
+      </div>
+    </div>
+    <div class="port-drive-cta rev">
+      <p>View the complete social media portfolio with all projects and variations</p>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a>
+    </div>
+  </div>
+
+  <!-- TAB: DIGITAL BANNERS -->
+  <div id="t-digital" class="port-panel">
+    <div class="port-intro rev">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Digital Banner Designs</h3>
+        <p class="port-intro-text">Designed using Photoshop and Illustrator, enhanced with AI tools including Adobe Firefly, Midjourney, and OpenAI technologies to refine visuals and boost creative efficiency.</p>
+      </div>
+      <div>
+        <div class="port-tags">
+          <span class="ptag">EDM Banners</span><span class="ptag">Web Banners</span>
+          <span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span>
+          <span class="ptag">TAB Global</span><span class="ptag">Finance Events</span>
+        </div>
+      </div>
+    </div>
+    <div class="port-gallery">
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_490,h_480,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition EDM Banner" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">The Great Transition — EDM Banner</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_490,h_480,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd Giving Tuesday Banner" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Kevin Rudd — Giving Tuesday Banner</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="TAB DigiFinMasterClass 2023 Web Banner" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB DigiFinMasterClass 2023 — Web Banner</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_490,h_350,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="TAB Finance Innovation Summit 2026 EDM B" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Finance Innovation Summit 2026 — EDM</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_490,h_350,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="TAB Finance Innovation Summit 2026 EDM A" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Finance Innovation Summit 2026 — EDM Alt</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_490,h_421,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="ED Book Invitation Money 2020" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">Money 2020 — Book Invitation Banner</div></div>
+      </div>
+      <div class="port-img-wrap" style="grid-column:1/-1" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_490,h_120,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="TAB Bootcamp MEA Banner" loading="lazy" style="object-fit:cover;max-height:160px;width:100%">
+        <div class="port-img-cap"><div class="pic-name">TAB Bootcamp MEA — Web Banner 855×120</div></div>
+      </div>
+      <div class="port-img-wrap" style="grid-column:1/-1" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_490,h_120,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="TAB Bootcamp ASIA Banner" loading="lazy" style="object-fit:cover;max-height:160px;width:100%">
+        <div class="port-img-cap"><div class="pic-name">TAB Bootcamp ASIA — Web Banner 855×120</div></div>
+      </div>
+    </div>
+    <div class="port-drive-cta rev">
+      <p>See the complete digital banner portfolio with all campaign deliverables</p>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a>
+    </div>
+  </div>
+
+  <!-- TAB: PRINT -->
+  <div id="t-print" class="port-panel">
+    <div class="port-intro rev">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Print Materials</h3>
+        <p class="port-intro-text">Print-ready designs created with industry tools and enhanced using AI technologies from Adobe, OpenAI, and Midjourney for precision and efficiency. Roll-up banners, signage, and event collateral.</p>
+      </div>
+      <div>
+        <div class="port-tags">
+          <span class="ptag">Roll-Up Banners</span><span class="ptag">Event Signage</span>
+          <span class="ptag">Print Production</span><span class="ptag">TAB Global</span>
+          <span class="ptag">Wealth &amp; Society</span><span class="ptag">AI-Enhanced</span>
+        </div>
+      </div>
+    </div>
+    <div class="port-gallery">
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_480,h_490,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="TBA Wealth Society Tour 2024 Roll-Up" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA Wealth Society Tour 2024 — Roll-Up</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_480,h_490,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="TBA Wealth Society Summit 2024 Roll-Up" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA Wealth Society Summit 2024 — Roll-Up</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic Roll-Up" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TBA Generic — Roll-Up Banner</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="TAB Senior Leadership Programme 2025 Roll-Up" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Senior Leadership Programme 2025</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global Generic Print" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Global — Generic Print</div></div>
+      </div>
+      <div class="port-img-wrap" onclick="lb(this)">
+        <img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Global Roll-Up 1" loading="lazy">
+        <div class="port-img-cap"><div class="pic-name">TAB Global — Roll-Up Series</div></div>
+      </div>
+    </div>
+    <div class="port-drive-cta rev">
+      <p>Explore the full print materials collection and event collateral portfolio</p>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a>
+    </div>
+  </div>
+
+  <!-- TAB: ALL INDUSTRIES -->
+  <div id="t-all" class="port-panel">
+    <div class="port-intro rev">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">All Industries — Overview</h3>
+        <p class="port-intro-text">15+ years of cross-industry design work spanning FMCG, international finance publishing, event activation, tech brands, and e-learning platforms. Every project print-ready or pixel-perfect.</p>
+      </div>
+      <div>
+        <div class="port-tags">
+          <span class="ptag">Finance &amp; Publishing</span><span class="ptag">FMCG &amp; Retail</span>
+          <span class="ptag">Events &amp; Activation</span><span class="ptag">AI-Enhanced</span>
+          <span class="ptag">Tech &amp; Web</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:2rem">
+      <!-- Finance card -->
+      <div style="background:var(--navy);border-radius:var(--r2);padding:2rem;cursor:pointer;transition:transform .2s,box-shadow .2s" onclick="switchTab(document.querySelector('[onclick*=t-social]'),'t-social');sTo('s-portfolio')" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(27,42,74,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:12px">Finance &amp; Publishing</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:700;color:var(--white);line-height:1.2;margin-bottom:8px">TAB Global · Asian Banker · Wealth &amp; Society</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.5)">Social media · EDM · Event branding · Publication</div>
+        <div style="margin-top:16px;font-size:20px;color:var(--amber)">→</div>
+      </div>
+      <!-- FMCG card -->
+      <div style="background:var(--slate2);border:1px solid var(--slate3);border-radius:var(--r2);padding:2rem;cursor:pointer;transition:transform .2s,box-shadow .2s" onclick="switchTab(document.querySelector('[onclick*=t-print]'),'t-print');sTo('s-portfolio')" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(27,42,74,.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:12px">FMCG &amp; Retail</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:8px">Nutrimetics · Macy Home</div>
+        <div style="font-size:13px;color:var(--text2)">Catalogue · Packaging · POSM · Retail campaigns</div>
+        <div style="margin-top:16px;font-size:20px;color:var(--amber)">→</div>
+      </div>
+      <!-- Events card -->
+      <div style="background:var(--slate2);border:1px solid var(--slate3);border-radius:var(--r2);padding:2rem;cursor:pointer;transition:transform .2s,box-shadow .2s" onclick="switchTab(document.querySelector('[onclick*=t-digital]'),'t-digital');sTo('s-portfolio')" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(27,42,74,.1)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+        <div style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:12px">Events &amp; Activation</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:8px">International Summits &amp; Study Tours</div>
+        <div style="font-size:13px;color:var(--text2)">Banners · Roll-ups · EDM · Signage · Digital ads</div>
+        <div style="margin-top:16px;font-size:20px;color:var(--amber)">→</div>
+      </div>
+    </div>
+    <div class="port-drive-cta rev" style="margin-top:2rem">
+      <p>All 24+ projects available in the complete portfolio archive</p>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a>
     </div>
   </div>
 </section>
 
-<!-- STACK -->
-<section id="s-stack" class="stsec">
-  <div class="stsl mono rev">004 / TECH STACK</div>
-  <h2 class="stst rev d1">THE AI <em>EDGE</em></h2>
-  <p class="stintro rev d2"><strong>Most senior designers list Adobe CC. Few run a live AI + Video AI + Web production pipeline on client work.</strong> This stack cuts production time, expands creative range, and justifies a premium salary.</p>
-  <div class="aigrid rev d1">
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> IMAGE AI</div><div class="achips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> VIDEO AI</div><div class="achips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> AI ASSISTANTS</div><div class="achips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> WEB &amp; DEV</div><div class="achips"><span>GitHub</span><span>HTML/CSS/JS</span><span>Webflow</span><span>Netlify</span></div></div>
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> VOICE &amp; PRODUCTIVITY</div><div class="achips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Eng.</span></div></div>
-    <div class="aicat"><div class="ach"><span class="adi">◆</span> ADOBE CC</div><div class="achips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
-  </div>
-  <div class="sktbl rev">
-    <div class="skth"><span>SKILL</span><span>LEVEL</span><span>RATING</span></div>
-    <div class="skr"><span>Brand &amp; Identity Design</span><span class="bw"><span class="bar" data-w="98%"></span></span><span class="slv mono">Expert</span></div>
-    <div class="skr"><span>Print &amp; Publication</span><span class="bw"><span class="bar" data-w="96%"></span></span><span class="slv mono">Expert</span></div>
-    <div class="skr"><span>POSM &amp; Retail Design</span><span class="bw"><span class="bar" data-w="96%"></span></span><span class="slv mono">Expert</span></div>
-    <div class="skr"><span>Social Media Design</span><span class="bw"><span class="bar" data-w="95%"></span></span><span class="slv mono">Expert</span></div>
-    <div class="skr"><span>AI Workflow Integration</span><span class="bw"><span class="bar gbar" data-w="88%"></span></span><span class="slv mono glv">Advanced</span></div>
-    <div class="skr"><span>Video &amp; Motion</span><span class="bw"><span class="bar" data-w="82%"></span></span><span class="slv mono">Proficient</span></div>
-    <div class="skr"><span>Web Design / HTML CSS</span><span class="bw"><span class="bar" data-w="78%"></span></span><span class="slv mono">Proficient</span></div>
-    <div class="skr"><span>Photography</span><span class="bw"><span class="bar" data-w="80%"></span></span><span class="slv mono">Proficient</span></div>
+<!-- ═══ PROCESS ═══ -->
+<section id="s-process" style="background:var(--slate)">
+  <div class="sec-eyebrow rev">Process &amp; Thinking</div>
+  <h2 class="sec-title rev d1">How I <em>Solve</em> Design Problems</h2>
+  <p class="sec-lead rev d2">Senior designers are hired for process, not just output. Here are two case studies — brief to measurable outcome.</p>
+
+  <div class="case-grid">
+    <div class="case-card rev">
+      <div class="case-head">
+        <div class="case-num">01</div>
+        <span class="case-tag">Finance · Publishing</span>
+        <div class="case-title">Scaling TAB Global's Design System Across 4 International Platforms</div>
+      </div>
+      <div class="case-body">
+        <div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands — each with different tones and global C-suite audiences.</span></div>
+        <div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">50–80 posts per month, one designer, zero template system. Brand inconsistency was eroding credibility with senior banking professionals worldwide.</span></div>
+        <div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Audited all 4 brand identities. Built modular InDesign template library with locked brand zones and flexible content areas. Integrated Adobe Firefly for rapid, IP-safe image generation.</span></div>
+        <div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Per-post production time cut dramatically. Visual consistency restored company-wide. System still in active use across all 4 brands.</span></div>
+        <div class="case-metric"><div class="cm-n">4×</div><div class="cm-d">Brands unified — The Asian Banker, TABInsights, Wealth &amp; Society, The Banking Academy</div></div>
+      </div>
+    </div>
+
+    <div class="case-card rev d1">
+      <div class="case-head">
+        <div class="case-num">02</div>
+        <span class="case-tag">FMCG · Retail</span>
+        <div class="case-title">Nutrimetics Monthly POSM Pipeline — Concept to Shelf in 7 Days</div>
+      </div>
+      <div class="case-body">
+        <div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Monthly full POSM suite — catalogue, packaging, brochure, in-store displays — with aggressive deadlines and Art Director + GM sign-off required every cycle.</span></div>
+        <div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">Coordinating across Art Director, General Manager, and external print vendors within a rigid 7-day cycle. Zero margin for error on a global premium beauty brand.</span></div>
+        <div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Built a repeatable design-to-print workflow. Created master templates with swappable photography zones. Managed product photography in-house to eliminate dependency delays.</span></div>
+        <div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Every monthly cycle delivered on time. Zero print recalls across entire tenure — the strongest quality-control record possible in high-volume FMCG production.</span></div>
+        <div class="case-metric"><div class="cm-n">0</div><div class="cm-d">Print recalls across entire tenure at Nutrimetics</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="s-exp" class="exsec">
-  <div class="exsh">
-    <div class="exsl mono rev">005 / CAREER HISTORY</div>
-    <h2 class="exst rev d1">15+ YEARS <em>BUILDING</em></h2>
-  </div>
-  <div class="extbl">
-    <div class="exth mono"><span>PERIOD</span><span>ROLE</span><span>COMPANY</span><span>FOCUS</span></div>
-    <div class="exr cur rev"><span class="ep mono">2018–NOW</span><span class="erl">Senior Graphic Designer</span><span class="eco">TAB Global</span><span class="efoc">Finance publishing · AI integration · 30+ countries</span></div>
-    <div class="exr rev"><span class="ep mono">2020–2021</span><span class="erl">Comm. Executive / Designer</span><span class="eco">Alliance Teamwork</span><span class="efoc">POSM · Event collateral · Content</span></div>
-    <div class="exr rev"><span class="ep mono">2012–2018</span><span class="erl">Graphic / Web Designer</span><span class="eco">Macy Home Furnishings</span><span class="efoc">Retail campaigns · E-commerce · Photography</span></div>
-    <div class="exr rev"><span class="ep mono">2009–2010</span><span class="erl">Comm. Executive / Designer</span><span class="eco">Nutrimetics Worldwide</span><span class="efoc">Catalogue · Packaging · POSM</span></div>
-    <div class="exr rev"><span class="ep mono">2008–2009</span><span class="erl">Graphic / Web Designer</span><span class="eco">ATN Media &amp; Advertising</span><span class="efoc">Billboards · Print · Large format</span></div>
-    <div class="exr rev"><span class="ep mono">2002–2007</span><span class="erl">Copywriter / Designer</span><span class="eco">Wannastation</span><span class="efoc">E-learning · Telekom Smart School · Web</span></div>
+<!-- ═══ SKILLS / AI STACK ═══ -->
+<section id="s-skills" style="background:var(--white)">
+  <div class="sec-eyebrow rev">Capabilities</div>
+  <h2 class="sec-title rev d1">Skills &amp; <em>AI Stack</em></h2>
+  <p class="sec-lead rev d2">The differentiator most senior designers cannot match — a fully integrated AI + Video AI + Web production stack running on live client work today.</p>
+
+  <div class="skills-wrap">
+    <div class="rev d1">
+      <p class="ai-intro-text">"Most senior designers list Adobe CC. I run a live AI production pipeline that delivers faster output at higher quality — on real client work."</p>
+      <p class="ai-body" style="margin-top:1rem">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems — this stack is a genuine salary-justifying differentiator.</p>
+
+      <div class="skill-tbl" style="margin-top:2rem">
+        <div class="skill-tbl-head"><span>Skill</span><span>Level</span><span>Rating</span></div>
+        <div class="sk-row"><span>Brand &amp; Identity Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="98"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>Print &amp; Publication Layout</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>POSM &amp; Retail Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>Social Media Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="95"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>AI Workflow Integration</span><div class="sk-bar-wrap"><div class="sk-bar amb" data-w="88"></div></div><span class="sk-lv a">Advanced</span></div>
+        <div class="sk-row"><span>Video &amp; Motion (Pr / Ae)</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="82"></div></div><span class="sk-lv">Proficient</span></div>
+        <div class="sk-row"><span>Web Design / HTML CSS</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="78"></div></div><span class="sk-lv">Proficient</span></div>
+        <div class="sk-row"><span>Photography</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="80"></div></div><span class="sk-lv">Proficient</span></div>
+      </div>
+    </div>
+
+    <div class="ai-cats rev d2">
+      <div class="ai-cat"><div class="ach">◆ Image AI</div><div class="achips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Video AI</div><div class="achips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ AI Assistants</div><div class="achips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Web &amp; Dev</div><div class="achips"><span>GitHub</span><span>HTML / CSS / JS</span><span>Webflow</span><span>Netlify</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Adobe Creative Suite</div><div class="achips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Productivity</div><div class="achips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Engineering</span></div></div>
+    </div>
   </div>
 </section>
 
-<!-- QUOTE -->
-<section class="qsec">
-  <div class="qwrap rev">
-    <span class="qmark">"</span>
-    <blockquote>Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote>
-    <p class="qattr mono">— Colleague · TAB Global · LinkedIn Recommendation</p>
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="s-exp" style="background:var(--slate)">
+  <div class="sec-eyebrow rev">Career History</div>
+  <h2 class="sec-title rev d1"><em>15+ Years</em> of Industry Experience</h2>
+  <p class="sec-lead rev d2">Across creative agencies, FMCG, international retail, and global publishing — growing scope and responsibility at every stage.</p>
+
+  <div class="exp-list">
+    <div class="exp-item current rev">
+      <div class="exp-period">2018 – Present</div>
+      <div>
+        <div class="exp-role">Senior Graphic Designer</div>
+        <div class="exp-co">Innotribe Solutions Sdn Bhd (TAB Global) · Selangor</div>
+        <ul class="exp-pts">
+          <li>Lead designer for multimedia and social media of TAB Global — international finance publishing group, C-suite audiences in 30+ countries.</li>
+          <li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, and The Banking Academy.</li>
+          <li>Pioneered AI integration — generative design tools and AI analytics for high-volume publishing layouts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item rev">
+      <div class="exp-period">2020 – 2021</div>
+      <div>
+        <div class="exp-role">Communicative Executive / Graphic Designer</div>
+        <div class="exp-co">Alliance Teamwork Marketing · Petaling Jaya, Selangor</div>
+        <ul class="exp-pts">
+          <li>POSM design suite — brochures, booklets, magazines, and event collateral.</li>
+          <li>Content development, translation and editing for marketing materials.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item rev">
+      <div class="exp-period">2012 – 2018</div>
+      <div>
+        <div class="exp-role">Graphic / Website Designer</div>
+        <div class="exp-co">Macy Home Furnishings · Selangor</div>
+        <ul class="exp-pts">
+          <li>Retail campaigns across digital and print media; e-commerce website UX.</li>
+          <li>In-house product photography and videography for all marketing channels.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item rev">
+      <div class="exp-period">2009 – 2010</div>
+      <div>
+        <div class="exp-role">Communicative Executive / Graphic Designer</div>
+        <div class="exp-co">Nutrimetics Worldwide (M) Sdn Bhd · Selangor</div>
+        <ul class="exp-pts">
+          <li>Monthly catalogues, packaging, and POSM for a global premium beauty brand.</li>
+          <li>Collaborated directly with Art Director and General Manager on all design concepts.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item rev">
+      <div class="exp-period">2008 – 2009</div>
+      <div>
+        <div class="exp-role">Graphic / Website Designer</div>
+        <div class="exp-co">ATN Media &amp; Advertising Sdn Bhd · Selangor</div>
+        <ul class="exp-pts">
+          <li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item rev">
+      <div class="exp-period">2002 – 2007</div>
+      <div>
+        <div class="exp-role">Copywriter / Instructional Designer / Graphic Designer</div>
+        <div class="exp-co">Wannastation · Selangor</div>
+        <ul class="exp-pts">
+          <li>E-learning modules for Telekom Malaysia's Smart School collaboration.</li>
+          <li>E-Terjemah English literacy platform designed for rural primary school students.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="s-contact" class="ctsec">
+<!-- TESTIMONIAL -->
+<section class="quote-sec">
   <div class="rev">
-    <div class="ctsl mono">006 / CONTACT</div>
-    <h2 class="ctst">LET'S<br><em>WORK.</em></h2>
-    <p class="ctsub">Open to senior roles at RM 6,000+, freelance, and brand consulting across FMCG, Finance, Events, Tech and AI design.</p>
-    <div class="ctlinks">
-      <div class="ctlink"><span class="ctl mono">PHONE</span><a href="tel:+60112360 8193">011 2360 8193</a></div>
-      <div class="ctlink"><span class="ctl mono">EMAIL</span><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></div>
-      <div class="ctlink"><span class="ctl mono">LINKEDIN</span><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></div>
-      <div class="ctlink"><span class="ctl mono">GITHUB</span><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></div>
-      <div class="ctlink"><span class="ctl mono">RESUME</span><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF ↗</a></div>
-    </div>
+    <span class="q-icon">"</span>
+    <blockquote>Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote>
+    <p class="q-attr">— Colleague · TAB Global · LinkedIn Recommendation</p>
   </div>
-  <form class="ctform rev d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <div class="cf2">
-      <div class="cff"><label class="mono">FIRST NAME</label><input type="text" name="fn" placeholder="Sarah" required></div>
-      <div class="cff"><label class="mono">LAST NAME</label><input type="text" name="ln" placeholder="Tan" required></div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="s-contact" style="background:var(--white)">
+  <div class="sec-eyebrow rev">Get In Touch</div>
+  <h2 class="sec-title rev d1">Let's Work <em>Together.</em></h2>
+  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance projects, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
+
+  <div class="contact-wrap">
+    <div class="rev">
+      <div class="contact-info-title">Yussaimee Ahmad</div>
+      <p class="contact-intro">Senior Graphic Designer with 15+ years of proven delivery for global brands. Based in Petaling Jaya — available for full-time roles, freelance engagements, and consulting.</p>
+      <div class="contact-list">
+        <div class="ci-item"><span class="ci-lbl">Phone</span><span class="ci-val"><a href="tel:+60112360 8193">011 2360 8193</a></span></div>
+        <div class="ci-item"><span class="ci-lbl">Email</span><span class="ci-val"><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></div>
+        <div class="ci-item"><span class="ci-lbl">LinkedIn</span><span class="ci-val"><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></span></div>
+        <div class="ci-item"><span class="ci-lbl">GitHub</span><span class="ci-val"><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></span></div>
+        <div class="ci-item"><span class="ci-lbl">Location</span><span class="ci-val">Petaling Jaya, Selangor, Malaysia</span></div>
+        <div class="ci-item"><span class="ci-lbl">Resume</span><span class="ci-val"><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF ↗</a></span></div>
+      </div>
     </div>
-    <div class="cff"><label class="mono">EMAIL</label><input type="email" name="em" placeholder="hiring@company.com" required></div>
-    <div class="cff"><label class="mono">ENQUIRY</label>
-      <select name="type"><option>Full-time Role</option><option>Freelance Project</option><option>Brand Consulting</option><option>AI Design Project</option><option>Collaboration</option></select>
-    </div>
-    <div class="cff"><label class="mono">MESSAGE</label><textarea name="msg" rows="4" placeholder="Tell me about the role or project..." required></textarea></div>
-    <button type="submit" class="bg" style="width:100%;justify-content:center;">SEND MESSAGE →</button>
-  </form>
+
+    <form class="c-form rev d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="c-2col">
+        <div><label>First Name</label><input type="text" name="fn" placeholder="Sarah" required></div>
+        <div><label>Last Name</label><input type="text" name="ln" placeholder="Tan" required></div>
+      </div>
+      <div><label>Email</label><input type="email" name="em" placeholder="hiring@company.com" required></div>
+      <div>
+        <label>Enquiry Type</label>
+        <select name="type">
+          <option>Full-time Role</option>
+          <option>Freelance Project</option>
+          <option>Brand Consulting</option>
+          <option>AI Design Project</option>
+          <option>Collaboration</option>
+        </select>
+      </div>
+      <div><label>Message</label><textarea name="msg" rows="4" placeholder="Tell me about the role or project..." required></textarea></div>
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+    </form>
+  </div>
 </section>
 
 <footer>
-  <span class="flogo">YA<em>.</em></span>
-  <span class="fcopy mono">© 2026 YUSSAIMEE AHMAD · SENIOR GRAPHIC DESIGNER · MALAYSIA</span>
-  <div class="flinks"><a href="mailto:yussaimee@gmail.com">EMAIL</a><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LINKEDIN</a><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GITHUB</a></div>
+  <span class="footer-name">Yussaimee<span>.</span></span>
+  <span class="footer-copy">© 2026 · Senior Graphic Designer · Petaling Jaya, Malaysia</span>
+  <div class="footer-links">
+    <a href="mailto:yussaimee@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener">Portfolio Drive</a>
+  </div>
 </footer>
-</div><!-- /home -->
 
-<!-- ══════════ SUBPAGE ══════════ -->
-<div id="pg-sub" class="pg">
-  <div id="sub-root"></div>
+</div><!-- /pg-home -->
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLb()">
+  <button id="lightbox-close" onclick="closeLb()">×</button>
+  <img id="lb-img" src="" alt="Portfolio image">
 </div>
 
 <script>
-/* ── PROJECT DATA ── */
-const P={
-  finance:{cat:'FINANCE & PUBLISHING',items:[
-    {e:'📊',n:'50–80 posts/month',t:'The Asian Banker — LinkedIn Campaign System',d:'Modular social media template system for consistent, high-volume publishing across LinkedIn, WeChat, Instagram and email for TAB Global\'s flagship finance publication.',tags:['Social Media','Template System','InDesign','Digital']},
-    {e:'📰',n:'Multi-issue system',t:'TABInsights — Digital Magazine Layout',d:'High-frequency digital magazine design with master layout templates and a full infographic system for translating complex financial data into clear visual stories.',tags:['Publication','InDesign','Infographics','Typography']},
-    {e:'🏦',n:'End-to-end event identity',t:'Wealth & Society Forum — Event Branding Suite',d:'Full event branding for an international wealth management summit — pre-event promotion, on-site signage, delegate packs, stage graphics, and post-event social content.',tags:['Event Branding','Print','Signage','Digital']},
-    {e:'🎓',n:'20+ countries',t:'The Banking Academy — Course Visual System',d:'Visual design system for e-learning course covers, certification materials and slide deck templates for an international banking training platform.',tags:['E-learning','Branding','Print','Digital']},
-    {e:'✈️',n:'Multi-city campaign',t:'AI Finance Study Tour — Promotion Suite',d:'Complete multi-city executive study tour promotional package — social graphics, HTML emails, digital display ads, print collateral and on-site event signage.',tags:['Campaign','Social Media','Print','Email']},
-    {e:'📖',n:'Premium print',t:'Wealth & Society Magazine — Editorial Design',d:'End-to-end editorial design of a premium wealth management print publication — cover concept, typographic grid, advertorials and full editorial spreads.',tags:['Magazine','Editorial','InDesign','Photography']},
-  ]},
-  fmcg:{cat:'FMCG & RETAIL',items:[
-    {e:'💄',n:'7-day cycle · zero recalls',t:'Nutrimetics — Monthly Product Catalogue',d:'End-to-end monthly catalogue design — concept, layout, in-house product photography, retouching and full print production on a strict 7-day cycle for a global beauty brand.',tags:['Catalogue','Print','Photography','FMCG']},
-    {e:'📦',n:'Direct C-suite brief',t:'Nutrimetics — Full POSM & Packaging Suite',d:'Complete POSM suite — product packaging redesigns, brochures, pamphlets, fliers and in-store display materials. Briefed directly by Art Director and General Manager.',tags:['POSM','Packaging','Print','Retail']},
-    {e:'🛋️',n:'Full channel',t:'Macy Home — Seasonal Retail Campaign',d:'Seasonal retail campaigns across digital banners, social media, e-commerce product photography, in-store visual merchandising and print media.',tags:['Retail','Digital','Photography','Campaign']},
-    {e:'🌐',n:'UX-led',t:'Macy Home — E-Commerce Website Redesign',d:'Redesigned and maintained the Macy Home corporate website — improved UX flow, updated product imagery to e-commerce standards and enhanced conversion page layouts.',tags:['Web Design','E-Commerce','UX','CMS']},
-    {e:'📋',n:'Scalable system',t:'Alliance Teamwork — Direct Sales POSM System',d:'Full marketing POSM suite — brochures, fliers, booklets and magazine-style materials for a direct sales organisation\'s product launch campaigns.',tags:['POSM','Brochure','Print','Marketing']},
-  ]},
-  events:{cat:'EVENTS & ACTIVATION',items:[
-    {e:'🎯',n:'All channels · multi-city',t:'AI Finance Study Tour — Full Campaign Suite',d:'Every touchpoint for a multi-city executive study tour — social graphics, HTML email banners, digital ads, print collateral and on-site signage.',tags:['Campaign','Social Media','Print','Email']},
-    {e:'🎪',n:'Full venue identity',t:'Wealth & Society Forum — Venue Branding',d:'Complete venue branding for an international finance summit — entrance backdrops, directional signage, table-top materials, stage graphics and post-event social content.',tags:['Event','Large Format','Signage','Print']},
-    {e:'🖼️',n:'Supervised installation',t:'ATN Media — Large Format Print Production',d:'Design and full production management of large-format outdoor campaigns — billboards, banners, buntings and backdrops. Supervised on-site installation.',tags:['Large Format','Billboard','Print Production','Signage']},
-    {e:'📁',n:'Full delegate UX',t:'Banking Conference — Delegate Pack Design',d:'Complete delegate experience — name cards, lanyards, event programmes, branded notepads and in-app event guide visual guidelines.',tags:['Print','Event','Collateral','Branding']},
-    {e:'🚀',n:'Live social content',t:'Product Launch Activation — In-Store Event',d:'In-store product launch activation — pop-up displays, promotional POSM, sampling station graphics and real-time social media content for live event coverage.',tags:['Activation','POSM','Retail','Social Media']},
-  ]},
-  ai:{cat:'AI & VIDEO AI',items:[
-    {e:'🎨',n:'Full workflow documented',t:'Midjourney + Firefly — Brand Concepting Workflow',d:'End-to-end prompt engineering workflow — Midjourney for creative ideation, Adobe Firefly for production-safe, IP-clean final assets fully integrated into Adobe CC.',tags:['Midjourney','Firefly','Workflow','Brand']},
-    {e:'🎬',n:'Live deployment',t:'Runway ML — Social Video Content Pipeline',d:'Used Runway ML to generate short-form video clips and social animations for TAB Global platforms, significantly cutting motion production time.',tags:['Runway ML','Video AI','Social Media','Motion']},
-    {e:'✍️',n:'Human-in-loop',t:'Claude.ai — Campaign Copywriting Integration',d:'Integrated Claude.ai into creative briefs — generating copy frameworks, headlines and content scaffolds, refined by human editorial direction before client delivery.',tags:['Claude.ai','Copywriting','AI Workflow','Campaign']},
-    {e:'📈',n:'Data-driven',t:'AI Analytics — Social Content Optimisation',d:'Used AI-driven analytics to test and optimise social post formats, visual styles and timing across TAB Global\'s LinkedIn and Instagram accounts.',tags:['Analytics','AI','Social Media','Optimisation']},
-  ]},
-  tech:{cat:'TECH & WEB',items:[
-    {e:'🏫',n:'Social impact',t:'E-Terjemah — Educational Community Website',d:'Designed and built a community website to improve English literacy for rural primary school students — content curated and aligned with Malaysia\'s national curriculum.',tags:['Web Design','E-learning','UX','Education']},
-    {e:'💻',n:'Government collaboration',t:'Telekom Smart School — E-Learning Modules',d:'Storyboards, interactive content layouts and visual assets for Telekom Malaysia\'s Smart School e-learning modules. Edited and proofread all text and visual elements.',tags:['E-learning','Storyboard','Interactive','Content']},
-    {e:'🛠️',n:'Conversion focus',t:'Macy Home — Website Redesign & CMS',d:'Full website redesign and CMS management — improved UX flow, updated product imagery to e-commerce standards and enhanced conversion page layouts.',tags:['Web Design','UX','CMS','E-Commerce']},
-    {e:'🐙',n:'Team system',t:'GitHub Design Asset Version Control',d:'Set up and maintained a GitHub-based version control workflow for design assets, brand guidelines and template files — enabling team collaboration and rollback.',tags:['GitHub','Asset Management','Workflow','Collaboration']},
-  ]}
-};
-const LABS={finance:'Finance & Publishing',fmcg:'FMCG & Retail',events:'Events & Activation',ai:'AI & Video AI',tech:'Tech & Web'};
-const KK=Object.keys(P);
-
-/* ── ROUTING ── */
-function sPage(id){document.querySelectorAll('.pg').forEach(p=>p.classList.remove('on'));document.getElementById(id).classList.add('on');window.scrollTo(0,0);}
-function gH(sec){sPage('pg-home');if(sec)setTimeout(()=>{const el=document.getElementById(sec);if(el)el.scrollIntoView({behavior:'smooth'});},70);setTimeout(iRev,60);}
-function sTo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
-
-/* ── SUBPAGE ── */
-function gS(key){
-  const d=P[key];
-  const sug=KK.filter(k=>k!==key).slice(0,3);
-  const rows=d.items.map(p=>`
-    <div class="sprow rev">
-      <div class="spico">${p.e}</div>
-      <div>
-        <div class="spnt mono">${p.n}</div>
-        <h3 class="spttl">${p.t}</h3>
-        <p class="spdsc">${p.d}</p>
-        <div class="sptags">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div>
-      </div>
-    </div>`).join('');
-  const sugs=sug.map(k=>`
-    <div class="sugcard" onclick="gS('${k}')">
-      <div class="sugind mono">${LABS[k].toUpperCase()}</div>
-      <div class="sugtit">${LABS[k]} →</div>
-    </div>`).join('');
-  document.getElementById('sub-root').innerHTML=`
-    <div>
-      <nav id="nav" style="position:sticky;top:0;z-index:900;height:58px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(8,8,8,.96);backdrop-filter:blur(18px);border-bottom:1px solid var(--rul)">
-        <span class="nl" onclick="gH()" style="cursor:pointer">YA<em style="color:var(--grn);font-style:normal">.</em></span>
-        <button class="spback" onclick="gH('s-work')">← BACK TO WORK</button>
-      </nav>
-      <div class="sphero">
-        <div class="spbg">${d.cat}</div>
-        <div class="spcat mono">${d.cat}</div>
-        <h2 class="spbig">${d.cat}</h2>
-        <div class="spn mono">${d.items.length} PROJECTS</div>
-      </div>
-      <div class="splist">${rows}</div>
-      <div class="spmore">
-        <div class="spmh mono">EXPLORE MORE →</div>
-        <div class="sugrow">${sugs}</div>
-      </div>
-      <footer style="background:var(--bg);border-top:1px solid var(--rul);padding:20px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
-        <span class="flogo" style="font-family:var(--cond);font-size:20px;font-weight:900">YA<em style="color:var(--grn);font-style:normal">.</em></span>
-        <span class="fcopy mono" style="font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)">© 2026 YUSSAIMEE AHMAD</span>
-        <div class="flinks"><a href="mailto:yussaimee@gmail.com" style="font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none">EMAIL</a></div>
-      </footer>
-    </div>`;
-  sPage('pg-sub');setTimeout(iRev,60);
-}
-
-/* ── TICKER ── */
-(function(){
-  const items=['SENIOR GRAPHIC DESIGNER','15+ YEARS','FMCG','FINANCE PUBLISHING','EVENTS','AI INTEGRATION','VIDEO AI','BRAND SYSTEMS','POSM','PETALING JAYA','GENERATIVE AI','WEB DEVELOPMENT','GITHUB','OPEN TO WORK'];
-  const t=document.getElementById('tkr');if(!t)return;
-  [...items,...items,...items].forEach(s=>{const el=document.createElement('span');el.className='ti-item mono';el.innerHTML=s+' <em>✦</em> ';t.appendChild(el);});
-})();
-
-/* ── SCROLL BARS ── */
-function aBars(){document.querySelectorAll('.bar[data-w]').forEach(b=>{b.style.width=b.getAttribute('data-w');});}
-
-/* ── REVEAL ── */
-let ro;
-function iRev(){
-  if(ro)ro.disconnect();
-  ro=new IntersectionObserver(es=>es.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('in');
-      // trigger bars when skill section visible
-      if(e.target.closest('.stsec')||e.target.classList.contains('sktbl'))aBars();
-    }
-  }),{threshold:0.07});
-  document.querySelectorAll('.rev').forEach(el=>ro.observe(el));
-}
-iRev();
-
 /* ── NAV SCROLL ── */
 window.addEventListener('scroll',()=>{
-  const n=document.getElementById('nav');if(n)n.classList.toggle('nb',scrollY>50);
+  document.getElementById('nav').classList.toggle('nb', scrollY > 50);
 },{passive:true});
 
 /* ── MOBILE MENU ── */
-const nb=document.getElementById('nbtn'),mob=document.getElementById('mob');
-if(nb&&mob){
-  nb.addEventListener('click',()=>{const o=mob.classList.toggle('show');nb.classList.toggle('x',o);});
-}
-function cM(){if(mob)mob.classList.remove('show');if(nb)nb.classList.remove('x');}
+const nb = document.getElementById('nbtn');
+const mm = document.getElementById('mob-menu');
+nb.addEventListener('click',()=>{
+  const o = mm.classList.toggle('show');
+  nb.classList.toggle('x', o);
+  nb.setAttribute('aria-expanded', o);
+});
+function cM(){ mm.classList.remove('show'); nb.classList.remove('x'); }
 
-/* ── HERO REVEAL ON LOAD ── */
+/* ── ROUTING ── */
+function gH(sec){
+  window.scrollTo(0,0);
+  if(sec) setTimeout(()=>{
+    const el = document.getElementById(sec);
+    if(el) el.scrollIntoView({behavior:'smooth'});
+  }, 60);
+}
+function sTo(id){
+  const el = document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+
+/* ── PORTFOLIO TABS ── */
+function switchTab(btn, panelId){
+  document.querySelectorAll('.ptab').forEach(t => t.classList.remove('act'));
+  document.querySelectorAll('.port-panel').forEach(p => p.classList.remove('act'));
+  if(btn) btn.classList.add('act');
+  const panel = document.getElementById(panelId);
+  if(panel){ panel.classList.add('act'); initRev(); }
+}
+
+/* ── LIGHTBOX ── */
+function lb(wrap){
+  const img = wrap.querySelector('img');
+  const lbImg = document.getElementById('lb-img');
+  // Use full-res src if possible
+  lbImg.src = img.src.replace(/w_\d+,h_\d+/, 'w_900,h_900');
+  lbImg.alt = img.alt;
+  document.getElementById('lightbox').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb(){
+  document.getElementById('lightbox').classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLb(); });
+
+/* ── SCROLL REVEAL ── */
+let ro;
+function initRev(){
+  if(ro) ro.disconnect();
+  ro = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        e.target.classList.add('in');
+        // animate skill bars when visible
+        e.target.querySelectorAll && e.target.querySelectorAll('.sk-bar[data-w]').forEach(b => {
+          b.style.width = b.getAttribute('data-w') + '%';
+        });
+      }
+    });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.rev').forEach(el => ro.observe(el));
+  // also observe skill bars directly
+  document.querySelectorAll('.sk-row').forEach(el => ro.observe(el));
+}
+initRev();
+
+/* ── LOAD TRIGGER ── */
 window.addEventListener('load',()=>{
   setTimeout(()=>{
-    document.querySelectorAll('#pg-home .rev').forEach(el=>el.classList.add('in'));
-    aBars();
-  },300);
+    document.querySelectorAll('#pg-home .rev').forEach(el => el.classList.add('in'));
+    document.querySelectorAll('.sk-bar[data-w]').forEach(b => {
+      b.style.width = b.getAttribute('data-w') + '%';
+    });
+  }, 200);
 });
 </script>
 </body>
