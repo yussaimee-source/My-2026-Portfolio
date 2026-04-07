@@ -39,9 +39,7 @@
   <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" onclick="cM()">Download CV ↗</a>
 </div>
 
-<!-- ══════════════════════════════
-     HERO
-══════════════════════════════ -->
+<!-- ════════════════ HERO ════════════════ -->
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-left">
@@ -63,8 +61,7 @@
         <button class="btn-secondary" onclick="sTo('s-contact')">Get In Touch</button>
       </div>
     </div>
-
-    <!-- HERO RIGHT: B&W Photo + AI SVG overlay -->
+    <!-- HERO RIGHT -->
     <div class="hero-right">
       <div class="hero-photo-wrap">
         <img src="me.png" alt="Yussaimee Ahmad" class="hero-photo" onerror="this.style.opacity='0'">
@@ -80,65 +77,51 @@
           </radialGradient>
         </defs>
         <ellipse cx="250" cy="195" rx="160" ry="155" fill="url(#halo)"/>
-        <!-- Left amber neural lines -->
         <g stroke="#e8800a" stroke-width="1.8" fill="none">
           <line x1="208" y1="145" x2="52" y2="108" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3.2s" repeatCount="indefinite"/></line>
           <line x1="198" y1="168" x2="44" y2="195" opacity="0"><animate attributeName="opacity" values="0;.9;0" dur="2.8s" begin=".5s" repeatCount="indefinite"/></line>
           <line x1="202" y1="198" x2="38" y2="255" opacity="0"><animate attributeName="opacity" values="0;.95;0" dur="3.6s" begin=".2s" repeatCount="indefinite"/></line>
           <line x1="212" y1="228" x2="68" y2="295" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="2.5s" begin="1s" repeatCount="indefinite"/></line>
         </g>
-        <!-- Right blue neural lines -->
         <g stroke="#5ba4ff" stroke-width="1.8" fill="none">
           <line x1="292" y1="145" x2="448" y2="108" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="2.9s" begin=".4s" repeatCount="indefinite"/></line>
           <line x1="302" y1="168" x2="456" y2="195" opacity="0"><animate attributeName="opacity" values="0;.9;0" dur="3.3s" begin=".6s" repeatCount="indefinite"/></line>
           <line x1="298" y1="198" x2="462" y2="255" opacity="0"><animate attributeName="opacity" values="0;.95;0" dur="2.7s" begin=".1s" repeatCount="indefinite"/></line>
           <line x1="288" y1="228" x2="432" y2="295" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3.8s" begin=".8s" repeatCount="indefinite"/></line>
         </g>
-        <!-- Crown lines -->
         <g fill="none">
           <line x1="238" y1="118" x2="195" y2="18" stroke="#fff" stroke-width="1.6" opacity="0"><animate attributeName="opacity" values="0;.7;0" dur="3.5s" begin=".5s" repeatCount="indefinite"/></line>
           <line x1="250" y1="112" x2="250" y2="8" stroke="#e8800a" stroke-width="2" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin=".2s" repeatCount="indefinite"/></line>
           <line x1="262" y1="118" x2="305" y2="18" stroke="#5ba4ff" stroke-width="1.6" opacity="0"><animate attributeName="opacity" values="0;.7;0" dur="3.1s" begin=".9s" repeatCount="indefinite"/></line>
         </g>
-        <!-- Amber endpoint nodes -->
         <g filter="url(#ng)">
           <circle cx="52" cy="108" r="5" fill="#e8800a"><animate attributeName="r" values="3;8;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="2.8s" repeatCount="indefinite"/></circle>
           <circle cx="44" cy="195" r="5" fill="#e8800a"><animate attributeName="r" values="3;7;3" dur="3.4s" begin=".6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;1;.6" dur="3.4s" begin=".6s" repeatCount="indefinite"/></circle>
           <circle cx="38" cy="255" r="4.5" fill="#e8800a"><animate attributeName="r" values="3;7;3" dur="2.6s" begin="1.1s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;1;.7" dur="2.6s" begin="1.1s" repeatCount="indefinite"/></circle>
           <circle cx="68" cy="295" r="5" fill="#e8800a"><animate attributeName="r" values="3;8;3" dur="3.8s" begin=".3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="3.8s" begin=".3s" repeatCount="indefinite"/></circle>
         </g>
-        <!-- Blue endpoint nodes -->
         <g filter="url(#bg)">
           <circle cx="448" cy="108" r="5" fill="#5ba4ff"><animate attributeName="r" values="3;8;3" dur="3.1s" begin=".4s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="3.1s" begin=".4s" repeatCount="indefinite"/></circle>
           <circle cx="456" cy="195" r="5" fill="#5ba4ff"><animate attributeName="r" values="3;7.5;3" dur="2.7s" begin=".8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;1;.6" dur="2.7s" begin=".8s" repeatCount="indefinite"/></circle>
           <circle cx="462" cy="255" r="4.5" fill="#5ba4ff"><animate attributeName="r" values="3;7;3" dur="3.5s" begin=".2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;1;.7" dur="3.5s" begin=".2s" repeatCount="indefinite"/></circle>
           <circle cx="432" cy="295" r="5" fill="#5ba4ff"><animate attributeName="r" values="3;8;3" dur="2.9s" begin=".7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="2.9s" begin=".7s" repeatCount="indefinite"/></circle>
         </g>
-        <!-- Crown nodes -->
         <circle cx="195" cy="18" r="5" fill="#e8800a" filter="url(#ng)"><animate attributeName="r" values="3;7;3" dur="3.2s" begin=".5s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;1;.7" dur="3.2s" begin=".5s" repeatCount="indefinite"/></circle>
         <circle cx="250" cy="8" r="6.5" fill="#fff" filter="url(#ng)"><animate attributeName="r" values="4;10;4" dur="2.5s" begin=".2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;1;.6" dur="2.5s" begin=".2s" repeatCount="indefinite"/></circle>
         <circle cx="305" cy="18" r="5" fill="#5ba4ff" filter="url(#bg)"><animate attributeName="r" values="3;7;3" dur="3.6s" begin=".9s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;1;.7" dur="3.6s" begin=".9s" repeatCount="indefinite"/></circle>
-        <!-- AI Chip top-right -->
         <g transform="translate(350,30)">
           <rect x="-4" y="-4" width="72" height="72" rx="10" fill="#e8800a" opacity="0"><animate attributeName="opacity" values="0;.12;0" dur="3s" repeatCount="indefinite"/></rect>
           <rect x="0" y="0" width="64" height="64" rx="8" fill="rgba(232,128,10,.18)" stroke="#e8800a" stroke-width="2"/>
           <rect x="10" y="10" width="44" height="44" rx="4" fill="none" stroke="#e8800a" stroke-width="1.2" opacity=".7"/>
           <line x1="10" y1="32" x2="54" y2="32" stroke="#e8800a" stroke-width=".8" opacity=".4"/>
           <line x1="32" y1="10" x2="32" y2="54" stroke="#e8800a" stroke-width=".8" opacity=".4"/>
-          <line x1="16" y1="0" x2="16" y2="-10" stroke="#e8800a" stroke-width="2"/>
-          <line x1="32" y1="0" x2="32" y2="-10" stroke="#e8800a" stroke-width="2"/>
-          <line x1="48" y1="0" x2="48" y2="-10" stroke="#e8800a" stroke-width="2"/>
-          <line x1="16" y1="64" x2="16" y2="74" stroke="#e8800a" stroke-width="2"/>
-          <line x1="32" y1="64" x2="32" y2="74" stroke="#e8800a" stroke-width="2"/>
-          <line x1="48" y1="64" x2="48" y2="74" stroke="#e8800a" stroke-width="2"/>
-          <line x1="0" y1="16" x2="-10" y2="16" stroke="#e8800a" stroke-width="2"/>
-          <line x1="0" y1="32" x2="-10" y2="32" stroke="#e8800a" stroke-width="2"/>
-          <line x1="64" y1="16" x2="74" y2="16" stroke="#e8800a" stroke-width="2"/>
-          <line x1="64" y1="32" x2="74" y2="32" stroke="#e8800a" stroke-width="2"/>
+          <line x1="16" y1="0" x2="16" y2="-10" stroke="#e8800a" stroke-width="2"/><line x1="32" y1="0" x2="32" y2="-10" stroke="#e8800a" stroke-width="2"/><line x1="48" y1="0" x2="48" y2="-10" stroke="#e8800a" stroke-width="2"/>
+          <line x1="16" y1="64" x2="16" y2="74" stroke="#e8800a" stroke-width="2"/><line x1="32" y1="64" x2="32" y2="74" stroke="#e8800a" stroke-width="2"/><line x1="48" y1="64" x2="48" y2="74" stroke="#e8800a" stroke-width="2"/>
+          <line x1="0" y1="16" x2="-10" y2="16" stroke="#e8800a" stroke-width="2"/><line x1="0" y1="32" x2="-10" y2="32" stroke="#e8800a" stroke-width="2"/>
+          <line x1="64" y1="16" x2="74" y2="16" stroke="#e8800a" stroke-width="2"/><line x1="64" y1="32" x2="74" y2="32" stroke="#e8800a" stroke-width="2"/>
           <text x="32" y="38" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#e8800a">AI</text>
           <animate attributeName="opacity" values=".65;1;.65" dur="2.8s" repeatCount="indefinite"/>
         </g>
-        <!-- Paintbrush bottom-left -->
         <g transform="translate(24,558)" opacity=".88">
           <rect x="12" y="0" width="10" height="72" rx="5" fill="#5ba4ff"/>
           <rect x="8" y="66" width="18" height="12" rx="3" fill="#8fc4ff"/>
@@ -149,7 +132,6 @@
           </path>
           <animate attributeName="opacity" values=".7;1;.7" dur="4s" begin="1s" repeatCount="indefinite"/>
         </g>
-        <!-- Floating labels with pill backgrounds -->
         <g font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="1">
           <rect x="14" y="350" width="98" height="18" rx="9" fill="rgba(232,128,10,.25)" stroke="#e8800a" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></rect>
           <text x="63" y="363" text-anchor="middle" fill="#e8800a" opacity="0">MIDJOURNEY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></text>
@@ -179,19 +161,13 @@
   <div class="stat rev d4"><div class="stat-n">16+</div><div class="stat-l">AI Tools Active</div></div>
 </div>
 
-<!-- ══════════════════════════════════════════
-     PORTFOLIO — INLINE EXPAND (no popup)
-     Click thumb → full-width drawer opens
-     below the row. Image shows at 100%
-     natural size inside page flow.
-══════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     PORTFOLIO  — masonry thumbnails + native dialog viewer
+════════════════════════════════════════ -->
 <section id="s-portfolio" style="background:var(--white)">
   <div class="sec-eyebrow rev">Selected Work</div>
   <h2 class="sec-title rev d1">Real Work. <em>Real Clients.</em></h2>
-  <p class="sec-lead rev d2">
-    Click any thumbnail to expand the full design below — no pop-ups, no cropping.
-    Every image shown at its complete original size.
-  </p>
+  <p class="sec-lead rev d2">Click any image to view the complete full-size design — no cropping, no scrolling required.</p>
 
   <div class="port-tabs">
     <button class="ptab act" onclick="switchTab(this,'t-social')">Social Media</button>
@@ -200,43 +176,42 @@
     <button class="ptab" onclick="switchTab(this,'t-all')">All Industries</button>
   </div>
 
-  <!-- ── SOCIAL MEDIA ── -->
+  <!-- SOCIAL MEDIA -->
   <div id="t-social" class="port-panel act">
     <div class="port-intro rev">
-      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Social Media Design</h3><p class="port-intro-text">Designed to stand out. Crafted to connect. Social media graphics for global finance and tech brands including TAB Global, Transwarp, MYbank, Huawei, Douyin, and Dingtalk.</p></div>
-      <div><div class="port-tags"><span class="ptag">Finance Publishing</span><span class="ptag">Tech Brands</span><span class="ptag">Adobe Photoshop</span><span class="ptag">Illustrator</span><span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span></div></div>
+      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Social Media Design</h3><p class="port-intro-text">Social media graphics for global finance and tech brands — TAB Global, Transwarp, MYbank, Huawei, Douyin, and Dingtalk. Designed with Photoshop, Illustrator, Adobe Firefly and Midjourney.</p></div>
+      <div><div class="port-tags"><span class="ptag">Finance Publishing</span><span class="ptag">Tech Brands</span><span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span></div></div>
     </div>
-    <div class="thumb-grid" id="grid-social">
-      <!-- thumbnails injected by JS -->
-    </div>
-    <div class="port-drive-cta rev"><p>View the complete social media portfolio with all projects</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
+    <!-- thumbnails use /fit/ — never crops -->
+    <div class="port-grid" id="grid-social"></div>
+    <div class="port-cta rev"><p>View the complete social media portfolio with all projects</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
   </div>
 
-  <!-- ── DIGITAL BANNERS ── -->
+  <!-- DIGITAL BANNERS -->
   <div id="t-digital" class="port-panel">
     <div class="port-intro rev">
-      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Digital Banner Designs</h3><p class="port-intro-text">Designed using Photoshop and Illustrator, enhanced with Adobe Firefly, Midjourney, and OpenAI technologies to refine visuals and boost creative efficiency.</p></div>
-      <div><div class="port-tags"><span class="ptag">EDM Banners</span><span class="ptag">Web Banners</span><span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span><span class="ptag">TAB Global</span><span class="ptag">Finance Events</span></div></div>
+      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Digital Banner Designs</h3><p class="port-intro-text">EDM and web banners designed using Photoshop and Illustrator, enhanced with Adobe Firefly, Midjourney, and OpenAI technologies.</p></div>
+      <div><div class="port-tags"><span class="ptag">EDM Banners</span><span class="ptag">Web Banners</span><span class="ptag">Adobe Firefly</span><span class="ptag">TAB Global</span></div></div>
     </div>
-    <div class="thumb-grid" id="grid-digital"></div>
-    <div class="port-drive-cta rev"><p>See the complete digital banner portfolio with all campaign deliverables</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
+    <div class="port-grid" id="grid-digital"></div>
+    <div class="port-cta rev"><p>See the complete digital banner portfolio</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
   </div>
 
-  <!-- ── PRINT MATERIALS ── -->
+  <!-- PRINT -->
   <div id="t-print" class="port-panel">
     <div class="port-intro rev">
-      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Print Materials</h3><p class="port-intro-text">Print-ready designs created with industry tools and enhanced using AI technologies from Adobe, OpenAI, and Midjourney for precision and efficiency.</p></div>
-      <div><div class="port-tags"><span class="ptag">Roll-Up Banners</span><span class="ptag">Event Signage</span><span class="ptag">Print Production</span><span class="ptag">TAB Global</span><span class="ptag">Wealth &amp; Society</span><span class="ptag">AI-Enhanced</span></div></div>
+      <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">Print Materials</h3><p class="port-intro-text">Print-ready roll-up banners, signage, and event collateral for TAB Global, Wealth &amp; Society, and major international summits. AI-enhanced for precision and efficiency.</p></div>
+      <div><div class="port-tags"><span class="ptag">Roll-Up Banners</span><span class="ptag">Event Signage</span><span class="ptag">Print Production</span><span class="ptag">TAB Global</span></div></div>
     </div>
-    <div class="thumb-grid" id="grid-print"></div>
-    <div class="port-drive-cta rev"><p>Explore the full print materials and event collateral collection</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
+    <div class="port-grid" id="grid-print"></div>
+    <div class="port-cta rev"><p>Explore the full print materials and event collateral collection</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
   </div>
 
-  <!-- ── ALL INDUSTRIES ── -->
+  <!-- ALL INDUSTRIES -->
   <div id="t-all" class="port-panel">
     <div class="port-intro rev">
       <div><h3 style="font-family:var(--serif);font-size:22px;color:var(--navy);margin-bottom:.75rem">All Industries — Overview</h3><p class="port-intro-text">15+ years across FMCG, international finance publishing, event activation, tech brands, and e-learning. Every project print-ready or pixel-perfect.</p></div>
-      <div><div class="port-tags"><span class="ptag">Finance &amp; Publishing</span><span class="ptag">FMCG &amp; Retail</span><span class="ptag">Events &amp; Activation</span><span class="ptag">AI-Enhanced</span><span class="ptag">Tech &amp; Web</span></div></div>
+      <div><div class="port-tags"><span class="ptag">Finance &amp; Publishing</span><span class="ptag">FMCG &amp; Retail</span><span class="ptag">Events &amp; Activation</span><span class="ptag">AI-Enhanced</span></div></div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin-top:2rem">
       <div style="background:var(--navy);border-radius:var(--r2);padding:2rem;cursor:pointer;transition:transform .2s,box-shadow .2s" onclick="switchTab(document.querySelectorAll('.ptab')[0],'t-social');sTo('s-portfolio')" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 16px 40px rgba(27,42,74,.25)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
@@ -258,7 +233,7 @@
         <div style="margin-top:16px;font-size:20px;color:var(--amber)">→</div>
       </div>
     </div>
-    <div class="port-drive-cta rev" style="margin-top:2rem"><p>All 24+ projects in the complete portfolio archive</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
+    <div class="port-cta rev" style="margin-top:2rem"><p>All 24+ projects in the complete portfolio archive</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive →</a></div>
   </div>
 </section>
 
@@ -327,7 +302,7 @@
 <section id="s-contact" style="background:var(--white)">
   <div class="sec-eyebrow rev">Get In Touch</div>
   <h2 class="sec-title rev d1">Let's Work <em>Together.</em></h2>
-  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance projects, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
+  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
   <div class="contact-wrap">
     <div class="rev">
       <div class="contact-info-title">Yussaimee Ahmad</div>
@@ -365,212 +340,170 @@
   </div>
 </footer>
 
-<!-- ══════════════════════════════════════════
-   ALL JAVASCRIPT — inline expand system
-══════════════════════════════════════════ -->
+<!-- ════════════════════════════════════════
+     NATIVE DIALOG VIEWER
+     Uses browser's built-in <dialog> element.
+     ::backdrop is painted by the browser itself
+     — completely outside all stacking contexts.
+     Image uses object-fit:contain — NEVER crops.
+════════════════════════════════════════ -->
+<dialog id="viewer">
+  <button class="viewer-close" id="viewer-close" aria-label="Close">×</button>
+  <div class="viewer-inner">
+    <img id="viewer-img" src="" alt="">
+    <div class="viewer-meta">
+      <div class="viewer-title" id="viewer-title"></div>
+      <div class="viewer-nav">
+        <button id="viewer-prev" aria-label="Previous">‹</button>
+        <span class="viewer-counter" id="viewer-counter"></span>
+        <button id="viewer-next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
 <script>
-/* ═══════════════════════════════════════
+/* ═══════════════════════════════════════════════════
    PORTFOLIO DATA
-═══════════════════════════════════════ */
+   CRITICAL: All full-size URLs use /fit/ not /fill/
+   /fit/ = scale to fit bounding box, preserve ratio, NO CROP
+   /fill/ = force exact dimensions, CROPS edges
+═══════════════════════════════════════════════════ */
+const BASE = 'https://static.wixstatic.com/media/';
+const FIT  = '/v1/fit/w_1200,h_1200,q_90,enc_avif,quality_auto';  // NO CROP
+const FITW = '/v1/fit/w_1600,h_400,q_90,enc_avif,quality_auto';   // wide banners
+const FITP = '/v1/fit/w_900,h_1600,q_90,enc_avif,quality_auto';   // tall roll-ups
+
+// Thumbnail uses a smaller fit — still no crop
+const TFIT = '/v1/fit/w_600,h_600,q_85,enc_avif,quality_auto';
+
 const SETS = {
   social: [
-    {thumb:'https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png',
-     title:'TAB Global — Social Media',tags:['Social Media','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png',
-     title:'Transwarp',tags:['Tech Brand','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png',
-     title:'MYbank',tags:['Finance','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png',
-     title:'Huawei Shanghai Qingpu R&D Centre',tags:['Tech Brand','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png',
-     title:'Douyin',tags:['Tech Brand','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png',
-     title:'Dingtalk',tags:['Tech Brand','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png',
-     title:'TBA Shanghai Tour — Decision Maker',tags:['Finance','Event','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png',
-     title:'TBA Shanghai Tour — Retreat & Peer Exchange',tags:['Finance','Event','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png',
-     title:'TBA AI Bootcamp Asia',tags:['AI','Finance','Social Media']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png',
-     title:'TAB Summit 2026 — Quote Card',tags:['Finance','Social Media']}
+    { id:'cb8121_7529f107c26149699a128f535efa2f82~mv2.png', title:'TAB Global — Social Media', tags:['Social','Finance'] },
+    { id:'cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png', title:'Transwarp', tags:['Tech Brand','Social'] },
+    { id:'cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png', title:'MYbank', tags:['Finance','Social'] },
+    { id:'cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png', title:'Huawei Shanghai Qingpu R&D Centre', tags:['Tech Brand','Social'] },
+    { id:'cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png', title:'Douyin', tags:['Tech Brand','Social'] },
+    { id:'cb8121_67f910650d7a4601856101f72759393f~mv2.png', title:'Dingtalk', tags:['Tech Brand','Social'] },
+    { id:'cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png', title:'TBA Shanghai Tour — Decision Maker', tags:['Finance','Event'] },
+    { id:'cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png', title:'TBA Shanghai Tour — Retreat & Peer Exchange', tags:['Finance','Event'] },
+    { id:'cb8121_1478cd1f75db461484180d9dc6082436~mv2.png', title:'TBA AI Bootcamp Asia', tags:['AI','Finance'] },
+    { id:'cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png', title:'TAB Summit 2026 — Quote Card', tags:['Finance'] }
   ],
   digital: [
-    {thumb:'https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_490,h_480,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png',
-     title:'The Great Transition — EDM Banner',tags:['EDM','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_490,h_480,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png',
-     title:'Kevin Rudd — Giving Tuesday Banner',tags:['EDM','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png',
-     title:'TAB DigiFinMasterClass 2023 — Web Banner',tags:['Web Banner','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_490,h_350,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_900,h_700,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png',
-     title:'Finance Innovation Summit 2026 — EDM',tags:['EDM','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_490,h_350,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_900,h_700,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png',
-     title:'Finance Innovation Summit 2026 — EDM Alt',tags:['EDM','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_490,h_421,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_900,h_800,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png',
-     title:'Money 2020 — Book Invitation Banner',tags:['EDM','Finance Event']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_490,h_120,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_180,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png',
-     title:'TAB Bootcamp MEA — Web Banner 855×120',tags:['Web Banner','Finance']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_490,h_120,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_180,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png',
-     title:'TAB Bootcamp ASIA — Web Banner 855×120',tags:['Web Banner','Finance']}
+    { id:'cb8121_be16b4bea844470d9b565320796ed928~mv2.png', title:'The Great Transition — EDM Banner', tags:['EDM','Finance'], fw:true },
+    { id:'cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png', title:'Kevin Rudd — Giving Tuesday Banner', tags:['EDM','Finance'], fw:true },
+    { id:'cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png', title:'TAB DigiFinMasterClass 2023 — Web Banner', tags:['Web Banner','Finance'], fw:true },
+    { id:'cb8121_4b1699d3831540e59c170aad9e202963~mv2.png', title:'Finance Innovation Summit 2026 — EDM', tags:['EDM','Finance'], fw:true },
+    { id:'cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png', title:'Finance Innovation Summit 2026 — EDM Alt', tags:['EDM','Finance'], fw:true },
+    { id:'cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png', title:'Money 2020 — Book Invitation Banner', tags:['EDM','Finance Event'], fw:true },
+    { id:'cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png', title:'TAB Bootcamp MEA — Web Banner 855×120', tags:['Web Banner','Finance'], fw:true },
+    { id:'cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png', title:'TAB Bootcamp ASIA — Web Banner 855×120', tags:['Web Banner','Finance'], fw:true }
   ],
   print: [
-    {thumb:'https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_480,h_490,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png',
-     title:'TBA Wealth Society Tour 2024 — Roll-Up',tags:['Print','Roll-Up','Event']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_480,h_490,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png',
-     title:'TBA Wealth Society Summit 2024 — Roll-Up',tags:['Print','Roll-Up','Event']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png',
-     title:'TBA Generic — Roll-Up Banner',tags:['Print','Roll-Up']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png',
-     title:'TAB Senior Leadership Programme 2025',tags:['Print','Roll-Up','Event']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png',
-     title:'TAB Global — Generic Print',tags:['Print','Event']},
-    {thumb:'https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_490,h_490,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png',
-     full: 'https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_900,h_900,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png',
-     title:'TAB Global — Roll-Up Series',tags:['Print','Roll-Up']}
+    { id:'cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png', title:'TBA Wealth Society Tour 2024 — Roll-Up', tags:['Print','Roll-Up','Event'], tall:true },
+    { id:'cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png', title:'TBA Wealth Society Summit 2024 — Roll-Up', tags:['Print','Roll-Up','Event'], tall:true },
+    { id:'cb8121_248e242443994936abc6259e1edf8424~mv2.png', title:'TBA Generic — Roll-Up Banner', tags:['Print','Roll-Up'], tall:true },
+    { id:'cb8121_77243f0917394b08926442bdc34163f5~mv2.png', title:'TAB Senior Leadership Programme 2025', tags:['Print','Roll-Up','Event'], tall:true },
+    { id:'cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png', title:'TAB Global — Generic Print', tags:['Print','Event'] },
+    { id:'cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png', title:'TAB Global — Roll-Up Series', tags:['Print','Roll-Up'] }
   ]
 };
 
+// Build full-res URL based on image type
+function fullUrl(item) {
+  if (item.tall) return BASE + item.id + FITP;  // tall = roll-ups
+  if (item.fw)   return BASE + item.id + FITW;  // wide = banners
+  return                BASE + item.id + FIT;   // default
+}
+// Thumbnail URL — always fit, no crop
+function thumbUrl(item) {
+  return BASE + item.id + TFIT;
+}
+
 /* ═══════════════════════════════════════
-   BUILD THUMBNAIL GRIDS
+   BUILD GRIDS
 ═══════════════════════════════════════ */
 function buildGrid(setName) {
   const grid = document.getElementById('grid-' + setName);
   if (!grid) return;
-  const items = SETS[setName];
-
-  items.forEach((item, idx) => {
+  SETS[setName].forEach((item, idx) => {
     const div = document.createElement('div');
-    div.className = 'thumb-item';
-    div.setAttribute('data-set', setName);
-    div.setAttribute('data-idx', idx);
-    div.setAttribute('tabindex', '0');
+    div.className = 'port-card';
+    div.tabIndex = 0;
+    div.setAttribute('role','button');
+    div.setAttribute('aria-label','View ' + item.title);
     div.innerHTML = `
-      <img src="${item.thumb}" alt="${item.title}" loading="lazy">
-      <div class="thumb-label">${item.title}</div>
-      <div class="thumb-hint">Click to expand ↓</div>`;
-    div.addEventListener('click', () => expandItem(setName, idx, div));
-    div.addEventListener('keypress', e => { if (e.key === 'Enter') expandItem(setName, idx, div); });
+      <img src="${thumbUrl(item)}" alt="${item.title}" loading="lazy">
+      <div class="port-card-label">${item.title}</div>`;
+    div.addEventListener('click', () => openViewer(setName, idx));
+    div.addEventListener('keypress', e => { if (e.key === 'Enter') openViewer(setName, idx); });
     grid.appendChild(div);
   });
-
-  // One shared drawer at the end of this grid
-  const drawer = document.createElement('div');
-  drawer.className = 'expand-drawer';
-  drawer.id = 'drawer-' + setName;
-  drawer.innerHTML = `
-    <div class="drawer-inner">
-      <button class="drawer-close" onclick="closeDrawer('${setName}')" aria-label="Close">×</button>
-      <div class="drawer-img-wrap">
-        <img class="drawer-img" id="dimg-${setName}" src="" alt="">
-      </div>
-      <div class="drawer-meta">
-        <div>
-          <div class="drawer-title" id="dtitle-${setName}"></div>
-          <div class="drawer-tags-row" id="dtags-${setName}"></div>
-        </div>
-        <div class="drawer-nav">
-          <button onclick="drawerNav('${setName}',-1)" aria-label="Previous">‹</button>
-          <span class="drawer-counter" id="dcnt-${setName}"></span>
-          <button onclick="drawerNav('${setName}',1)" aria-label="Next">›</button>
-        </div>
-      </div>
-    </div>`;
-  grid.appendChild(drawer);
 }
-
-/* track active index per set */
-const activeIdx = {};
-
-function expandItem(setName, idx, thumbEl) {
-  const drawer = document.getElementById('drawer-' + setName);
-  const allThumbs = document.querySelectorAll(`[data-set="${setName}"]`);
-  const item = SETS[setName][idx];
-  activeIdx[setName] = idx;
-
-  /* If clicking the already-active thumb → close */
-  if (thumbEl.classList.contains('active')) {
-    closeDrawer(setName);
-    return;
-  }
-
-  /* Mark active thumb */
-  allThumbs.forEach(t => t.classList.remove('active'));
-  thumbEl.classList.add('active');
-
-  /* Fill drawer content */
-  document.getElementById('dimg-' + setName).src = item.full;
-  document.getElementById('dimg-' + setName).alt = item.title;
-  document.getElementById('dtitle-' + setName).textContent = item.title;
-  document.getElementById('dtags-' + setName).innerHTML =
-    item.tags.map(t => `<span class="drawer-tag">${t}</span>`).join('');
-  document.getElementById('dcnt-' + setName).textContent =
-    (idx + 1) + ' / ' + SETS[setName].length;
-
-  /* Open drawer */
-  drawer.classList.add('open');
-
-  /* Smooth scroll so the expanded image is visible */
-  setTimeout(() => {
-    drawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }, 80);
-}
-
-function closeDrawer(setName) {
-  const drawer = document.getElementById('drawer-' + setName);
-  drawer.classList.remove('open');
-  document.querySelectorAll(`[data-set="${setName}"]`)
-    .forEach(t => t.classList.remove('active'));
-  setTimeout(() => {
-    document.getElementById('dimg-' + setName).src = '';
-  }, 500);
-}
-
-function drawerNav(setName, dir) {
-  const len = SETS[setName].length;
-  const newIdx = ((activeIdx[setName] || 0) + dir + len) % len;
-  const thumbEl = document.querySelector(`[data-set="${setName}"][data-idx="${newIdx}"]`);
-  if (thumbEl) expandItem(setName, newIdx, thumbEl);
-}
-
-/* ═══════════════════════════════════════
-   INIT
-═══════════════════════════════════════ */
 buildGrid('social');
 buildGrid('digital');
 buildGrid('print');
 
+/* ═══════════════════════════════════════
+   NATIVE DIALOG VIEWER
+   Uses browser's <dialog> showModal() API.
+   The ::backdrop is handled by the browser —
+   no z-index conflicts, no viewport fighting.
+   The <img> uses object-fit:contain so it
+   NEVER crops — it scales to fit the available
+   space while preserving the full image.
+═══════════════════════════════════════ */
+const dlg         = document.getElementById('viewer');
+const vImg        = document.getElementById('viewer-img');
+const vTitle      = document.getElementById('viewer-title');
+const vCounter    = document.getElementById('viewer-counter');
+const vClose      = document.getElementById('viewer-close');
+const vPrev       = document.getElementById('viewer-prev');
+const vNext       = document.getElementById('viewer-next');
+
+let vSet = 'social', vIdx = 0;
+
+function openViewer(setName, idx) {
+  vSet = setName;
+  vIdx = idx;
+  renderViewer();
+  dlg.showModal();  // native browser dialog — handles backdrop and focus trap
+}
+
+function renderViewer() {
+  const item = SETS[vSet][vIdx];
+  vImg.src   = '';                   // clear first — forces reload + animation
+  vImg.src   = fullUrl(item);        // /fit/ URL — never crops
+  vImg.alt   = item.title;
+  vTitle.textContent   = item.title;
+  vCounter.textContent = (vIdx + 1) + ' / ' + SETS[vSet].length;
+}
+
+function closeViewer() { dlg.close() }
+
+vClose.addEventListener('click', closeViewer);
+vPrev.addEventListener('click', () => { vIdx = (vIdx - 1 + SETS[vSet].length) % SETS[vSet].length; renderViewer(); });
+vNext.addEventListener('click', () => { vIdx = (vIdx + 1) % SETS[vSet].length; renderViewer(); });
+
+// Click outside dialog content (on ::backdrop) → close
+dlg.addEventListener('click', e => { if (e.target === dlg) closeViewer(); });
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (!dlg.open) return;
+  if (e.key === 'Escape')      closeViewer();
+  if (e.key === 'ArrowRight')  { vIdx = (vIdx + 1) % SETS[vSet].length; renderViewer(); }
+  if (e.key === 'ArrowLeft')   { vIdx = (vIdx - 1 + SETS[vSet].length) % SETS[vSet].length; renderViewer(); }
+});
+
 /* ── NAV ── */
-window.addEventListener('scroll', () => {
-  document.getElementById('nav').classList.toggle('nb', scrollY > 50);
-}, { passive: true });
-const nb = document.getElementById('nbtn'), mm = document.getElementById('mob-menu');
-nb.addEventListener('click', () => { const o = mm.classList.toggle('show'); nb.classList.toggle('x', o); });
-function cM() { mm.classList.remove('show'); nb.classList.remove('x'); }
-function gH(sec) { window.scrollTo(0, 0); if (sec) setTimeout(() => { const el = document.getElementById(sec); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60); }
-function sTo(id) { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth' }); }
+window.addEventListener('scroll', () => { document.getElementById('nav').classList.toggle('nb', scrollY > 50); }, { passive:true });
+const nbtn = document.getElementById('nbtn'), mm = document.getElementById('mob-menu');
+nbtn.addEventListener('click', () => { const o = mm.classList.toggle('show'); nbtn.classList.toggle('x', o); });
+function cM() { mm.classList.remove('show'); nbtn.classList.remove('x'); }
+function gH(sec) { window.scrollTo(0, 0); if (sec) setTimeout(() => { const el = document.getElementById(sec); if (el) el.scrollIntoView({ behavior:'smooth' }); }, 60); }
+function sTo(id) { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior:'smooth' }); }
 
 /* ── TABS ── */
 function switchTab(btn, pid) {
@@ -589,9 +522,7 @@ function initRev() {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('in');
-        e.target.querySelectorAll && e.target.querySelectorAll('.sk-bar[data-w]').forEach(b => {
-          b.style.width = b.getAttribute('data-w') + '%';
-        });
+        e.target.querySelectorAll && e.target.querySelectorAll('.sk-bar[data-w]').forEach(b => { b.style.width = b.getAttribute('data-w') + '%'; });
       }
     });
   }, { threshold: 0.07 });
