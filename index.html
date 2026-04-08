@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer. 15+ years. FMCG · Finance · Events · AI. Banting, Selangor, Malaysia.">
+<meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer. 15+ years across FMCG, Finance, Events and AI. Banting, Selangor, Malaysia.">
 <title>Yussaimee Ahmad — Senior Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -109,145 +109,257 @@
 <div class="stats-bar">
   <div class="stat rev"><div class="stat-n">15+</div><div class="stat-l">Years Experience</div></div>
   <div class="stat rev d1"><div class="stat-n">5+</div><div class="stat-l">Industries</div></div>
-  <div class="stat rev d2"><div class="stat-n">4x</div><div class="stat-l">Brands Unified</div></div>
+  <div class="stat rev d2"><div class="stat-n">4×</div><div class="stat-l">Brands Unified</div></div>
   <div class="stat rev d3"><div class="stat-n">0</div><div class="stat-l">Print Recalls</div></div>
   <div class="stat rev d4"><div class="stat-n">16+</div><div class="stat-l">AI Tools Active</div></div>
 </div>
 
-<!-- PORTFOLIO - all images hardcoded, no JS needed to display -->
-<section id="s-portfolio" style="background:#fff">
+<!-- ════════════════════════════════════════════════════════
+     PORTFOLIO — v10  FULL REBUILD
+     Animated masonry grid · Fullscreen scrollable lightbox
+     All images: natural proportions, zero cropping
+════════════════════════════════════════════════════════ -->
+<section id="s-portfolio">
   <div class="sec-eyebrow rev">Selected Work</div>
-  <h2 class="sec-title rev d1">Real Work. <em>Real Clients.</em></h2>
-  <p class="sec-lead rev d2">Click any image to view the complete full-size design.</p>
-  <div class="port-tabs">
-    <button class="ptab act" onclick="showTab('t-social',this)">Social Media</button>
-    <button class="ptab" onclick="showTab('t-digital',this)">Digital Banners</button>
-    <button class="ptab" onclick="showTab('t-print',this)">Print Materials</button>
-    <button class="ptab" onclick="showTab('t-all',this)">All Industries</button>
+  <h2 class="sec-title rev d1">Work That <em>Speaks.</em></h2>
+  <p class="sec-lead rev d2">15+ years of real deliverables for global brands. Click any image — it opens fullscreen at its natural, full size. No cropping. No clipping. Every pixel visible.</p>
+
+  <div class="pf-tabs rev d2">
+    <button class="pf-tab act" onclick="pfTab(this,'tab-social')">Social Media <span class="tc">10</span></button>
+    <button class="pf-tab" onclick="pfTab(this,'tab-digital')">Digital Banners <span class="tc">8</span></button>
+    <button class="pf-tab" onclick="pfTab(this,'tab-print')">Print Materials <span class="tc">6</span></button>
+    <button class="pf-tab" onclick="pfTab(this,'tab-all')">All Work <span class="tc">24</span></button>
   </div>
 
-  <div id="t-social" class="port-panel act">
-    <div class="port-intro rev">
-      <div><h3 class="port-h3">Social Media Design</h3><p class="port-intro-text">Social media graphics for global finance and tech brands including TAB Global, Transwarp, MYbank, Huawei, Douyin, and Dingtalk.</p></div>
-      <div><div class="port-tags"><span class="ptag">Finance</span><span class="ptag">Tech Brands</span><span class="ptag">Firefly</span><span class="ptag">Midjourney</span></div></div>
+  <!-- ── SOCIAL MEDIA ── -->
+  <div id="tab-social" class="pf-panel act">
+    <div class="pf-intro rev">
+      <h3>Social Media Design</h3>
+      <p>High-volume social media graphics for global finance publishers and tech brands — TAB Global, Transwarp, MYbank, Huawei, Douyin, Dingtalk. Photoshop · Illustrator · Adobe Firefly · Midjourney.</p>
+      <div class="pf-tags"><span class="pf-tag">Finance Publishing</span><span class="pf-tag">Tech Brands</span><span class="pf-tag">Adobe Firefly</span><span class="pf-tag">Midjourney</span><span class="pf-tag">LinkedIn</span><span class="pf-tag">WeChat</span></div>
     </div>
-    <div class="port-grid">
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global Social Media',1,10)"><img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global" loading="lazy"><figcaption>TAB Global</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp',2,10)"><img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy"><figcaption>Transwarp</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank',3,10)"><img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy"><figcaption>MYbank</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png','Huawei Shanghai R&amp;D Centre',4,10)"><img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei" loading="lazy"><figcaption>Huawei Shanghai R&amp;D Centre</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin',5,10)"><img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin" loading="lazy"><figcaption>Douyin</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk',6,10)"><img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy"><figcaption>Dingtalk</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai Tour - Decision Maker',7,10)"><img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai Decision Maker" loading="lazy"><figcaption>TBA Shanghai — Decision Maker</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png','TBA Shanghai Tour - Retreat',8,10)"><img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Retreat" loading="lazy"><figcaption>TBA Shanghai — Retreat</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia',9,10)"><img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp" loading="lazy"><figcaption>TBA AI Bootcamp Asia</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png','TAB Summit 2026 Quote Card',10,10)"><img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026" loading="lazy"><figcaption>TAB Summit 2026 — Quote Card</figcaption></figure>
-    </div>
-    <div class="port-cta rev"><p>View the complete portfolio with all projects</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive</a></div>
-  </div>
+    <div class="pf-grid" id="grid-s">
 
-  <div id="t-digital" class="port-panel">
-    <div class="port-intro rev">
-      <div><h3 class="port-h3">Digital Banner Designs</h3><p class="port-intro-text">EDM and web banners enhanced with Adobe Firefly, Midjourney, and OpenAI technologies.</p></div>
-      <div><div class="port-tags"><span class="ptag">EDM</span><span class="ptag">Web Banners</span><span class="ptag">Firefly</span><span class="ptag">TAB Global</span></div></div>
-    </div>
-    <div class="port-grid">
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition EDM',1,8)"><img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition" loading="lazy"><figcaption>The Great Transition — EDM</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd Giving Tuesday',2,8)"><img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd" loading="lazy"><figcaption>Kevin Rudd — Giving Tuesday</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png','DigiFinMasterClass 2023',3,8)"><img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="DigiFinMasterClass" loading="lazy"><figcaption>DigiFinMasterClass 2023</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026 EDM',4,8)"><img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit EDM" loading="lazy"><figcaption>Finance Innovation Summit 2026</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png','Finance Innovation Summit 2026 Alt',5,8)"><img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="Finance Innovation Summit Alt" loading="lazy"><figcaption>Finance Innovation Summit — Alt</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 Book Invitation',6,8)"><img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020" loading="lazy"><figcaption>Money 2020 — Book Invitation</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png','TAB Bootcamp MEA Banner',7,8)"><img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="Bootcamp MEA" loading="lazy"><figcaption>TAB Bootcamp MEA</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png','TAB Bootcamp ASIA Banner',8,8)"><img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="Bootcamp ASIA" loading="lazy"><figcaption>TAB Bootcamp ASIA</figcaption></figure>
-    </div>
-    <div class="port-cta rev"><p>See the complete digital banner portfolio</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive</a></div>
-  </div>
-
-  <div id="t-print" class="port-panel">
-    <div class="port-intro rev">
-      <div><h3 class="port-h3">Print Materials</h3><p class="port-intro-text">Print-ready roll-up banners, signage, and event collateral for TAB Global, Wealth and Society, and major international summits.</p></div>
-      <div><div class="port-tags"><span class="ptag">Roll-Up Banners</span><span class="ptag">Event Signage</span><span class="ptag">Print</span><span class="ptag">TAB Global</span></div></div>
-    </div>
-    <div class="port-grid">
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','TBA Wealth Society Tour 2024',1,6)"><img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="WS Tour 2024" loading="lazy"><figcaption>WS Tour 2024 — Roll-Up</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','TBA Wealth Society Summit 2024',2,6)"><img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="WS Summit 2024" loading="lazy"><figcaption>WS Summit 2024 — Roll-Up</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic Roll-Up',3,6)"><img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic" loading="lazy"><figcaption>TBA Generic — Roll-Up</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership Programme 2025',4,6)"><img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="Senior Leadership" loading="lazy"><figcaption>Senior Leadership 2025</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global Generic Print',5,6)"><img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global Generic" loading="lazy"><figcaption>TAB Global — Generic Print</figcaption></figure>
-      <figure class="pf" onclick="openDlg('https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global Roll-Up Series',6,6)"><img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Roll-Up Series" loading="lazy"><figcaption>TAB Global — Roll-Up Series</figcaption></figure>
-    </div>
-    <div class="port-cta rev"><p>Explore the full print and event collateral collection</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive</a></div>
-  </div>
-
-  <div id="t-all" class="port-panel">
-    <div class="port-intro rev">
-      <div><h3 class="port-h3">All Industries</h3><p class="port-intro-text">15+ years across FMCG, international finance publishing, event activation, tech brands, and e-learning.</p></div>
-      <div><div class="port-tags"><span class="ptag">Finance</span><span class="ptag">FMCG</span><span class="ptag">Events</span><span class="ptag">AI-Enhanced</span></div></div>
-    </div>
-    <div class="all-grid">
-      <div class="all-card navy" onclick="showTab('t-social',document.querySelectorAll('.ptab')[0]);sTo('s-portfolio')">
-        <div class="all-label">Finance and Publishing</div>
-        <div class="all-name">TAB Global, Asian Banker, Wealth and Society</div>
-        <div class="all-sub">Social media, EDM, Event branding, Publication</div>
-        <div class="all-arrow">Go to Social Media tab</div>
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" data-title="TAB Global — Social Media" data-set="s" data-idx="0">
+        <img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global Social Media" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Global — Social Media</div><div class="pf-cap-sub">Finance Publishing · Social</div></div>
       </div>
-      <div class="all-card" onclick="showTab('t-print',document.querySelectorAll('.ptab')[2]);sTo('s-portfolio')">
-        <div class="all-label">FMCG and Retail</div>
-        <div class="all-name">Nutrimetics, Macy Home</div>
-        <div class="all-sub">Catalogue, Packaging, POSM, Retail</div>
-        <div class="all-arrow">Go to Print tab</div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" data-title="Transwarp" data-set="s" data-idx="1">
+        <img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Transwarp</div><div class="pf-cap-sub">Tech Brand · Social</div></div>
       </div>
-      <div class="all-card" onclick="showTab('t-digital',document.querySelectorAll('.ptab')[1]);sTo('s-portfolio')">
-        <div class="all-label">Events and Activation</div>
-        <div class="all-name">International Summits and Study Tours</div>
-        <div class="all-sub">Banners, Roll-ups, EDM, Signage</div>
-        <div class="all-arrow">Go to Digital Banners tab</div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" data-title="MYbank" data-set="s" data-idx="2">
+        <img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">MYbank</div><div class="pf-cap-sub">Finance · Social</div></div>
       </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" data-title="Huawei Shanghai Qingpu R&D Centre" data-set="s" data-idx="3">
+        <img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei Shanghai" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Huawei Shanghai R&amp;D Centre</div><div class="pf-cap-sub">Tech Brand · Social</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" data-title="Douyin — Future of Social Media" data-set="s" data-idx="4">
+        <img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Douyin — Future of Social Media</div><div class="pf-cap-sub">Tech Brand · Social</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" data-title="Dingtalk" data-set="s" data-idx="5">
+        <img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Dingtalk</div><div class="pf-cap-sub">Tech Brand · Social</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" data-title="TBA Shanghai Tour — Decision Maker" data-set="s" data-idx="6">
+        <img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai Tour Decision Maker" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA Shanghai Tour — Decision Maker</div><div class="pf-cap-sub">Finance · Event Promo</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" data-title="TBA Shanghai Tour — Retreat & Peer Exchange" data-set="s" data-idx="7">
+        <img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Shanghai Retreat" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA Shanghai Tour — Retreat &amp; Peer Exchange</div><div class="pf-cap-sub">Finance · Event Promo</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" data-title="TBA AI Bootcamp Asia" data-set="s" data-idx="8">
+        <img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp Asia" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA AI Bootcamp Asia</div><div class="pf-cap-sub">AI · Finance · Social</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" data-title="TAB Summit 2026 — Quote Card" data-set="s" data-idx="9">
+        <img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026 Quote" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Summit 2026 — Quote Card</div><div class="pf-cap-sub">Finance · Social</div></div>
+      </div>
+
     </div>
-    <div class="port-cta rev" style="margin-top:2rem"><p>All 24+ projects in the complete portfolio archive</p><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="btn-primary">View Full Portfolio on Google Drive</a></div>
+    <div class="pf-drive-cta rev">
+      <div class="pf-drive-cta-text">
+        <h4>See the complete portfolio</h4>
+        <p>All projects, variations, and additional work across every campaign and brand</p>
+      </div>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">
+        Open Google Drive Portfolio <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- ── DIGITAL BANNERS ── -->
+  <div id="tab-digital" class="pf-panel">
+    <div class="pf-intro rev">
+      <h3>Digital Banner Designs</h3>
+      <p>EDM banners and web display ads designed using Photoshop and Illustrator, enhanced with Adobe Firefly, Midjourney, and OpenAI technologies for precision and creative efficiency.</p>
+      <div class="pf-tags"><span class="pf-tag">EDM Banners</span><span class="pf-tag">Web Display</span><span class="pf-tag">Adobe Firefly</span><span class="pf-tag">Midjourney</span><span class="pf-tag">TAB Global</span></div>
+    </div>
+    <div class="pf-grid" id="grid-d">
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" data-title="The Great Transition — EDM Banner" data-set="d" data-idx="0">
+        <img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition EDM" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">The Great Transition — EDM Banner</div><div class="pf-cap-sub">Finance · EDM</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" data-title="Kevin Rudd — Giving Tuesday Banner" data-set="d" data-idx="1">
+        <img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd Giving Tuesday" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Kevin Rudd — Giving Tuesday Banner</div><div class="pf-cap-sub">Finance · EDM</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" data-title="TAB DigiFinMasterClass 2023 — Web Banner" data-set="d" data-idx="2">
+        <img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="DigiFinMasterClass 2023" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB DigiFinMasterClass 2023</div><div class="pf-cap-sub">Finance · Web Banner</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" data-title="Finance Innovation Summit 2026 — EDM" data-set="d" data-idx="3">
+        <img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit EDM" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Finance Innovation Summit 2026 — EDM</div><div class="pf-cap-sub">Finance · EDM</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" data-title="Finance Innovation Summit 2026 — EDM Alt" data-set="d" data-idx="4">
+        <img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="Finance Innovation Summit EDM Alt" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Finance Innovation Summit 2026 — Alt</div><div class="pf-cap-sub">Finance · EDM</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" data-title="Money 2020 — Book Invitation Banner" data-set="d" data-idx="5">
+        <img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020 Book Invitation" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">Money 2020 — Book Invitation</div><div class="pf-cap-sub">Finance Event · EDM</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" data-title="TAB Bootcamp MEA — Web Banner 855×120" data-set="d" data-idx="6">
+        <img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="Bootcamp MEA Banner" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Bootcamp MEA — Web Banner</div><div class="pf-cap-sub">Finance · Web Banner</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" data-title="TAB Bootcamp ASIA — Web Banner 855×120" data-set="d" data-idx="7">
+        <img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="Bootcamp ASIA Banner" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Bootcamp ASIA — Web Banner</div><div class="pf-cap-sub">Finance · Web Banner</div></div>
+      </div>
+
+    </div>
+    <div class="pf-drive-cta rev">
+      <div class="pf-drive-cta-text"><h4>View all digital assets</h4><p>Full campaign archives including all size variants and revisions</p></div>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </div>
+  </div>
+
+  <!-- ── PRINT MATERIALS ── -->
+  <div id="tab-print" class="pf-panel">
+    <div class="pf-intro rev">
+      <h3>Print Materials</h3>
+      <p>Print-ready roll-up banners, large-format signage, and event collateral for TAB Global, Wealth &amp; Society summits, and international conferences. AI-enhanced for precision and efficiency.</p>
+      <div class="pf-tags"><span class="pf-tag">Roll-Up Banners</span><span class="pf-tag">Event Signage</span><span class="pf-tag">Large Format</span><span class="pf-tag">TAB Global</span></div>
+    </div>
+    <div class="pf-grid" id="grid-p">
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" data-title="TBA Wealth Society Tour 2024 — Roll-Up" data-set="p" data-idx="0">
+        <img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="WS Tour 2024 Roll-Up" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA Wealth Society Tour 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event Signage</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" data-title="TBA Wealth Society Summit 2024 — Roll-Up" data-set="p" data-idx="1">
+        <img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="WS Summit 2024 Roll-Up" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA Wealth Society Summit 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event Signage</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" data-title="TBA Generic — Roll-Up Banner" data-set="p" data-idx="2">
+        <img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic Roll-Up" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TBA Generic — Roll-Up Banner</div><div class="pf-cap-sub">Print · Roll-Up</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" data-title="TAB Senior Leadership Programme 2025" data-set="p" data-idx="3">
+        <img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="Senior Leadership Programme" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Senior Leadership Programme 2025</div><div class="pf-cap-sub">Print · Event</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" data-title="TAB Global — Generic Print" data-set="p" data-idx="4">
+        <img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global Generic Print" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Global — Generic Print</div><div class="pf-cap-sub">Print · Signage</div></div>
+      </div>
+
+      <div class="pf-card" data-src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" data-title="TAB Global — Roll-Up Series" data-set="p" data-idx="5">
+        <img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Global Roll-Up Series" loading="lazy">
+        <div class="pf-cap"><div class="pf-cap-title">TAB Global — Roll-Up Series</div><div class="pf-cap-sub">Print · Roll-Up</div></div>
+      </div>
+
+    </div>
+    <div class="pf-drive-cta rev">
+      <div class="pf-drive-cta-text"><h4>Full print portfolio</h4><p>Catalogue, POSM, packaging and large-format archives in Google Drive</p></div>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </div>
+  </div>
+
+  <!-- ── ALL WORK ── -->
+  <div id="tab-all" class="pf-panel">
+    <div class="pf-intro rev">
+      <h3>All Work — 24 Projects</h3>
+      <p>Every project across all three categories shown together. 15+ years across FMCG, international finance publishing, event activation, and tech brands.</p>
+      <div class="pf-tags"><span class="pf-tag">Social Media</span><span class="pf-tag">Digital Banners</span><span class="pf-tag">Print Materials</span><span class="pf-tag">All Clients</span></div>
+    </div>
+    <div class="pf-grid" id="grid-all">
+      <!-- All 24 items, pulled from other grids by JS on tab activation -->
+    </div>
+    <div class="pf-drive-cta rev">
+      <div class="pf-drive-cta-text"><h4>Complete portfolio archive</h4><p>All 24+ projects with full campaign files, size variants, and process notes</p></div>
+      <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio <svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg></a>
+    </div>
   </div>
 </section>
 
 <!-- PROCESS -->
 <section id="s-process" style="background:var(--slate)">
-  <div class="sec-eyebrow rev">Process and Thinking</div>
+  <div class="sec-eyebrow rev">Process &amp; Thinking</div>
   <h2 class="sec-title rev d1">How I <em>Solve</em> Design Problems</h2>
-  <p class="sec-lead rev d2">Senior designers are hired for process, not just output. Two case studies from brief to measurable outcome.</p>
+  <p class="sec-lead rev d2">Senior designers are hired for process, not just output. Two case studies — brief to measurable outcome.</p>
   <div class="case-grid">
-    <div class="case-card rev"><div class="case-head"><div class="case-num">01</div><span class="case-tag">Finance · Publishing</span><div class="case-title">Scaling TAB Global's Design System Across 4 International Platforms</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands with different tones and global C-suite audiences.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">50 to 80 posts per month, one designer, zero template system. Brand inconsistency eroding credibility with senior banking professionals worldwide.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Audited all 4 brand identities. Built modular InDesign template library with locked brand zones. Integrated Adobe Firefly for rapid, IP-safe image generation.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Per-post production time cut dramatically. Visual consistency restored company-wide. System still in active use across all 4 brands.</span></div><div class="case-metric"><div class="cm-n">4x</div><div class="cm-d">Brands unified: The Asian Banker, TABInsights, Wealth and Society, The Banking Academy</div></div></div></div>
-    <div class="case-card rev d1"><div class="case-head"><div class="case-num">02</div><span class="case-tag">FMCG · Retail</span><div class="case-title">Nutrimetics Monthly POSM Pipeline — Concept to Shelf in 7 Days</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Monthly full POSM suite with aggressive deadlines and Art Director plus GM sign-off every cycle.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">Coordinating across Art Director, General Manager, and external print vendors within a rigid 7-day cycle.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Built a repeatable design-to-print workflow. Created master templates with swappable photography zones. Managed photography in-house.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Every monthly cycle delivered on time. Zero print recalls across entire tenure.</span></div><div class="case-metric"><div class="cm-n">0</div><div class="cm-d">Print recalls across entire tenure at Nutrimetics</div></div></div></div>
+    <div class="case-card rev"><div class="case-head"><div class="case-num">01</div><span class="case-tag">Finance · Publishing</span><div class="case-title">Scaling TAB Global's Design System Across 4 International Platforms</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands with different tones and global C-suite audiences.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">50–80 posts/month, one designer, zero template system. Brand inconsistency eroding credibility with senior banking professionals worldwide.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Audited all 4 brand identities. Built modular InDesign template library with locked brand zones. Integrated Adobe Firefly for rapid, IP-safe image generation.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Per-post production time cut dramatically. Visual consistency restored company-wide. System still in active use across all 4 brands.</span></div><div class="case-metric"><div class="cm-n">4×</div><div class="cm-d">Brands unified — The Asian Banker, TABInsights, Wealth &amp; Society, The Banking Academy</div></div></div></div>
+    <div class="case-card rev d1"><div class="case-head"><div class="case-num">02</div><span class="case-tag">FMCG · Retail</span><div class="case-title">Nutrimetics Monthly POSM Pipeline — Concept to Shelf in 7 Days</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Monthly full POSM suite with aggressive deadlines and Art Director + GM sign-off every cycle.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">Coordinating across Art Director, General Manager, and external print vendors within a rigid 7-day cycle.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Built a repeatable design-to-print workflow. Created master templates with swappable photography zones. Managed photography in-house.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Every monthly cycle delivered on time. Zero print recalls across entire tenure.</span></div><div class="case-metric"><div class="cm-n">0</div><div class="cm-d">Print recalls across entire tenure at Nutrimetics</div></div></div></div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="s-skills" style="background:#fff">
+<section id="s-skills" style="background:var(--white)">
   <div class="sec-eyebrow rev">Capabilities</div>
-  <h2 class="sec-title rev d1">Skills and <em>AI Stack</em></h2>
-  <p class="sec-lead rev d2">The differentiator most senior designers cannot match — a fully integrated AI, Video AI, and Web production stack running on live client work today.</p>
+  <h2 class="sec-title rev d1">Skills &amp; <em>AI Stack</em></h2>
+  <p class="sec-lead rev d2">The differentiator most senior designers cannot match — a fully integrated AI + Video AI + Web production stack running on live client work today.</p>
   <div class="skills-wrap">
     <div class="rev d1">
-      <p class="ai-intro-text">"Most senior designers list Adobe CC. I run a live AI production pipeline that delivers faster output at higher quality on real client work."</p>
-      <p class="ai-body" style="margin-top:1rem">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems.</p>
+      <p class="ai-intro-text">"Most senior designers list Adobe CC. I run a live AI production pipeline that delivers faster output at higher quality — on real client work."</p>
+      <p class="ai-body" style="margin-top:1rem">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems — this stack is a genuine salary-justifying differentiator.</p>
       <div class="skill-tbl" style="margin-top:2rem">
         <div class="skill-tbl-head"><span>Skill</span><span>Level</span><span>Rating</span></div>
-        <div class="sk-row"><span>Brand and Identity Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="98"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>Print and Publication Layout</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>POSM and Retail Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>Brand &amp; Identity Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="98"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>Print &amp; Publication Layout</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
+        <div class="sk-row"><span>POSM &amp; Retail Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
         <div class="sk-row"><span>Social Media Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="95"></div></div><span class="sk-lv">Expert</span></div>
         <div class="sk-row"><span>AI Workflow Integration</span><div class="sk-bar-wrap"><div class="sk-bar amb" data-w="88"></div></div><span class="sk-lv a">Advanced</span></div>
-        <div class="sk-row"><span>Video and Motion</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="82"></div></div><span class="sk-lv">Proficient</span></div>
+        <div class="sk-row"><span>Video &amp; Motion (Pr / Ae)</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="82"></div></div><span class="sk-lv">Proficient</span></div>
         <div class="sk-row"><span>Web Design / HTML CSS</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="78"></div></div><span class="sk-lv">Proficient</span></div>
         <div class="sk-row"><span>Photography</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="80"></div></div><span class="sk-lv">Proficient</span></div>
       </div>
     </div>
     <div class="ai-cats rev d2">
-      <div class="ai-cat"><div class="ach">Image AI</div><div class="achips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
-      <div class="ai-cat"><div class="ach">Video AI</div><div class="achips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
-      <div class="ai-cat"><div class="ach">AI Assistants</div><div class="achips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
-      <div class="ai-cat"><div class="ach">Web and Dev</div><div class="achips"><span>GitHub</span><span>HTML CSS JS</span><span>Webflow</span><span>Netlify</span></div></div>
-      <div class="ai-cat"><div class="ach">Adobe Creative Suite</div><div class="achips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
-      <div class="ai-cat"><div class="ach">Productivity</div><div class="achips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Engineering</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Image AI</div><div class="achips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Video AI</div><div class="achips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ AI Assistants</div><div class="achips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Web &amp; Dev</div><div class="achips"><span>GitHub</span><span>HTML / CSS / JS</span><span>Webflow</span><span>Netlify</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Adobe Creative Suite</div><div class="achips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
+      <div class="ai-cat"><div class="ach">◆ Productivity</div><div class="achips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Engineering</span></div></div>
     </div>
   </div>
 </section>
@@ -256,35 +368,35 @@
 <section id="s-exp" style="background:var(--slate)">
   <div class="sec-eyebrow rev">Career History</div>
   <h2 class="sec-title rev d1"><em>15+ Years</em> of Industry Experience</h2>
-  <p class="sec-lead rev d2">Across creative agencies, FMCG, international retail, and global publishing.</p>
+  <p class="sec-lead rev d2">Across creative agencies, FMCG, international retail, and global publishing — growing scope and responsibility at every stage.</p>
   <div class="exp-list">
-    <div class="exp-item current rev"><div class="exp-period">2018 to Now</div><div><div class="exp-role">Senior Graphic Designer</div><div class="exp-co">TAB Global (Innotribe Solutions) · Selangor</div><ul class="exp-pts"><li>Lead designer for TAB Global — international finance publishing, 30+ countries.</li><li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, The Banking Academy.</li><li>Pioneered AI integration — generative design tools and AI analytics for high-volume publishing.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2020 to 2021</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Alliance Teamwork Marketing · Selangor</div><ul class="exp-pts"><li>POSM design suite — brochures, booklets, magazines, and event collateral.</li><li>Content development and translation for marketing materials.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2012 to 2018</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">Macy Home Furnishings · Selangor</div><ul class="exp-pts"><li>Retail campaigns across digital and print; e-commerce website UX.</li><li>In-house product photography and videography.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2009 to 2010</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Nutrimetics Worldwide · Selangor</div><ul class="exp-pts"><li>Monthly catalogues, packaging, and POSM for a global premium beauty brand.</li><li>Collaborated directly with Art Director and General Manager.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2008 to 2009</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">ATN Media and Advertising · Selangor</div><ul class="exp-pts"><li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2002 to 2007</div><div><div class="exp-role">Copywriter / Instructional Designer / Graphic Designer</div><div class="exp-co">Wannastation · Selangor</div><ul class="exp-pts"><li>E-learning modules for Telekom Malaysia's Smart School collaboration.</li><li>E-Terjemah English literacy platform for rural primary school students.</li></ul></div></div>
+    <div class="exp-item current rev"><div class="exp-period">2018 – Now</div><div><div class="exp-role">Senior Graphic Designer</div><div class="exp-co">TAB Global (Innotribe Solutions) · Selangor</div><ul class="exp-pts"><li>Lead designer for TAB Global — international finance publishing group, C-suite audiences in 30+ countries.</li><li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, The Banking Academy.</li><li>Pioneered AI integration — generative design tools for high-volume publishing layouts.</li></ul></div></div>
+    <div class="exp-item rev"><div class="exp-period">2020 – 2021</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Alliance Teamwork Marketing · Selangor</div><ul class="exp-pts"><li>POSM design suite — brochures, booklets, magazines, and event collateral.</li><li>Content development and translation for marketing materials.</li></ul></div></div>
+    <div class="exp-item rev"><div class="exp-period">2012 – 2018</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">Macy Home Furnishings · Selangor</div><ul class="exp-pts"><li>Retail campaigns across digital and print; e-commerce website UX.</li><li>In-house product photography and videography.</li></ul></div></div>
+    <div class="exp-item rev"><div class="exp-period">2009 – 2010</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Nutrimetics Worldwide · Selangor</div><ul class="exp-pts"><li>Monthly catalogues, packaging, and POSM for a global premium beauty brand.</li><li>Collaborated directly with Art Director and General Manager.</li></ul></div></div>
+    <div class="exp-item rev"><div class="exp-period">2008 – 2009</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">ATN Media &amp; Advertising · Selangor</div><ul class="exp-pts"><li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li></ul></div></div>
+    <div class="exp-item rev"><div class="exp-period">2002 – 2007</div><div><div class="exp-role">Copywriter / Instructional Designer / Graphic Designer</div><div class="exp-co">Wannastation · Selangor</div><ul class="exp-pts"><li>E-learning modules for Telekom Malaysia's Smart School collaboration.</li><li>E-Terjemah English literacy platform for rural primary school students.</li></ul></div></div>
   </div>
 </section>
 
-<section class="quote-sec"><div class="rev"><span class="q-icon">"</span><blockquote>Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote><p class="q-attr">Colleague, TAB Global, LinkedIn Recommendation</p></div></section>
+<section class="quote-sec"><div class="rev"><span class="q-icon">"</span><blockquote>Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote><p class="q-attr">— Colleague · TAB Global · LinkedIn Recommendation</p></div></section>
 
 <!-- CONTACT -->
-<section id="s-contact" style="background:#fff">
+<section id="s-contact" style="background:var(--white)">
   <div class="sec-eyebrow rev">Get In Touch</div>
   <h2 class="sec-title rev d1">Let's Work <em>Together.</em></h2>
-  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance, and brand consulting.</p>
+  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
   <div class="contact-wrap">
     <div class="rev">
       <div class="contact-info-title">Yussaimee Ahmad</div>
-      <p class="contact-intro">Senior Graphic Designer with 15+ years of proven delivery. Based in Banting, Selangor.</p>
+      <p class="contact-intro">Senior Graphic Designer with 15+ years of proven delivery for global brands. Based in Banting, Selangor — available for full-time roles, freelance, and consulting.</p>
       <div class="contact-list">
         <div class="ci-item"><span class="ci-lbl">Phone</span><span class="ci-val"><a href="tel:+60112360 8193">011 2360 8193</a></span></div>
         <div class="ci-item"><span class="ci-lbl">Email</span><span class="ci-val"><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></div>
         <div class="ci-item"><span class="ci-lbl">LinkedIn</span><span class="ci-val"><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></span></div>
         <div class="ci-item"><span class="ci-lbl">GitHub</span><span class="ci-val"><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></span></div>
         <div class="ci-item"><span class="ci-lbl">Location</span><span class="ci-val">Banting, Selangor, Malaysia</span></div>
-        <div class="ci-item"><span class="ci-lbl">Resume</span><span class="ci-val"><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF</a></span></div>
+        <div class="ci-item"><span class="ci-lbl">Resume</span><span class="ci-val"><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF ↗</a></span></div>
       </div>
     </div>
     <form class="c-form rev d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -292,98 +404,245 @@
       <div><label>Email</label><input type="email" name="em" placeholder="hiring@company.com" required></div>
       <div><label>Enquiry Type</label><select name="type"><option>Full-time Role</option><option>Freelance Project</option><option>Brand Consulting</option><option>AI Design Project</option><option>Collaboration</option></select></div>
       <div><label>Message</label><textarea name="msg" rows="4" placeholder="Tell me about the role or project..." required></textarea></div>
-      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
     </form>
   </div>
 </section>
 
 <footer>
   <span class="footer-name">Yussaimee<span>.</span></span>
-  <span class="footer-copy">2026 Senior Graphic Designer Banting Selangor Malaysia</span>
-  <div class="footer-links"><a href="mailto:yussaimee@gmail.com">Email</a><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GitHub</a></div>
+  <span class="footer-copy">© 2026 · Senior Graphic Designer · Banting, Selangor, Malaysia</span>
+  <div class="footer-links">
+    <a href="mailto:yussaimee@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener">Portfolio</a>
+  </div>
 </footer>
 
-<!-- VIEWER -->
-<dialog id="dlg">
-  <button id="dlg-close">x</button>
-  <div class="dlg-body">
-    <img id="dlg-img" src="" alt="">
-    <div class="dlg-bar">
-      <span id="dlg-title"></span>
-      <div class="dlg-nav">
-        <button id="dlg-prev">prev</button>
-        <span id="dlg-cnt"></span>
-        <button id="dlg-next">next</button>
-      </div>
+<!-- ════════════════════════════════════════════════════════
+     LIGHTBOX  —  native <dialog>
+     Full viewport, scrollable, image at natural dimensions
+════════════════════════════════════════════════════════ -->
+<dialog id="lb">
+  <button id="lb-close" aria-label="Close">×</button>
+  <div id="lb-scroll-hint">↓ Scroll to see full image</div>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-bar">
+    <span id="lb-title"></span>
+    <div class="lb-nav">
+      <button id="lb-prev" aria-label="Previous">‹</button>
+      <span id="lb-cnt"></span>
+      <button id="lb-next" aria-label="Next">›</button>
     </div>
   </div>
 </dialog>
 
 <script>
-var curTitle='',curNum=1,curTotal=10;
-var dlg=document.getElementById('dlg');
-var dlgImg=document.getElementById('dlg-img');
-var dlgTitle=document.getElementById('dlg-title');
-var dlgCnt=document.getElementById('dlg-cnt');
-
-function openDlg(src,title,num,total){
-  curTitle=title; curNum=num; curTotal=total;
-  dlgImg.src=src; dlgImg.alt=title;
-  dlgTitle.textContent=title;
-  dlgCnt.textContent=num+' of '+total;
-  dlg.showModal();
-}
-
-document.getElementById('dlg-close').onclick=function(){dlg.close();};
-dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close();});
-document.addEventListener('keydown',function(e){if(!dlg.open)return;if(e.key==='Escape')dlg.close();});
-
-function showTab(pid,btn){
-  var panels=document.querySelectorAll('.port-panel');
-  var tabs=document.querySelectorAll('.ptab');
-  for(var i=0;i<panels.length;i++)panels[i].classList.remove('act');
-  for(var i=0;i<tabs.length;i++)tabs[i].classList.remove('act');
-  document.getElementById(pid).classList.add('act');
-  if(btn)btn.classList.add('act');
-  initRev();
-}
-
-window.addEventListener('scroll',function(){
-  document.getElementById('nav').classList.toggle('nb',window.scrollY>50);
-},{passive:true});
-
-var nbtn=document.getElementById('nbtn');
-var mm=document.getElementById('mob-menu');
-nbtn.addEventListener('click',function(){
-  var o=mm.classList.toggle('show');
-  nbtn.classList.toggle('x',o);
+/* ════════════════════════════════
+   Portfolio cards — click handler
+════════════════════════════════ */
+// All cards across all grids share this logic
+document.querySelectorAll('.pf-card').forEach(function(card) {
+  card.addEventListener('click', function() {
+    openLb(
+      card.getAttribute('data-src'),
+      card.getAttribute('data-title'),
+      card.getAttribute('data-set'),
+      parseInt(card.getAttribute('data-idx'))
+    );
+  });
 });
-function cM(){mm.classList.remove('show');nbtn.classList.remove('x');}
-function gH(s){
-  window.scrollTo(0,0);
-  if(s)setTimeout(function(){var el=document.getElementById(s);if(el)el.scrollIntoView({behavior:'smooth'});},60);
-}
-function sTo(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
 
-var ro;
-function initRev(){
-  if(ro)ro.disconnect();
-  ro=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        e.target.classList.add('in');
-        if(e.target.querySelectorAll)e.target.querySelectorAll('.sk-bar[data-w]').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%';});
+/* ════════════════════════════════
+   Build "All Work" tab — clone cards
+════════════════════════════════ */
+function buildAllTab() {
+  var dest = document.getElementById('grid-all');
+  if (!dest || dest.children.length > 0) return;
+  ['grid-s','grid-d','grid-p'].forEach(function(gid) {
+    var src = document.getElementById(gid);
+    if (!src) return;
+    src.querySelectorAll('.pf-card').forEach(function(card) {
+      var clone = card.cloneNode(true);
+      // Fix data-set to 'all' so lightbox nav indexes correctly
+      dest.appendChild(clone);
+    });
+  });
+  // Re-attach click listeners to cloned cards
+  dest.querySelectorAll('.pf-card').forEach(function(card, i) {
+    card.setAttribute('data-set','all');
+    card.setAttribute('data-idx', i);
+    card.addEventListener('click', function() {
+      openLb(
+        card.getAttribute('data-src'),
+        card.getAttribute('data-title'),
+        'all',
+        i
+      );
+    });
+  });
+  observeCards(dest);
+}
+
+/* ════════════════════════════════
+   Lightbox
+════════════════════════════════ */
+var lbEl    = document.getElementById('lb');
+var lbImg   = document.getElementById('lb-img');
+var lbTitle = document.getElementById('lb-title');
+var lbCnt   = document.getElementById('lb-cnt');
+var lbSet   = 's';
+var lbIdx   = 0;
+
+// Collect all srcs per set at runtime
+function getCards(set) {
+  if (set === 'all') return document.querySelectorAll('#grid-all .pf-card');
+  var map = {s:'grid-s', d:'grid-d', p:'grid-p'};
+  return document.querySelectorAll('#' + map[set] + ' .pf-card');
+}
+
+function openLb(src, title, set, idx) {
+  lbSet = set; lbIdx = idx;
+  renderLb(src, title, set, idx);
+  lbEl.showModal();
+  // Scroll dialog back to top (in case previous was tall)
+  lbEl.scrollTop = 0;
+}
+
+function renderLb(src, title, set, idx) {
+  var cards = getCards(set);
+  lbImg.src = src || cards[idx].getAttribute('data-src');
+  lbImg.alt = title || cards[idx].getAttribute('data-title');
+  lbTitle.textContent = title || cards[idx].getAttribute('data-title');
+  lbCnt.textContent = (idx + 1) + ' / ' + cards.length;
+  // Detect if image might be taller than viewport — show scroll hint after load
+  lbEl.classList.remove('tall');
+  lbImg.onload = function() {
+    if (lbImg.naturalHeight > window.innerHeight * 1.2) {
+      lbEl.classList.add('tall');
+    }
+    lbEl.scrollTop = 0;
+  };
+}
+
+function lbNav(dir) {
+  var cards = getCards(lbSet);
+  lbIdx = (lbIdx + dir + cards.length) % cards.length;
+  renderLb(null, null, lbSet, lbIdx);
+  lbEl.scrollTop = 0;
+}
+
+document.getElementById('lb-close').onclick = function() { lbEl.close(); };
+document.getElementById('lb-prev').onclick  = function() { lbNav(-1); };
+document.getElementById('lb-next').onclick  = function() { lbNav(1); };
+
+// Click the dark area outside the image to close
+lbEl.addEventListener('click', function(e) {
+  if (e.target === lbEl) lbEl.close();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (!lbEl.open) return;
+  if (e.key === 'Escape')     lbEl.close();
+  if (e.key === 'ArrowRight') lbNav(1);
+  if (e.key === 'ArrowLeft')  lbNav(-1);
+});
+
+/* ════════════════════════════════
+   Tab switching
+════════════════════════════════ */
+function pfTab(btn, panelId) {
+  document.querySelectorAll('.pf-tab').forEach(function(t) { t.classList.remove('act'); });
+  document.querySelectorAll('.pf-panel').forEach(function(p) { p.classList.remove('act'); });
+  btn.classList.add('act');
+  var panel = document.getElementById(panelId);
+  if (panel) {
+    panel.classList.add('act');
+    if (panelId === 'tab-all') buildAllTab();
+    observeCards(panel);
+    initRev();
+  }
+}
+
+/* ════════════════════════════════
+   Scroll-reveal for portfolio cards
+   (staggered entry animation)
+════════════════════════════════ */
+function observeCards(container) {
+  var cards = container.querySelectorAll('.pf-card');
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        // Stagger by index within its column
+        var delay = (parseInt(e.target.getAttribute('data-idx')) % 3) * 80;
+        setTimeout(function() {
+          e.target.classList.add('vis');
+        }, delay);
+        io.unobserve(e.target);
       }
     });
-  },{threshold:0.07});
-  document.querySelectorAll('.rev').forEach(function(el){ro.observe(el);});
+  }, { threshold: 0.08 });
+  cards.forEach(function(card) { io.observe(card); });
+}
+
+// Observe initial tab
+observeCards(document.getElementById('grid-s'));
+observeCards(document.getElementById('grid-d'));
+observeCards(document.getElementById('grid-p'));
+
+/* ════════════════════════════════
+   NAV
+════════════════════════════════ */
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('nb', window.scrollY > 50);
+}, { passive: true });
+
+var nbtn = document.getElementById('nbtn');
+var mm   = document.getElementById('mob-menu');
+nbtn.addEventListener('click', function() {
+  var o = mm.classList.toggle('show');
+  nbtn.classList.toggle('x', o);
+});
+function cM() { mm.classList.remove('show'); nbtn.classList.remove('x'); }
+function gH(s) {
+  window.scrollTo(0, 0);
+  if (s) setTimeout(function() {
+    var el = document.getElementById(s);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }, 60);
+}
+function sTo(id) {
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+/* ════════════════════════════════
+   Scroll reveal (general)
+════════════════════════════════ */
+var ro;
+function initRev() {
+  if (ro) ro.disconnect();
+  ro = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        if (e.target.querySelectorAll) {
+          e.target.querySelectorAll('.sk-bar[data-w]').forEach(function(b) {
+            b.style.width = b.getAttribute('data-w') + '%';
+          });
+        }
+      }
+    });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.rev').forEach(function(el) { ro.observe(el); });
 }
 initRev();
-window.addEventListener('load',function(){
-  setTimeout(function(){
-    document.querySelectorAll('.rev').forEach(function(el){el.classList.add('in');});
-    document.querySelectorAll('.sk-bar[data-w]').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%';});
-  },200);
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.querySelectorAll('.rev').forEach(function(el) { el.classList.add('in'); });
+    document.querySelectorAll('.sk-bar[data-w]').forEach(function(b) { b.style.width = b.getAttribute('data-w') + '%'; });
+  }, 200);
 });
 </script>
 </body>
