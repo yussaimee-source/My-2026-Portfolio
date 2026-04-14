@@ -3,333 +3,281 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Yussaimee Ahmad — Senior Graphic Designer with 15+ years across FMCG, Finance, Events and AI. Banting, Selangor, Malaysia. Open to senior roles RM6,000+.">
-<meta property="og:title" content="Yussaimee Ahmad — Senior Graphic Designer">
-<meta property="og:description" content="15+ years. Finance · FMCG · Events · AI. Open to work RM6,000+">
-<title>Yussaimee Ahmad — Senior Graphic Designer</title>
+<meta name="description" content="Yussaimee Ahmad - Senior Graphic Designer. 15+ years FMCG, Finance, Events, AI. Banting Selangor. Open to senior roles RM6000+.">
+<title>Yussaimee Ahmad - Senior Graphic Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ===================================================
-   ALL CSS EMBEDDED — no external file needed
-   =================================================== */
-:root{
-  --navy:#1b2a4a;--navy2:#243558;
-  --slate:#f0f4f8;--slate2:#e4eaf1;--slate3:#d0dae6;
-  --amber:#e8800a;--amber2:#f59c2e;
-  --text:#1b2a4a;--text2:#4a5e7a;--text3:#7a90a8;
-  --white:#ffffff;--ok:#2d8a4e;
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:'DM Sans',system-ui,sans-serif;
-  --mono:'JetBrains Mono','Fira Code',monospace;
-  --r:8px;--r2:16px;--r3:24px;
-  --ease:cubic-bezier(.25,.46,.45,.94);
-  --spring:cubic-bezier(.34,1.56,.64,1);
-}
+:root{--navy:#1b2a4a;--navy2:#243558;--sl:#f0f4f8;--sl2:#e4eaf1;--sl3:#d0dae6;--am:#e8800a;--am2:#f59c2e;--tx:#1b2a4a;--tx2:#4a5e7a;--tx3:#7a90a8;--wh:#fff;--ok:#2d8a4e;--S:"Playfair Display",Georgia,serif;--N:"DM Sans",system-ui,sans-serif;--M:"JetBrains Mono","Fira Code",monospace;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--slate);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-::selection{background:var(--amber);color:#fff}
+body{font-family:var(--N);background:var(--sl);color:var(--tx);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--am);color:#fff}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
 ul{list-style:none}
-button{font-family:var(--sans);cursor:pointer;border:none;background:none}
-.mono{font-family:var(--mono)}
-.amber{color:var(--amber)}
+button{font-family:var(--N);cursor:pointer;border:none;background:none}
 
 /* NAV */
-#nav{position:fixed;inset:0 0 auto;z-index:900;height:64px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(240,244,248,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
-#nav.nb{border-color:var(--slate3);box-shadow:0 2px 16px rgba(27,42,74,.08)}
-.nav-logo{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);cursor:pointer;letter-spacing:-.02em}
-.nav-logo span{color:var(--amber)}
-.nav-links{display:flex;align-items:center;gap:2rem}
-.nav-links a{font-size:13px;font-weight:500;color:var(--text2);cursor:pointer;transition:color .2s}
-.nav-links a:hover{color:var(--amber)}
-.nav-cv{display:flex;align-items:center;gap:6px;padding:9px 20px;background:var(--navy);color:#fff;font-size:13px;font-weight:600;border-radius:100px;transition:background .2s,transform .15s;text-decoration:none}
-.nav-cv:hover{background:var(--amber);transform:translateY(-1px)}
-.nav-burger{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
-.nav-burger span{display:block;width:22px;height:1.5px;background:var(--navy);transition:transform .3s,opacity .3s}
-.nav-burger.x span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-.nav-burger.x span:nth-child(2){opacity:0}
-.nav-burger.x span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-#mob-menu{display:none;position:fixed;top:64px;left:0;right:0;z-index:899;background:#fff;border-bottom:1px solid var(--slate3);padding:1.25rem 5vw;flex-direction:column;gap:.5rem;box-shadow:0 8px 32px rgba(27,42,74,.1)}
-#mob-menu.show{display:flex}
-#mob-menu a{font-size:15px;font-weight:500;color:var(--text2);padding:10px 0;border-bottom:1px solid var(--slate);cursor:pointer;transition:color .2s;text-decoration:none}
-#mob-menu a:hover{color:var(--amber)}
-
-/* HERO */
-.hero{padding-top:64px;background:#fff;border-bottom:1px solid var(--slate3);overflow:hidden}
-.hero-inner{display:grid;grid-template-columns:1fr 500px;min-height:calc(100svh - 64px);max-width:1300px;margin:0 auto;padding:0 5vw}
-.hero-left{display:flex;flex-direction:column;justify-content:center;padding:4rem 4rem 4rem 0}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--slate);border:1px solid var(--slate3);padding:6px 14px;border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text2);margin-bottom:1.5rem;width:fit-content}
-.hero-badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--ok);animation:pulse 2s ease infinite;flex-shrink:0}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.65)}}
-.hero-title{font-family:var(--serif);font-size:clamp(36px,4.5vw,60px);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--navy);margin-bottom:1.25rem}
-.hero-title em{font-style:italic;color:var(--amber)}
-.hero-tagline{font-size:16px;line-height:1.85;color:var(--text2);max-width:480px;margin-bottom:2rem}
-.hero-tagline strong{color:var(--navy);font-weight:600}
-.hero-meta{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:2.5rem}
-.hm-label{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);display:block;margin-bottom:3px}
-.hm-val{font-size:14px;font-weight:600;color:var(--navy)}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero-right{position:relative;background:linear-gradient(160deg,#0f1e38,#1b2a4a);overflow:hidden;display:flex;align-items:stretch}
-.hero-photo-wrap{position:absolute;inset:0}
-.hero-photo{width:100%;height:100%;object-fit:cover;object-position:center 12%;filter:grayscale(100%) contrast(1.1) brightness(1.08);opacity:.78;animation:breath 5s ease-in-out infinite}
-.hero-right:hover .hero-photo{opacity:.88}
-@keyframes breath{0%,100%{transform:scale(1);opacity:.78}50%{transform:scale(1.03);opacity:.84}}
-.hero-photo-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(11,22,46,.4) 0%,rgba(11,22,46,.1) 35%,rgba(11,22,46,.65) 100%)}
-.hero-ai-svg{position:absolute;inset:0;z-index:3;pointer-events:none}
-.hero-photo-label{position:absolute;bottom:24px;left:24px;right:24px;z-index:10}
-.hpl-name{font-family:var(--serif);font-size:22px;font-weight:700;color:#fff;line-height:1.1;margin-bottom:4px}
-.hpl-role{font-size:13px;font-weight:500;color:rgba(255,255,255,.65);letter-spacing:.04em}
-.hero-amber-bar{position:absolute;top:0;right:0;width:4px;height:100%;background:var(--amber);z-index:10}
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(240,244,248,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--sl3);box-shadow:0 1px 10px rgba(27,42,74,.06)}
+.logo{font-family:var(--S);font-size:22px;font-weight:700;color:var(--navy);cursor:pointer;letter-spacing:-.02em}
+.logo span{color:var(--am)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:13px;font-weight:500;color:var(--tx2);cursor:pointer;transition:color .2s}
+.nav-links a:hover{color:var(--am)}
+.nav-cv{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--navy);color:#fff;font-size:13px;font-weight:600;border-radius:100px;transition:background .2s}
+.nav-cv:hover{background:var(--am)}
+.burg{display:none;flex-direction:column;gap:5px;padding:4px;cursor:pointer}
+.burg span{display:block;width:22px;height:1.5px;background:var(--navy);transition:transform .3s,opacity .3s}
+.burg.x span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.burg.x span:nth-child(2){opacity:0}
+.burg.x span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+#mob{display:none;position:fixed;top:64px;left:0;right:0;z-index:199;background:#fff;border-bottom:1px solid var(--sl3);padding:1rem 5vw;flex-direction:column;gap:.25rem;box-shadow:0 4px 20px rgba(27,42,74,.1)}
+#mob.on{display:flex}
+#mob a{font-size:15px;font-weight:500;color:var(--tx2);padding:10px 0;border-bottom:1px solid var(--sl);cursor:pointer;transition:color .2s}
+#mob a:hover{color:var(--am)}
 
 /* BUTTONS */
-.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:var(--amber);color:#fff;font-size:14px;font-weight:700;border-radius:100px;border:none;cursor:pointer;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(232,128,10,.28);text-decoration:none}
-.btn-primary:hover{background:var(--amber2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(232,128,10,.38)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:transparent;color:var(--navy);font-size:14px;font-weight:600;border-radius:100px;border:2px solid var(--slate3);cursor:pointer;transition:border-color .2s,background .2s,transform .15s;text-decoration:none}
-.btn-secondary:hover{border-color:var(--navy);background:var(--slate);transform:translateY(-2px)}
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:var(--am);color:#fff;font-size:14px;font-weight:700;border-radius:100px;transition:background .2s,transform .15s;box-shadow:0 4px 20px rgba(232,128,10,.3);cursor:pointer}
+.btn-p:hover{background:var(--am2);transform:translateY(-2px)}
+.btn-s{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:transparent;color:var(--navy);font-size:14px;font-weight:600;border-radius:100px;border:2px solid var(--sl3);transition:border-color .2s,background .2s,transform .15s;cursor:pointer}
+.btn-s:hover{border-color:var(--navy);background:var(--sl);transform:translateY(-2px)}
+
+/* HERO */
+.hero{padding-top:64px;background:#fff;overflow:hidden;border-bottom:1px solid var(--sl3)}
+.hero-wrap{display:grid;grid-template-columns:1fr 480px;min-height:calc(100vh - 64px);max-width:1280px;margin:0 auto;padding:0 5vw}
+.hero-l{display:flex;flex-direction:column;justify-content:center;padding:4rem 4rem 4rem 0}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--sl);border:1px solid var(--sl3);padding:6px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tx2);margin-bottom:1.5rem;width:fit-content}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex-shrink:0;animation:blink 2s ease infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+h1{font-family:var(--S);font-size:clamp(36px,4.5vw,58px);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--navy);margin-bottom:1.25rem}
+h1 em{font-style:italic;color:var(--am)}
+.htag{font-size:16px;line-height:1.85;color:var(--tx2);max-width:480px;margin-bottom:2rem}
+.htag strong{color:var(--navy);font-weight:600}
+.hmeta{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:2.5rem}
+.hm span:first-child{display:block;font-family:var(--M);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx3);margin-bottom:3px}
+.hm span:last-child{font-size:14px;font-weight:600;color:var(--navy)}
+.hm span.am{color:var(--am)}
+.hctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero-r{position:relative;background:linear-gradient(160deg,#0f1e38,#1b2a4a);overflow:hidden}
+.hphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 12%;filter:grayscale(100%) contrast(1.1) brightness(1.1);opacity:.78;animation:br 5s ease-in-out infinite}
+@keyframes br{0%,100%{transform:scale(1);opacity:.78}50%{transform:scale(1.03);opacity:.84}}
+.hgrad{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(11,22,46,.4) 0%,rgba(11,22,46,.05) 40%,rgba(11,22,46,.7) 100%)}
+.hsvg{position:absolute;inset:0;z-index:3;pointer-events:none}
+.hlabel{position:absolute;bottom:24px;left:24px;right:24px;z-index:4}
+.hlabel strong{display:block;font-family:var(--S);font-size:21px;font-weight:700;color:#fff;margin-bottom:4px}
+.hlabel span{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.04em}
+.abar{position:absolute;top:0;right:0;width:4px;height:100%;background:var(--am);z-index:4}
 
 /* STATS */
-.stats-bar{background:var(--navy);display:flex;overflow-x:auto}
-.stat{flex:1;min-width:140px;padding:2rem 2.5rem;border-right:1px solid rgba(255,255,255,.08);transition:background .2s}
+.stats{background:var(--navy);display:flex;overflow-x:auto}
+.stat{flex:1;min-width:120px;padding:1.75rem 2rem;border-right:1px solid rgba(255,255,255,.08);transition:background .2s}
 .stat:last-child{border-right:none}
 .stat:hover{background:var(--navy2)}
-.stat-n{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--amber);line-height:1;margin-bottom:4px}
-.stat-l{font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.sn{font-family:var(--S);font-size:clamp(28px,3.5vw,48px);font-weight:700;color:var(--am);line-height:1;margin-bottom:4px}
+.sl-{font-size:11px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;color:rgba(255,255,255,.45)}
 
 /* SECTIONS */
-section{padding:80px 5vw}
-.sec-eye{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:.6rem;display:flex;align-items:center;gap:10px}
-.sec-eye::before{content:'';width:24px;height:2px;background:var(--amber);flex-shrink:0;border-radius:2px}
-h2.sec-title{font-family:var(--serif);font-size:clamp(28px,4vw,48px);font-weight:700;letter-spacing:-.02em;color:var(--navy);margin-bottom:.5rem;line-height:1.1}
-h2.sec-title em{font-style:italic;color:var(--amber)}
-.sec-lead{font-size:16px;color:var(--text2);max-width:560px;line-height:1.8;margin-bottom:3rem}
+.sec{padding:80px 5vw}
+.eye{font-family:var(--M);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--am);margin-bottom:.6rem;display:flex;align-items:center;gap:10px}
+.eye::before{content:"";width:24px;height:2px;background:var(--am);border-radius:2px;flex-shrink:0}
+h2{font-family:var(--S);font-size:clamp(26px,4vw,46px);font-weight:700;letter-spacing:-.02em;color:var(--navy);margin-bottom:.5rem;line-height:1.1}
+h2 em{font-style:italic;color:var(--am)}
+.lead{font-size:15px;color:var(--tx2);max-width:540px;line-height:1.8;margin-bottom:2.5rem}
 
-/* =========================================
-   PORTFOLIO
-   ========================================= */
-#s-portfolio{background:#fff;padding-bottom:80px}
-.pf-tabs{display:flex;border-bottom:2px solid var(--slate3);margin-bottom:2.5rem;overflow-x:auto;gap:0}
-.pf-tab{padding:12px 22px;font-size:13px;font-weight:600;color:var(--text3);background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer;white-space:nowrap;transition:color .2s,border-color .2s;display:inline-flex;align-items:center;gap:8px}
-.pf-tab .tc{font-size:10px;font-family:var(--mono);background:var(--slate2);color:var(--text3);padding:2px 7px;border-radius:100px;transition:background .2s,color .2s}
-.pf-tab:hover{color:var(--amber)}
-.pf-tab.act{color:var(--amber);border-color:var(--amber)}
-.pf-tab.act .tc{background:var(--amber);color:#fff}
-.pf-panel{display:none}
-.pf-panel.act{display:block}
+/* PORTFOLIO */
+#s-portfolio{background:#fff}
+.ptabs{display:flex;border-bottom:2px solid var(--sl3);margin-bottom:2.5rem;overflow-x:auto}
+.tab{padding:11px 20px;font-size:13px;font-weight:600;color:var(--tx3);background:none;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer;white-space:nowrap;transition:color .2s,border-color .2s;display:inline-flex;align-items:center;gap:7px}
+.tab .n{font-size:10px;font-family:var(--M);background:var(--sl2);color:var(--tx3);padding:2px 7px;border-radius:100px;transition:background .2s,color .2s}
+.tab:hover{color:var(--am)}
+.tab.on{color:var(--am);border-color:var(--am)}
+.tab.on .n{background:var(--am);color:#fff}
+.panel{display:none}
+.panel.on{display:block}
+.pintro{margin-bottom:2rem}
+.pintro h3{font-family:var(--S);font-size:21px;font-weight:700;color:var(--navy);margin-bottom:.5rem}
+.pintro p{font-size:14px;color:var(--tx2);line-height:1.75;max-width:620px}
+.ptags{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem}
+.ptag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:100px;background:var(--sl);border:1px solid var(--sl3);color:var(--tx2)}
+.grid{columns:3;column-gap:14px;margin-top:1.5rem}
+.card{break-inside:avoid;margin-bottom:14px;border-radius:16px;overflow:hidden;cursor:pointer;background:var(--sl2);border:2px solid transparent;position:relative;transition:border-color .25s,transform .3s,box-shadow .3s}
+.card:hover{border-color:var(--am);transform:translateY(-5px);box-shadow:0 16px 48px rgba(27,42,74,.15)}
+.card img{width:100%;height:auto;display:block;transition:transform .4s}
+.card:hover img{transform:scale(1.04)}
+.ccap{background:#fff;padding:9px 13px 11px;border-top:1px solid var(--sl3)}
+.ccap b{display:block;font-size:12px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.ccap small{font-size:10px;font-family:var(--M);color:var(--tx3);letter-spacing:.06em;text-transform:uppercase}
+.card::after{content:"Expand";position:absolute;top:10px;right:10px;background:rgba(27,42,74,.82);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:100px;opacity:0;transform:translateY(-4px);transition:opacity .2s,transform .2s;pointer-events:none}
+.card:hover::after{opacity:1;transform:none}
+.dcta{margin-top:2.5rem;padding:2rem 2.5rem;background:var(--navy);border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.dcta h4{font-family:var(--S);font-size:20px;font-weight:700;color:#fff;margin-bottom:4px}
+.dcta p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6}
+.dbtn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;background:var(--am);color:#fff;font-size:13px;font-weight:700;border-radius:100px;white-space:nowrap;transition:background .2s,transform .15s;box-shadow:0 4px 20px rgba(232,128,10,.35)}
+.dbtn:hover{background:var(--am2);transform:translateY(-2px)}
 
-/* Masonry grid - images at natural proportions */
-.pf-grid{columns:3;column-gap:16px;margin-top:1.5rem}
-.pf-card{break-inside:avoid;margin-bottom:16px;border-radius:var(--r3);overflow:hidden;cursor:pointer;background:var(--slate2);border:2px solid transparent;transition:border-color .25s,transform .3s var(--spring),box-shadow .3s;position:relative}
-.pf-card:hover{border-color:var(--amber);transform:translateY(-5px);box-shadow:0 18px 50px rgba(27,42,74,.16)}
-/* KEY: natural proportions, height auto, no cropping */
-.pf-card img{width:100%;height:auto;display:block;transition:transform .45s var(--ease)}
-.pf-card:hover img{transform:scale(1.04)}
-.pf-cap{background:#fff;padding:10px 14px 12px;border-top:1px solid var(--slate3)}
-.pf-cap-title{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:2px}
-.pf-cap-sub{font-size:10px;color:var(--text3);font-family:var(--mono);letter-spacing:.06em;text-transform:uppercase}
-.pf-card::after{content:'↗ View Full';position:absolute;top:12px;right:12px;background:rgba(27,42,74,.82);backdrop-filter:blur(6px);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;padding:5px 12px;border-radius:100px;opacity:0;transform:translateY(-4px);transition:opacity .22s,transform .22s;pointer-events:none}
-.pf-card:hover::after{opacity:1;transform:none}
-
-/* Intro block */
-.pf-intro{margin-bottom:2rem}
-.pf-intro h3{font-family:var(--serif);font-size:22px;font-weight:700;color:var(--navy);margin-bottom:.5rem}
-.pf-intro p{font-size:14px;color:var(--text2);line-height:1.75;max-width:640px}
-.pf-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:.75rem}
-.pf-tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px;background:var(--slate);border:1px solid var(--slate3);color:var(--text2)}
-
-/* Drive CTA */
-.pf-cta{margin-top:2.5rem;padding:2rem 2.5rem;background:var(--navy);border-radius:var(--r3);display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
-.pf-cta h4{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;margin-bottom:5px}
-.pf-cta p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6}
-.pf-drive-btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;background:var(--amber);color:#fff;font-size:13px;font-weight:700;border-radius:100px;text-decoration:none;transition:background .2s,transform .15s;box-shadow:0 4px 20px rgba(232,128,10,.35);white-space:nowrap}
-.pf-drive-btn:hover{background:var(--amber2);transform:translateY(-2px)}
-
-/* =========================================
-   LIGHTBOX — native <dialog>
-   Full screen, scrollable, image NEVER cropped
-   ========================================= */
-dialog#lb{
-  border:none;padding:0;outline:none;background:rgba(6,12,28,.97);
-  position:fixed;inset:0;width:100vw;height:100dvh;
-  max-width:100vw;max-height:100dvh;margin:0;
-  display:flex;flex-direction:column;align-items:center;
-  overflow-y:auto;overflow-x:hidden;
-  padding:60px 20px 72px;gap:0;
-}
-dialog#lb::backdrop{background:rgba(6,12,28,.97)}
-dialog#lb[open]{animation:lbFade .25s ease}
-@keyframes lbFade{from{opacity:0}to{opacity:1}}
-/* Image: natural size, scrollable if tall, never cropped */
-#lb-img{display:block;max-width:min(1100px,calc(100vw - 40px));width:auto;height:auto;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.7);margin:0 auto;animation:imgPop .3s cubic-bezier(.34,1.56,.64,1)}
-@keyframes imgPop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
-#lb-close{position:fixed;top:14px;right:18px;z-index:10001;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:22px;display:flex;align-items:center;justify-content:center;cursor:pointer;line-height:1;transition:background .2s,transform .25s}
-#lb-close:hover{background:var(--amber);transform:rotate(90deg)}
-#lb-bar{position:fixed;bottom:0;left:0;right:0;z-index:10001;background:rgba(10,18,40,.94);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:16px;border-top:1px solid rgba(255,255,255,.08);min-height:56px}
-#lb-title{font-family:var(--serif);font-size:15px;font-weight:700;color:#fff;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#lb-cnt{font-family:var(--mono);font-size:12px;color:rgba(255,255,255,.4);letter-spacing:.1em;white-space:nowrap}
-.lb-nav{display:flex;gap:8px;flex-shrink:0}
-.lb-nav button{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;line-height:1;transition:background .2s}
-.lb-nav button:hover{background:var(--amber);border-color:var(--amber)}
+/* LIGHTBOX - plain div, display:none by default, NEVER shows unless openLb() called */
+#lb{display:none;position:fixed;inset:0;z-index:9999;background:rgba(6,12,28,.96);flex-direction:column;align-items:center;overflow-y:auto;overflow-x:hidden;padding:60px 20px 72px}
+#lb.open{display:flex}
+#lb-img{display:block;max-width:min(1100px,calc(100vw - 40px));width:auto;height:auto;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,.7);margin:0 auto;animation:iin .3s ease}
+@keyframes iin{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+#lb-x{position:fixed;top:14px;right:18px;z-index:10000;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .25s}
+#lb-x:hover{background:var(--am);transform:rotate(90deg)}
+#lb-bar{position:fixed;bottom:0;left:0;right:0;z-index:10000;background:rgba(10,18,40,.94);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:12px 20px;gap:16px;border-top:1px solid rgba(255,255,255,.08);min-height:56px}
+#lb-t{font-family:var(--S);font-size:15px;font-weight:700;color:#fff;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#lb-c{font-family:var(--M);font-size:12px;color:rgba(255,255,255,.4);letter-spacing:.1em;white-space:nowrap}
+.lbnav{display:flex;gap:8px;flex-shrink:0}
+.lbnav button{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
+.lbnav button:hover{background:var(--am);border-color:var(--am)}
 
 /* PROCESS */
-#s-process{background:var(--slate)}
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.case-card{background:#fff;border:1px solid var(--slate3);border-radius:var(--r2);overflow:hidden;transition:box-shadow .3s,transform .3s}
-.case-card:hover{box-shadow:0 16px 48px rgba(27,42,74,.1);transform:translateY(-4px)}
-.case-head{padding:2rem;background:var(--navy);position:relative}
-.case-num{font-family:var(--serif);font-size:64px;font-weight:700;color:rgba(255,255,255,.08);position:absolute;right:16px;top:8px;line-height:1}
-.case-tag{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;display:block}
-.case-title{font-family:var(--serif);font-size:20px;font-weight:700;color:#fff;line-height:1.25}
-.case-body{padding:2rem}
-.cs-item{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--slate);font-size:13px;line-height:1.7}
-.cs-item:last-child{border-bottom:none}
-.cs-l{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);font-weight:600;padding-top:2px}
-.cs-v{color:var(--text2)}
-.case-metric{display:flex;align-items:center;gap:1rem;margin-top:1.5rem;padding:14px 16px;background:var(--slate);border-radius:var(--r);border-left:3px solid var(--amber)}
-.cm-n{font-family:var(--serif);font-size:44px;font-weight:700;color:var(--amber);line-height:1;white-space:nowrap}
-.cm-d{font-size:12px;color:var(--text2);line-height:1.6}
+#s-process{background:var(--sl)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cc{background:#fff;border:1px solid var(--sl3);border-radius:16px;overflow:hidden;transition:box-shadow .3s,transform .3s}
+.cc:hover{box-shadow:0 16px 48px rgba(27,42,74,.1);transform:translateY(-4px)}
+.ch{padding:2rem;background:var(--navy);position:relative}
+.cbig{font-family:var(--S);font-size:60px;font-weight:700;color:rgba(255,255,255,.07);position:absolute;right:16px;top:8px;line-height:1}
+.clbl{font-family:var(--M);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--am);margin-bottom:8px;display:block}
+.ctitle{font-family:var(--S);font-size:19px;font-weight:700;color:#fff;line-height:1.25}
+.cb{padding:2rem}
+.ci{display:grid;grid-template-columns:68px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--sl);font-size:13px;line-height:1.7}
+.ci:last-child{border-bottom:none}
+.cil{font-family:var(--M);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--am);font-weight:600;padding-top:2px}
+.civ{color:var(--tx2)}
+.cstat{display:flex;align-items:center;gap:1rem;margin-top:1.5rem;padding:14px 16px;background:var(--sl);border-radius:8px;border-left:3px solid var(--am)}
+.cnum{font-family:var(--S);font-size:42px;font-weight:700;color:var(--am);line-height:1;white-space:nowrap}
+.cdesc{font-size:12px;color:var(--tx2);line-height:1.6}
 
 /* SKILLS */
 #s-skills{background:#fff}
-.skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
-.ai-intro-text{font-family:var(--serif);font-size:clamp(17px,2vw,22px);font-weight:700;font-style:italic;color:var(--navy);line-height:1.55;margin-bottom:1rem}
-.ai-body{font-size:14px;color:var(--text2);line-height:1.8}
-.ai-cats{display:grid;gap:1rem}
-.ai-cat{background:var(--slate);border:1px solid var(--slate3);border-radius:var(--r2);padding:1.25rem 1.5rem;transition:border-color .2s,box-shadow .2s}
-.ai-cat:hover{border-color:var(--amber);box-shadow:0 4px 20px rgba(232,128,10,.1)}
-.ach{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
-.achips{display:flex;flex-wrap:wrap;gap:6px}
-.achips span{font-size:12px;font-weight:600;padding:4px 10px;background:#fff;border:1px solid var(--slate3);border-radius:100px;color:var(--navy);transition:border-color .2s,color .2s}
-.ai-cat:hover .achips span{border-color:rgba(232,128,10,.4);color:var(--amber)}
-.skill-tbl{margin-top:3rem}
-.skill-tbl-head{display:grid;grid-template-columns:1fr 140px 80px;padding:8px 14px;font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--text3);border-bottom:2px solid var(--slate3)}
-.sk-row{display:grid;grid-template-columns:1fr 140px 80px;padding:11px 14px;align-items:center;font-size:13px;border-bottom:1px solid var(--slate);transition:background .2s}
-.sk-row:last-child{border-bottom:none}
-.sk-row:hover{background:var(--slate)}
-.sk-bar-wrap{height:4px;background:var(--slate3);border-radius:2px;overflow:hidden}
-.sk-bar{height:100%;background:var(--navy);border-radius:2px;width:0;transition:width 1.2s var(--ease) .2s}
-.sk-bar.amb{background:var(--amber)}
-.sk-lv{font-family:var(--mono);font-size:10px;text-align:right;color:var(--text3)}
-.sk-lv.a{color:var(--amber);font-weight:600}
+.skwrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.aiq{font-family:var(--S);font-size:clamp(16px,1.8vw,21px);font-weight:700;font-style:italic;color:var(--navy);line-height:1.55;margin-bottom:1rem}
+.aib{font-size:14px;color:var(--tx2);line-height:1.8}
+.aigrid{display:grid;gap:1rem}
+.aicat{background:var(--sl);border:1px solid var(--sl3);border-radius:14px;padding:1.25rem 1.5rem;transition:border-color .2s,box-shadow .2s}
+.aicat:hover{border-color:var(--am);box-shadow:0 4px 20px rgba(232,128,10,.1)}
+.ailbl{font-family:var(--M);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--am);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:12px;font-weight:600;padding:4px 10px;background:#fff;border:1px solid var(--sl3);border-radius:100px;color:var(--navy);transition:border-color .2s,color .2s}
+.aicat:hover .chips span{border-color:rgba(232,128,10,.4);color:var(--am)}
+.sktbl{margin-top:3rem}
+.skh{display:grid;grid-template-columns:1fr 130px 80px;padding:8px 14px;font-family:var(--M);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx3);border-bottom:2px solid var(--sl3)}
+.skr{display:grid;grid-template-columns:1fr 130px 80px;padding:10px 14px;align-items:center;font-size:13px;border-bottom:1px solid var(--sl);transition:background .2s}
+.skr:last-child{border-bottom:none}
+.skr:hover{background:var(--sl)}
+.bw{height:4px;background:var(--sl3);border-radius:2px;overflow:hidden}
+.bar{height:100%;background:var(--navy);border-radius:2px;width:0;transition:width 1.2s ease .2s}
+.bar.a{background:var(--am)}
+.slv{font-family:var(--M);font-size:10px;text-align:right;color:var(--tx3)}
+.slv.a{color:var(--am);font-weight:600}
 
 /* EXPERIENCE */
-#s-exp{background:var(--slate)}
-.exp-list{display:grid;gap:2px}
-.exp-item{background:#fff;padding:2rem 2.5rem;border-radius:var(--r);border:1px solid var(--slate3);display:grid;grid-template-columns:160px 1fr;gap:2rem;transition:box-shadow .2s,transform .2s}
-.exp-item:hover{box-shadow:0 8px 32px rgba(27,42,74,.08);transform:translateX(4px)}
-.exp-item.current{border-left:3px solid var(--amber)}
-.exp-period{font-family:var(--mono);font-size:11px;color:var(--amber);letter-spacing:.06em;padding-top:3px}
-.exp-role{font-family:var(--serif);font-size:18px;font-weight:700;color:var(--navy);margin-bottom:2px}
-.exp-co{font-size:13px;color:var(--text2);margin-bottom:10px;font-weight:600}
-.exp-pts li{font-size:13px;color:var(--text2);line-height:1.75;padding-left:14px;position:relative;padding-bottom:4px}
-.exp-pts li::before{content:'→';position:absolute;left:0;color:var(--amber);font-size:11px;top:2px}
+#s-exp{background:var(--sl)}
+.exlist{display:grid;gap:2px}
+.ex{background:#fff;padding:2rem 2.5rem;border-radius:8px;border:1px solid var(--sl3);display:grid;grid-template-columns:150px 1fr;gap:2rem;transition:box-shadow .2s,transform .2s}
+.ex:hover{box-shadow:0 8px 32px rgba(27,42,74,.08);transform:translateX(4px)}
+.ex.cur{border-left:3px solid var(--am)}
+.eyr{font-family:var(--M);font-size:11px;color:var(--am);letter-spacing:.06em;padding-top:3px}
+.er{font-family:var(--S);font-size:17px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.eco{font-size:13px;color:var(--tx2);margin-bottom:10px;font-weight:600}
+.eps li{font-size:13px;color:var(--tx2);line-height:1.75;padding-left:14px;position:relative;padding-bottom:4px}
+.eps li::before{content:"→";position:absolute;left:0;color:var(--am);font-size:11px;top:2px}
 
 /* QUOTE */
-.quote-sec{background:var(--navy);padding:80px 5vw;text-align:center}
-.q-icon{font-size:72px;font-family:var(--serif);color:var(--amber);line-height:.5;display:block;margin-bottom:1.5rem}
-blockquote{font-family:var(--serif);font-size:clamp(18px,2.5vw,26px);font-style:italic;color:rgba(255,255,255,.88);line-height:1.65;max-width:740px;margin:0 auto 1.5rem}
-.q-attr{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber)}
+.quote{background:var(--navy);padding:80px 5vw;text-align:center}
+.qi{font-size:72px;font-family:var(--S);color:var(--am);line-height:.5;display:block;margin-bottom:1.5rem}
+blockquote{font-family:var(--S);font-size:clamp(17px,2.4vw,25px);font-style:italic;color:rgba(255,255,255,.88);line-height:1.65;max-width:720px;margin:0 auto 1.5rem}
+.qa{font-family:var(--M);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--am)}
 
 /* CONTACT */
 #s-contact{background:#fff}
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start;padding-top:2rem}
-.contact-info-title{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--navy);margin-bottom:1rem}
-.contact-intro{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:2rem}
-.ci-item{display:flex;gap:1rem;padding:13px 0;border-bottom:1px solid var(--slate);align-items:baseline}
-.ci-item:last-child{border-bottom:none}
-.ci-lbl{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);min-width:80px;flex-shrink:0}
-.ci-val{font-size:14px;color:var(--text2)}
-.ci-val a{color:var(--text2);border-bottom:1px solid var(--slate3);transition:color .2s,border-color .2s;text-decoration:none}
-.ci-val a:hover{color:var(--amber);border-color:var(--amber)}
-.c-form{display:grid;gap:14px}
-.c-form label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:5px}
-.c-form input,.c-form textarea,.c-form select{width:100%;padding:11px 14px;border:1.5px solid var(--slate3);border-radius:var(--r);font-family:var(--sans);font-size:14px;color:var(--text);background:var(--slate);outline:none;transition:border-color .2s,box-shadow .2s}
-.c-form input:focus,.c-form textarea:focus,.c-form select:focus{border-color:var(--amber);box-shadow:0 0 0 3px rgba(232,128,10,.12)}
-.c-form textarea{resize:vertical;min-height:100px}
-.c-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ctwrap{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:start;padding-top:2rem}
+.ctitle{font-family:var(--S);font-size:26px;font-weight:700;color:var(--navy);margin-bottom:1rem}
+.ctintro{font-size:15px;color:var(--tx2);line-height:1.8;margin-bottom:2rem}
+.ctrow{display:flex;gap:1rem;padding:12px 0;border-bottom:1px solid var(--sl);align-items:baseline}
+.ctrow:last-child{border-bottom:none}
+.ctlbl{font-family:var(--M);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--am);min-width:80px;flex-shrink:0}
+.ctval{font-size:14px;color:var(--tx2)}
+.ctval a{color:var(--tx2);border-bottom:1px solid var(--sl3);transition:color .2s,border-color .2s}
+.ctval a:hover{color:var(--am);border-color:var(--am)}
+.cform{display:grid;gap:14px}
+.cform label{display:block;font-family:var(--M);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--tx3);margin-bottom:5px}
+.cform input,.cform textarea,.cform select{width:100%;padding:11px 14px;border:1.5px solid var(--sl3);border-radius:8px;font-family:var(--N);font-size:14px;color:var(--tx);background:var(--sl);outline:none;transition:border-color .2s,box-shadow .2s}
+.cform input:focus,.cform textarea:focus,.cform select:focus{border-color:var(--am);box-shadow:0 0 0 3px rgba(232,128,10,.12)}
+.cform textarea{resize:vertical;min-height:100px}
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 
 /* FOOTER */
 footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
-.footer-name{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff}
-.footer-name span{color:var(--amber)}
-.footer-copy{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35)}
-.footer-links{display:flex;gap:1.5rem}
-.footer-links a{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s}
-.footer-links a:hover{color:var(--amber)}
+.fn{font-family:var(--S);font-size:18px;font-weight:700;color:#fff}
+.fn span{color:var(--am)}
+.fc{font-family:var(--M);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.fl{display:flex;gap:1.5rem}
+.fl a{font-family:var(--M);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);transition:color .2s}
+.fl a:hover{color:var(--am)}
 
-/* SCROLL REVEAL */
-.rev{opacity:0;transform:translateY(28px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+/* REVEAL */
+.rev{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
 .rev.in{opacity:1;transform:none}
 .d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
 
 /* RESPONSIVE */
-@media(max-width:1024px){.hero-inner{grid-template-columns:1fr 400px}.case-grid{grid-template-columns:1fr}.pf-grid{columns:2}}
-@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-right{height:420px}.hero-left{padding:3rem 0 2rem}.skills-wrap{grid-template-columns:1fr}.contact-wrap{grid-template-columns:1fr}.exp-item{grid-template-columns:1fr;gap:.5rem}.pf-grid{columns:2}.pf-cta{flex-direction:column}}
-@media(max-width:640px){.nav-links{display:none}.nav-cv{display:none}.nav-burger{display:flex}.skill-tbl-head,.sk-row{grid-template-columns:1fr 80px}.skill-tbl-head span:nth-child(2),.sk-row .sk-bar-wrap{display:none}.c-2col{grid-template-columns:1fr}.pf-grid{columns:1}section{padding:60px 5vw}dialog#lb{padding:48px 8px 72px}#lb-img{max-width:calc(100vw - 16px)}}
+@media(max-width:1100px){.hero-wrap{grid-template-columns:1fr 400px}.cases{grid-template-columns:1fr}.grid{columns:2}}
+@media(max-width:900px){.hero-wrap{grid-template-columns:1fr}.hero-r{height:380px}.hero-l{padding:3rem 0 2rem}.skwrap{grid-template-columns:1fr}.ctwrap{grid-template-columns:1fr}.ex{grid-template-columns:1fr;gap:.5rem}.grid{columns:2}.dcta{flex-direction:column}}
+@media(max-width:640px){.nav-links,.nav-cv{display:none}.burg{display:flex}.sec{padding:60px 5vw}.grid{columns:1}.skh,.skr{grid-template-columns:1fr 80px}.skh span:nth-child(2),.skr .bw{display:none}.c2{grid-template-columns:1fr}#lb{padding:48px 8px 68px}#lb-img{max-width:calc(100vw - 16px)}}
 </style>
 </head>
 <body>
 
-<!-- ====== NAV ====== -->
 <nav id="nav">
-  <a class="nav-logo" href="#" onclick="gH();return false;">Yussaimee<span>.</span></a>
+  <a class="logo" href="#" onclick="gH();return false;">Yussaimee<span>.</span></a>
   <div class="nav-links">
     <a href="#s-portfolio" onclick="goTo('s-portfolio');return false;">Portfolio</a>
-    <a href="#s-process"   onclick="goTo('s-process');return false;">Process</a>
-    <a href="#s-skills"    onclick="goTo('s-skills');return false;">Stack</a>
-    <a href="#s-exp"       onclick="goTo('s-exp');return false;">Experience</a>
-    <a href="#s-contact"   onclick="goTo('s-contact');return false;">Contact</a>
+    <a href="#s-process" onclick="goTo('s-process');return false;">Process</a>
+    <a href="#s-skills" onclick="goTo('s-skills');return false;">Stack</a>
+    <a href="#s-exp" onclick="goTo('s-exp');return false;">Experience</a>
+    <a href="#s-contact" onclick="goTo('s-contact');return false;">Contact</a>
   </div>
-  <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">
-    Download CV <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H4M11 1V8" stroke="currentColor" stroke-width="1.8"/></svg>
-  </a>
-  <button class="nav-burger" id="nbtn" onclick="toggleMob()"><span></span><span></span><span></span></button>
+  <a class="nav-cv" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download CV &#x2197;</a>
+  <button class="burg" id="burg" onclick="toggleMenu()"><span></span><span></span><span></span></button>
 </nav>
-<div id="mob-menu">
-  <a href="#s-portfolio" onclick="goTo('s-portfolio');closeMob();return false;">Portfolio</a>
-  <a href="#s-process"   onclick="goTo('s-process');closeMob();return false;">Process</a>
-  <a href="#s-skills"    onclick="goTo('s-skills');closeMob();return false;">Stack</a>
-  <a href="#s-exp"       onclick="goTo('s-exp');closeMob();return false;">Experience</a>
-  <a href="#s-contact"   onclick="goTo('s-contact');closeMob();return false;">Contact</a>
-  <a class="nav-cv" style="margin-top:.5rem;width:fit-content;display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:var(--navy);color:#fff;font-size:13px;font-weight:600;border-radius:100px;text-decoration:none" href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener" onclick="closeMob()">Download CV ↗</a>
+<div id="mob">
+  <a href="#s-portfolio" onclick="goTo('s-portfolio');closeMenu();return false;">Portfolio</a>
+  <a href="#s-process" onclick="goTo('s-process');closeMenu();return false;">Process</a>
+  <a href="#s-skills" onclick="goTo('s-skills');closeMenu();return false;">Stack</a>
+  <a href="#s-exp" onclick="goTo('s-exp');closeMenu();return false;">Experience</a>
+  <a href="#s-contact" onclick="goTo('s-contact');closeMenu();return false;">Contact</a>
+  <a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener" onclick="closeMenu()" style="color:var(--am);font-weight:700">Download CV &#x2197;</a>
 </div>
 
-<!-- ====== HERO ====== -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="hero-left">
-      <div class="hero-badge"><span class="pulse"></span>Available for Senior Roles · RM 6,000+</div>
-      <h1 class="hero-title">Senior Graphic<br>Designer &amp;<br><em>AI Integrator</em></h1>
-      <p class="hero-tagline">
-        <strong>Yussaimee Ahmad</strong> — 15+ years crafting high-impact visual systems for global finance publishers, FMCG brands, and large-scale events.
-        Now integrating <strong>Generative AI, Video AI &amp; Web</strong> into live production workflows.
-      </p>
-      <div class="hero-meta">
-        <div><span class="hm-label">Location</span><span class="hm-val">Banting, Selangor</span></div>
-        <div><span class="hm-label">Experience</span><span class="hm-val">15+ Years</span></div>
-        <div><span class="hm-label">Industries</span><span class="hm-val">5+ Sectors</span></div>
-        <div><span class="hm-label">AI Stack</span><span class="hm-val amber">16+ Active Tools</span></div>
+  <div class="hero-wrap">
+    <div class="hero-l">
+      <div class="badge"><span class="dot"></span>Available for Senior Roles &middot; RM 6,000+</div>
+      <h1>Senior Graphic<br>Designer &amp;<br><em>AI Integrator</em></h1>
+      <p class="htag"><strong>Yussaimee Ahmad</strong> &mdash; 15+ years crafting high-impact visual systems for global finance publishers, FMCG brands, and large-scale events. Now integrating <strong>Generative AI, Video AI &amp; Web</strong> into live production workflows.</p>
+      <div class="hmeta">
+        <div class="hm"><span>Location</span><span>Banting, Selangor</span></div>
+        <div class="hm"><span>Experience</span><span>15+ Years</span></div>
+        <div class="hm"><span>Industries</span><span>5+ Sectors</span></div>
+        <div class="hm"><span>AI Stack</span><span class="am">16+ Active Tools</span></div>
       </div>
-      <div class="hero-ctas">
-        <a class="btn-primary" href="#s-portfolio" onclick="goTo('s-portfolio');return false;">View My Work</a>
-        <a class="btn-secondary" href="#s-contact" onclick="goTo('s-contact');return false;">Get In Touch</a>
+      <div class="hctas">
+        <a class="btn-p" href="#s-portfolio" onclick="goTo('s-portfolio');return false;">View My Work</a>
+        <a class="btn-s" href="#s-contact" onclick="goTo('s-contact');return false;">Get In Touch</a>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-photo-wrap">
-        <img src="me.png" alt="Yussaimee Ahmad" class="hero-photo" onerror="this.style.opacity='0'">
-      </div>
-      <div class="hero-photo-overlay"></div>
-      <svg class="hero-ai-svg" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <div class="hero-r">
+      <img src="me.png" alt="Yussaimee Ahmad" class="hphoto" onerror="this.style.opacity=0">
+      <div class="hgrad"></div>
+      <svg class="hsvg" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
         <defs>
-          <filter id="ng"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          <filter id="bg2"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-          <radialGradient id="halo" cx="50%" cy="38%" r="42%"><stop offset="0%" stop-color="#e8800a" stop-opacity="0.16"/><stop offset="100%" stop-color="#e8800a" stop-opacity="0"/></radialGradient>
+          <filter id="gA"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="gB"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <radialGradient id="hl" cx="50%" cy="38%" r="42%"><stop offset="0%" stop-color="#e8800a" stop-opacity="0.14"/><stop offset="100%" stop-color="#e8800a" stop-opacity="0"/></radialGradient>
         </defs>
-        <ellipse cx="250" cy="195" rx="160" ry="155" fill="url(#halo)"/>
+        <ellipse cx="250" cy="195" rx="160" ry="155" fill="url(#hl)"/>
         <g stroke="#e8800a" stroke-width="1.8" fill="none">
           <line x1="208" y1="145" x2="52" y2="108" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3.2s" repeatCount="indefinite"/></line>
           <line x1="202" y1="198" x2="38" y2="255" opacity="0"><animate attributeName="opacity" values="0;.95;0" dur="3.6s" begin=".2s" repeatCount="indefinite"/></line>
@@ -338,404 +286,331 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
         <g stroke="#5ba4ff" stroke-width="1.8" fill="none">
           <line x1="292" y1="145" x2="448" y2="108" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="2.9s" begin=".4s" repeatCount="indefinite"/></line>
           <line x1="298" y1="198" x2="462" y2="255" opacity="0"><animate attributeName="opacity" values="0;.95;0" dur="2.7s" begin=".1s" repeatCount="indefinite"/></line>
-          <line x1="288" y1="228" x2="432" y2="295" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3.8s" begin=".8s" repeatCount="indefinite"/></line>
         </g>
-        <line x1="250" y1="112" x2="250" y2="8" stroke="#e8800a" stroke-width="2" opacity="0" fill="none"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin=".2s" repeatCount="indefinite"/></line>
-        <g filter="url(#ng)">
-          <circle cx="52" cy="108" r="5" fill="#e8800a"><animate attributeName="r" values="3;8;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;1;.5" dur="2.8s" repeatCount="indefinite"/></circle>
+        <line x1="250" y1="112" x2="250" y2="8" stroke="#e8800a" stroke-width="2" fill="none" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="2.6s" begin=".2s" repeatCount="indefinite"/></line>
+        <g filter="url(#gA)">
+          <circle cx="52" cy="108" r="5" fill="#e8800a"><animate attributeName="r" values="3;8;3" dur="2.8s" repeatCount="indefinite"/></circle>
           <circle cx="38" cy="255" r="4.5" fill="#e8800a"><animate attributeName="r" values="3;7;3" dur="2.6s" begin="1.1s" repeatCount="indefinite"/></circle>
           <circle cx="250" cy="8" r="6.5" fill="#fff"><animate attributeName="r" values="4;10;4" dur="2.5s" begin=".2s" repeatCount="indefinite"/></circle>
         </g>
-        <g filter="url(#bg2)">
+        <g filter="url(#gB)">
           <circle cx="448" cy="108" r="5" fill="#5ba4ff"><animate attributeName="r" values="3;8;3" dur="3.1s" begin=".4s" repeatCount="indefinite"/></circle>
           <circle cx="462" cy="255" r="4.5" fill="#5ba4ff"><animate attributeName="r" values="3;7;3" dur="3.5s" begin=".2s" repeatCount="indefinite"/></circle>
-          <circle cx="432" cy="295" r="5" fill="#5ba4ff"><animate attributeName="r" values="3;8;3" dur="2.9s" begin=".7s" repeatCount="indefinite"/></circle>
         </g>
-        <g transform="translate(350,30)"><rect x="0" y="0" width="64" height="64" rx="8" fill="rgba(232,128,10,.18)" stroke="#e8800a" stroke-width="2"/><rect x="10" y="10" width="44" height="44" rx="4" fill="none" stroke="#e8800a" stroke-width="1.2" opacity=".7"/><line x1="16" y1="0" x2="16" y2="-10" stroke="#e8800a" stroke-width="2"/><line x1="32" y1="0" x2="32" y2="-10" stroke="#e8800a" stroke-width="2"/><line x1="48" y1="0" x2="48" y2="-10" stroke="#e8800a" stroke-width="2"/><line x1="16" y1="64" x2="16" y2="74" stroke="#e8800a" stroke-width="2"/><line x1="32" y1="64" x2="32" y2="74" stroke="#e8800a" stroke-width="2"/><line x1="48" y1="64" x2="48" y2="74" stroke="#e8800a" stroke-width="2"/><line x1="0" y1="16" x2="-10" y2="16" stroke="#e8800a" stroke-width="2"/><line x1="0" y1="32" x2="-10" y2="32" stroke="#e8800a" stroke-width="2"/><line x1="64" y1="16" x2="74" y2="16" stroke="#e8800a" stroke-width="2"/><line x1="64" y1="32" x2="74" y2="32" stroke="#e8800a" stroke-width="2"/><text x="32" y="38" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#e8800a">AI</text><animate attributeName="opacity" values=".65;1;.65" dur="2.8s" repeatCount="indefinite"/></g>
-        <g font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="1">
-          <rect x="14" y="350" width="98" height="18" rx="9" fill="rgba(232,128,10,.25)" stroke="#e8800a" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></rect>
-          <text x="63" y="363" text-anchor="middle" fill="#e8800a" opacity="0">MIDJOURNEY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></text>
-          <rect x="388" y="350" width="98" height="18" rx="9" fill="rgba(91,164,255,.25)" stroke="#5ba4ff" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="1.8s" repeatCount="indefinite"/></rect>
-          <text x="437" y="363" text-anchor="middle" fill="#5ba4ff" opacity="0">RUNWAY ML<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="1.8s" repeatCount="indefinite"/></text>
-          <rect x="362" y="397" width="88" height="18" rx="9" fill="rgba(232,128,10,.25)" stroke="#e8800a" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="3.2s" repeatCount="indefinite"/></rect>
-          <text x="406" y="410" text-anchor="middle" fill="#e8800a" opacity="0">CLAUDE.AI<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="3.2s" repeatCount="indefinite"/></text>
-          <rect x="20" y="397" width="72" height="18" rx="9" fill="rgba(91,164,255,.25)" stroke="#5ba4ff" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="4.5s" repeatCount="indefinite"/></rect>
-          <text x="56" y="410" text-anchor="middle" fill="#5ba4ff" opacity="0">FIREFLY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="4.5s" repeatCount="indefinite"/></text>
+        <g transform="translate(350,32)">
+          <rect x="0" y="0" width="60" height="60" rx="8" fill="rgba(232,128,10,.18)" stroke="#e8800a" stroke-width="1.8"/>
+          <rect x="9" y="9" width="42" height="42" rx="4" fill="none" stroke="#e8800a" stroke-width="1.1" opacity=".7"/>
+          <line x1="15" y1="0" x2="15" y2="-9" stroke="#e8800a" stroke-width="2"/><line x1="30" y1="0" x2="30" y2="-9" stroke="#e8800a" stroke-width="2"/><line x1="45" y1="0" x2="45" y2="-9" stroke="#e8800a" stroke-width="2"/>
+          <line x1="15" y1="60" x2="15" y2="69" stroke="#e8800a" stroke-width="2"/><line x1="30" y1="60" x2="30" y2="69" stroke="#e8800a" stroke-width="2"/><line x1="45" y1="60" x2="45" y2="69" stroke="#e8800a" stroke-width="2"/>
+          <line x1="0" y1="15" x2="-9" y2="15" stroke="#e8800a" stroke-width="2"/><line x1="0" y1="30" x2="-9" y2="30" stroke="#e8800a" stroke-width="2"/>
+          <line x1="60" y1="15" x2="69" y2="15" stroke="#e8800a" stroke-width="2"/><line x1="60" y1="30" x2="69" y2="30" stroke="#e8800a" stroke-width="2"/>
+          <text x="30" y="36" text-anchor="middle" font-family="monospace" font-size="15" font-weight="bold" fill="#e8800a">AI</text>
+          <animate attributeName="opacity" values=".6;1;.6" dur="2.8s" repeatCount="indefinite"/>
+        </g>
+        <g font-family="JetBrains Mono,monospace" font-size="10" letter-spacing="1">
+          <rect x="14" y="348" width="96" height="18" rx="9" fill="rgba(232,128,10,.22)" stroke="#e8800a" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></rect>
+          <text x="62" y="361" text-anchor="middle" fill="#e8800a" opacity="0">MIDJOURNEY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin=".5s" repeatCount="indefinite"/></text>
+          <rect x="385" y="348" width="96" height="18" rx="9" fill="rgba(91,164,255,.22)" stroke="#5ba4ff" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="1.8s" repeatCount="indefinite"/></rect>
+          <text x="433" y="361" text-anchor="middle" fill="#5ba4ff" opacity="0">RUNWAY ML<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="1.8s" repeatCount="indefinite"/></text>
+          <rect x="360" y="395" width="86" height="18" rx="9" fill="rgba(232,128,10,.22)" stroke="#e8800a" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="3.2s" repeatCount="indefinite"/></rect>
+          <text x="403" y="408" text-anchor="middle" fill="#e8800a" opacity="0">CLAUDE.AI<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="3.2s" repeatCount="indefinite"/></text>
+          <rect x="18" y="395" width="70" height="18" rx="9" fill="rgba(91,164,255,.22)" stroke="#5ba4ff" stroke-width=".8" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="4.5s" repeatCount="indefinite"/></rect>
+          <text x="53" y="408" text-anchor="middle" fill="#5ba4ff" opacity="0">FIREFLY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="4.5s" repeatCount="indefinite"/></text>
         </g>
       </svg>
-      <div class="hero-photo-label"><div class="hpl-name">Yussaimee Ahmad</div><div class="hpl-role">Senior Graphic Designer · Banting, Selangor</div></div>
-      <div class="hero-amber-bar"></div>
+      <div class="hlabel"><strong>Yussaimee Ahmad</strong><span>Senior Graphic Designer &middot; Banting, Selangor</span></div>
+      <div class="abar"></div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stat rev"><div class="stat-n">15+</div><div class="stat-l">Years Experience</div></div>
-  <div class="stat rev d1"><div class="stat-n">5+</div><div class="stat-l">Industries</div></div>
-  <div class="stat rev d2"><div class="stat-n">4×</div><div class="stat-l">Brands Unified</div></div>
-  <div class="stat rev d3"><div class="stat-n">0</div><div class="stat-l">Print Recalls</div></div>
-  <div class="stat rev d4"><div class="stat-n">16+</div><div class="stat-l">AI Tools Active</div></div>
+<div class="stats">
+  <div class="stat rev"><div class="sn">15+</div><div class="sl-">Years Experience</div></div>
+  <div class="stat rev d1"><div class="sn">5+</div><div class="sl-">Industries</div></div>
+  <div class="stat rev d2"><div class="sn">4&#xD7;</div><div class="sl-">Brands Unified</div></div>
+  <div class="stat rev d3"><div class="sn">0</div><div class="sl-">Print Recalls</div></div>
+  <div class="stat rev d4"><div class="sn">16+</div><div class="sl-">AI Tools Active</div></div>
 </div>
 
-<!-- ====== PORTFOLIO ====== -->
-<section id="s-portfolio">
-  <div class="sec-eye rev">Selected Work</div>
-  <h2 class="sec-title rev d1">Work That <em>Speaks.</em></h2>
-  <p class="sec-lead rev d2">Click any image to view the complete full-size design. Every image opens at its natural dimensions — no cropping, no clipping.</p>
-  <div class="pf-tabs">
-    <button class="pf-tab act" onclick="pfTab(this,'tab-s')">Social Media <span class="tc">10</span></button>
-    <button class="pf-tab" onclick="pfTab(this,'tab-d')">Digital Banners <span class="tc">8</span></button>
-    <button class="pf-tab" onclick="pfTab(this,'tab-p')">Print Materials <span class="tc">6</span></button>
-    <button class="pf-tab" onclick="pfTab(this,'tab-a')">All Work <span class="tc">24</span></button>
+<section id="s-portfolio" class="sec" style="background:#fff">
+  <div class="eye rev">Selected Work</div>
+  <h2 class="rev d1">Work That <em>Speaks.</em></h2>
+  <p class="lead rev d2">Click any image to view full-size. Opens at natural dimensions &mdash; no cropping.</p>
+  <div class="ptabs">
+    <button class="tab on" onclick="showTab(this,'ps')">Social Media <span class="n">10</span></button>
+    <button class="tab" onclick="showTab(this,'pd')">Digital Banners <span class="n">8</span></button>
+    <button class="tab" onclick="showTab(this,'pp')">Print Materials <span class="n">6</span></button>
+    <button class="tab" onclick="showTab(this,'pa')">All Work <span class="n">24</span></button>
   </div>
-
-  <!-- SOCIAL MEDIA -->
-  <div id="tab-s" class="pf-panel act">
-    <div class="pf-intro rev"><h3>Social Media Design</h3><p>High-volume social media graphics for global finance publishers and tech brands — TAB Global, Transwarp, MYbank, Huawei, Douyin, Dingtalk.</p><div class="pf-tags"><span class="pf-tag">Finance Publishing</span><span class="pf-tag">Tech Brands</span><span class="pf-tag">Adobe Firefly</span><span class="pf-tag">Midjourney</span></div></div>
-    <div class="pf-grid">
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global — Social Media','s',0)"><img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Social Media</div><div class="pf-cap-sub">Finance · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp','s',1)"><img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Transwarp</div><div class="pf-cap-sub">Tech Brand · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank','s',2)"><img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">MYbank</div><div class="pf-cap-sub">Finance · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png','Huawei Shanghai R&amp;D Centre','s',3)"><img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei Shanghai" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Huawei Shanghai R&amp;D Centre</div><div class="pf-cap-sub">Tech Brand · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin — Future of Social Media','s',4)"><img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Douyin — Future of Social Media</div><div class="pf-cap-sub">Tech Brand · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk','s',5)"><img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Dingtalk</div><div class="pf-cap-sub">Tech Brand · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai Tour — Decision Maker','s',6)"><img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai Decision Maker" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Shanghai — Decision Maker</div><div class="pf-cap-sub">Finance · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png','TBA Shanghai Tour — Retreat &amp; Peer Exchange','s',7)"><img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Retreat" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Shanghai — Retreat &amp; Peer Exchange</div><div class="pf-cap-sub">Finance · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia','s',8)"><img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA AI Bootcamp Asia</div><div class="pf-cap-sub">AI · Finance · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png','TAB Summit 2026 — Quote Card','s',9)"><img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Summit 2026 — Quote Card</div><div class="pf-cap-sub">Finance · Social</div></div></div>
+  <div id="ps" class="panel on">
+    <div class="pintro rev"><h3>Social Media Design</h3><p>Social media graphics for global finance publishers and tech brands &mdash; TAB Global, Transwarp, MYbank, Huawei, Douyin, Dingtalk.</p><div class="ptags"><span class="ptag">Finance Publishing</span><span class="ptag">Tech Brands</span><span class="ptag">Adobe Firefly</span><span class="ptag">Midjourney</span></div></div>
+    <div class="grid">
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global &mdash; Social Media','s',0)"><img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global &mdash; Social Media" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Social Media</b><small>Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp','s',1)"><img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy"><div class="ccap"><b>Transwarp</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank','s',2)"><img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy"><div class="ccap"><b>MYbank</b><small>Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png','Huawei Shanghai R&amp;D Centre','s',3)"><img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei Shanghai R&amp;D Centre" loading="lazy"><div class="ccap"><b>Huawei Shanghai R&amp;D Centre</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin &mdash; Future of Social Media','s',4)"><img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin &mdash; Future of Social Media" loading="lazy"><div class="ccap"><b>Douyin &mdash; Future of Social Media</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk','s',5)"><img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy"><div class="ccap"><b>Dingtalk</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai &mdash; Decision Maker','s',6)"><img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai &mdash; Decision Maker" loading="lazy"><div class="ccap"><b>TBA Shanghai &mdash; Decision Maker</b><small>Finance &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png','TBA Shanghai &mdash; Retreat &amp; Peer Exchange','s',7)"><img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Shanghai &mdash; Retreat &amp; Peer Exchange" loading="lazy"><div class="ccap"><b>TBA Shanghai &mdash; Retreat &amp; Peer Exchange</b><small>Finance &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia','s',8)"><img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp Asia" loading="lazy"><div class="ccap"><b>TBA AI Bootcamp Asia</b><small>AI &middot; Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png','TAB Summit 2026 &mdash; Quote Card','s',9)"><img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026 &mdash; Quote Card" loading="lazy"><div class="ccap"><b>TAB Summit 2026 &mdash; Quote Card</b><small>Finance &middot; Social</small></div></div>
     </div>
-    <div class="pf-cta rev"><div><h4>See the complete portfolio</h4><p>All projects, variations and additional work across every campaign</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio ↗</a></div>
+    <div class="dcta rev"><div><h4>See the complete portfolio</h4><p>All projects, variations and additional work</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="dbtn">Open Google Drive Portfolio &#x2197;</a></div>
   </div>
-
-  <!-- DIGITAL BANNERS -->
-  <div id="tab-d" class="pf-panel">
-    <div class="pf-intro rev"><h3>Digital Banner Designs</h3><p>EDM banners and web display ads designed with Photoshop and Illustrator, enhanced with Adobe Firefly, Midjourney, and OpenAI technologies.</p><div class="pf-tags"><span class="pf-tag">EDM Banners</span><span class="pf-tag">Web Display</span><span class="pf-tag">Adobe Firefly</span><span class="pf-tag">TAB Global</span></div></div>
-    <div class="pf-grid">
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition — EDM Banner','d',0)"><img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">The Great Transition — EDM</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd — Giving Tuesday Banner','d',1)"><img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Kevin Rudd — Giving Tuesday</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png','TAB DigiFinMasterClass 2023 — Web Banner','d',2)"><img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="DigiFinMasterClass" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB DigiFinMasterClass 2023</div><div class="pf-cap-sub">Finance · Web Banner</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026 — EDM','d',3)"><img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Finance Innovation Summit 2026</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png','Finance Innovation Summit 2026 — Alt','d',4)"><img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="Finance Innovation Summit Alt" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Finance Innovation Summit — Alt</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 — Book Invitation Banner','d',5)"><img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Money 2020 — Book Invitation</div><div class="pf-cap-sub">Finance Event · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png','TAB Bootcamp MEA — Web Banner','d',6)"><img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="Bootcamp MEA" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Bootcamp MEA — Web Banner</div><div class="pf-cap-sub">Finance · Banner</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png','TAB Bootcamp ASIA — Web Banner','d',7)"><img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="Bootcamp ASIA" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Bootcamp ASIA — Web Banner</div><div class="pf-cap-sub">Finance · Banner</div></div></div>
+  <div id="pd" class="panel">
+    <div class="pintro rev"><h3>Digital Banner Designs</h3><p>EDM banners and web display ads enhanced with Adobe Firefly, Midjourney, and OpenAI technologies.</p><div class="ptags"><span class="ptag">EDM Banners</span><span class="ptag">Web Display</span><span class="ptag">Adobe Firefly</span><span class="ptag">TAB Global</span></div></div>
+    <div class="grid">
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition &mdash; EDM','d',0)"><img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition &mdash; EDM" loading="lazy"><div class="ccap"><b>The Great Transition &mdash; EDM</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd &mdash; Giving Tuesday','d',1)"><img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd &mdash; Giving Tuesday" loading="lazy"><div class="ccap"><b>Kevin Rudd &mdash; Giving Tuesday</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png','TAB DigiFinMasterClass 2023','d',2)"><img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="TAB DigiFinMasterClass 2023" loading="lazy"><div class="ccap"><b>TAB DigiFinMasterClass 2023</b><small>Finance &middot; Web Banner</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026 &mdash; EDM','d',3)"><img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit 2026 &mdash; EDM" loading="lazy"><div class="ccap"><b>Finance Innovation Summit 2026 &mdash; EDM</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png','Finance Innovation Summit 2026 &mdash; Alt','d',4)"><img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="Finance Innovation Summit 2026 &mdash; Alt" loading="lazy"><div class="ccap"><b>Finance Innovation Summit 2026 &mdash; Alt</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 &mdash; Book Invitation','d',5)"><img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020 &mdash; Book Invitation" loading="lazy"><div class="ccap"><b>Money 2020 &mdash; Book Invitation</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png','TAB Bootcamp MEA &mdash; Web Banner','d',6)"><img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="TAB Bootcamp MEA &mdash; Web Banner" loading="lazy"><div class="ccap"><b>TAB Bootcamp MEA &mdash; Web Banner</b><small>Finance &middot; Banner</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png','TAB Bootcamp ASIA &mdash; Web Banner','d',7)"><img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="TAB Bootcamp ASIA &mdash; Web Banner" loading="lazy"><div class="ccap"><b>TAB Bootcamp ASIA &mdash; Web Banner</b><small>Finance &middot; Banner</small></div></div>
     </div>
-    <div class="pf-cta rev"><div><h4>View all digital assets</h4><p>Full campaign archives including all size variants and revisions</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio ↗</a></div>
+    <div class="dcta rev"><div><h4>View all digital assets</h4><p>Full campaign archives including all size variants</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="dbtn">Open Google Drive Portfolio &#x2197;</a></div>
   </div>
-
-  <!-- PRINT MATERIALS -->
-  <div id="tab-p" class="pf-panel">
-    <div class="pf-intro rev"><h3>Print Materials</h3><p>Print-ready roll-up banners, large-format signage, and event collateral for TAB Global, Wealth &amp; Society summits, and international conferences.</p><div class="pf-tags"><span class="pf-tag">Roll-Up Banners</span><span class="pf-tag">Event Signage</span><span class="pf-tag">Large Format</span><span class="pf-tag">TAB Global</span></div></div>
-    <div class="pf-grid">
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','TBA Wealth Society Tour 2024 — Roll-Up','p',0)"><img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="WS Tour 2024" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Wealth Society Tour 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','TBA Wealth Society Summit 2024 — Roll-Up','p',1)"><img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="WS Summit 2024" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Wealth Society Summit 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic — Roll-Up Banner','p',2)"><img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic Roll-Up" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Generic — Roll-Up Banner</div><div class="pf-cap-sub">Print · Roll-Up</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership Programme 2025','p',3)"><img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="Senior Leadership" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Senior Leadership Programme 2025</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global — Generic Print','p',4)"><img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global Generic" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Generic Print</div><div class="pf-cap-sub">Print · Signage</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global — Roll-Up Series','p',5)"><img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Roll-Up Series" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Roll-Up Series</div><div class="pf-cap-sub">Print · Roll-Up</div></div></div>
+  <div id="pp" class="panel">
+    <div class="pintro rev"><h3>Print Materials</h3><p>Print-ready roll-up banners, large-format signage, and event collateral for TAB Global, Wealth &amp; Society summits, and international conferences.</p><div class="ptags"><span class="ptag">Roll-Up Banners</span><span class="ptag">Event Signage</span><span class="ptag">Large Format</span><span class="ptag">TAB Global</span></div></div>
+    <div class="grid">
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','TBA Wealth Society Tour 2024 &mdash; Roll-Up','p',0)"><img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="TBA Wealth Society Tour 2024 &mdash; Roll-Up" loading="lazy"><div class="ccap"><b>TBA Wealth Society Tour 2024 &mdash; Roll-Up</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','TBA Wealth Society Summit 2024 &mdash; Roll-Up','p',1)"><img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="TBA Wealth Society Summit 2024 &mdash; Roll-Up" loading="lazy"><div class="ccap"><b>TBA Wealth Society Summit 2024 &mdash; Roll-Up</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic &mdash; Roll-Up Banner','p',2)"><img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic &mdash; Roll-Up Banner" loading="lazy"><div class="ccap"><b>TBA Generic &mdash; Roll-Up Banner</b><small>Print &middot; Roll-Up</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership Programme 2025','p',3)"><img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="TAB Senior Leadership Programme 2025" loading="lazy"><div class="ccap"><b>TAB Senior Leadership Programme 2025</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global &mdash; Generic Print','p',4)"><img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global &mdash; Generic Print" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Generic Print</b><small>Print &middot; Signage</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global &mdash; Roll-Up Series','p',5)"><img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Global &mdash; Roll-Up Series" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Roll-Up Series</b><small>Print &middot; Roll-Up</small></div></div>
     </div>
-    <div class="pf-cta rev"><div><h4>Full print portfolio</h4><p>Catalogue, POSM, packaging and large-format archives in Google Drive</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio ↗</a></div>
+    <div class="dcta rev"><div><h4>Full print portfolio</h4><p>Catalogue, POSM, packaging and large-format archives</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="dbtn">Open Google Drive Portfolio &#x2197;</a></div>
   </div>
-
-  <!-- ALL WORK -->
-  <div id="tab-a" class="pf-panel">
-    <div class="pf-intro rev"><h3>All Work — 24 Projects</h3><p>Every project across Social Media, Digital Banners and Print Materials — 15+ years across FMCG, international finance publishing, event activation, and tech brands.</p><div class="pf-tags"><span class="pf-tag">Social Media</span><span class="pf-tag">Digital Banners</span><span class="pf-tag">Print Materials</span><span class="pf-tag">All Clients</span></div></div>
-    <div class="pf-grid">
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global — Social Media','a',0)"><img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Social Media</div><div class="pf-cap-sub">Finance · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp','a',1)"><img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Transwarp</div><div class="pf-cap-sub">Tech · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank','a',2)"><img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">MYbank</div><div class="pf-cap-sub">Finance · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin','a',3)"><img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Douyin</div><div class="pf-cap-sub">Tech · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk','a',4)"><img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Dingtalk</div><div class="pf-cap-sub">Tech · Social</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai — Decision Maker','a',5)"><img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Shanghai — Decision Maker</div><div class="pf-cap-sub">Finance · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia','a',6)"><img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA AI Bootcamp Asia</div><div class="pf-cap-sub">AI · Finance</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition — EDM','a',7)"><img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="Great Transition" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">The Great Transition — EDM</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd — Giving Tuesday','a',8)"><img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Kevin Rudd — Giving Tuesday</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026','a',9)"><img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Finance Innovation Summit 2026</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 — Book Invitation','a',10)"><img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">Money 2020 — Book Invitation</div><div class="pf-cap-sub">Finance · EDM</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','WS Tour 2024 — Roll-Up','a',11)"><img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="WS Tour" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">WS Tour 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','WS Summit 2024 — Roll-Up','a',12)"><img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="WS Summit" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">WS Summit 2024 — Roll-Up</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic Roll-Up','a',13)"><img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TBA Generic — Roll-Up</div><div class="pf-cap-sub">Print · Roll-Up</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership 2025','a',14)"><img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="Senior Leadership" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Senior Leadership 2025</div><div class="pf-cap-sub">Print · Event</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global Generic Print','a',15)"><img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Generic" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Generic Print</div><div class="pf-cap-sub">Print · Signage</div></div></div>
-      <div class="pf-card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global Roll-Up Series','a',16)"><img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Roll-Up Series" loading="lazy"><div class="pf-cap"><div class="pf-cap-title">TAB Global — Roll-Up Series</div><div class="pf-cap-sub">Print · Roll-Up</div></div></div>
+  <div id="pa" class="panel">
+    <div class="pintro rev"><h3>All Work &mdash; 24 Projects</h3><p>Every project across Social Media, Digital Banners and Print Materials.</p><div class="ptags"><span class="ptag">Social Media</span><span class="ptag">Digital Banners</span><span class="ptag">Print Materials</span><span class="ptag">All Clients</span></div></div>
+    <div class="grid">
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global &mdash; Social Media','s',0)"><img src="https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png" alt="TAB Global &mdash; Social Media" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Social Media</b><small>Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp','s',1)"><img src="https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png" alt="Transwarp" loading="lazy"><div class="ccap"><b>Transwarp</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank','s',2)"><img src="https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png" alt="MYbank" loading="lazy"><div class="ccap"><b>MYbank</b><small>Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png','Huawei Shanghai R&amp;D Centre','s',3)"><img src="https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png" alt="Huawei Shanghai R&amp;D Centre" loading="lazy"><div class="ccap"><b>Huawei Shanghai R&amp;D Centre</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin &mdash; Future of Social Media','s',4)"><img src="https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png" alt="Douyin &mdash; Future of Social Media" loading="lazy"><div class="ccap"><b>Douyin &mdash; Future of Social Media</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk','s',5)"><img src="https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png" alt="Dingtalk" loading="lazy"><div class="ccap"><b>Dingtalk</b><small>Tech Brand &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai &mdash; Decision Maker','s',6)"><img src="https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png" alt="TBA Shanghai &mdash; Decision Maker" loading="lazy"><div class="ccap"><b>TBA Shanghai &mdash; Decision Maker</b><small>Finance &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png','TBA Shanghai &mdash; Retreat &amp; Peer Exchange','s',7)"><img src="https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png" alt="TBA Shanghai &mdash; Retreat &amp; Peer Exchange" loading="lazy"><div class="ccap"><b>TBA Shanghai &mdash; Retreat &amp; Peer Exchange</b><small>Finance &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia','s',8)"><img src="https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png" alt="TBA AI Bootcamp Asia" loading="lazy"><div class="ccap"><b>TBA AI Bootcamp Asia</b><small>AI &middot; Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png','TAB Summit 2026 &mdash; Quote Card','s',9)"><img src="https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png" alt="TAB Summit 2026 &mdash; Quote Card" loading="lazy"><div class="ccap"><b>TAB Summit 2026 &mdash; Quote Card</b><small>Finance &middot; Social</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition &mdash; EDM','d',0)"><img src="https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png" alt="The Great Transition &mdash; EDM" loading="lazy"><div class="ccap"><b>The Great Transition &mdash; EDM</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd &mdash; Giving Tuesday','d',1)"><img src="https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png" alt="Kevin Rudd &mdash; Giving Tuesday" loading="lazy"><div class="ccap"><b>Kevin Rudd &mdash; Giving Tuesday</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png','TAB DigiFinMasterClass 2023','d',2)"><img src="https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png" alt="TAB DigiFinMasterClass 2023" loading="lazy"><div class="ccap"><b>TAB DigiFinMasterClass 2023</b><small>Finance &middot; Web Banner</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026 &mdash; EDM','d',3)"><img src="https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png" alt="Finance Innovation Summit 2026 &mdash; EDM" loading="lazy"><div class="ccap"><b>Finance Innovation Summit 2026 &mdash; EDM</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png','Finance Innovation Summit 2026 &mdash; Alt','d',4)"><img src="https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png" alt="Finance Innovation Summit 2026 &mdash; Alt" loading="lazy"><div class="ccap"><b>Finance Innovation Summit 2026 &mdash; Alt</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 &mdash; Book Invitation','d',5)"><img src="https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png" alt="Money 2020 &mdash; Book Invitation" loading="lazy"><div class="ccap"><b>Money 2020 &mdash; Book Invitation</b><small>Finance &middot; EDM</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png','TAB Bootcamp MEA &mdash; Web Banner','d',6)"><img src="https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png" alt="TAB Bootcamp MEA &mdash; Web Banner" loading="lazy"><div class="ccap"><b>TAB Bootcamp MEA &mdash; Web Banner</b><small>Finance &middot; Banner</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png','TAB Bootcamp ASIA &mdash; Web Banner','d',7)"><img src="https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png" alt="TAB Bootcamp ASIA &mdash; Web Banner" loading="lazy"><div class="ccap"><b>TAB Bootcamp ASIA &mdash; Web Banner</b><small>Finance &middot; Banner</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','TBA Wealth Society Tour 2024 &mdash; Roll-Up','p',0)"><img src="https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png" alt="TBA Wealth Society Tour 2024 &mdash; Roll-Up" loading="lazy"><div class="ccap"><b>TBA Wealth Society Tour 2024 &mdash; Roll-Up</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','TBA Wealth Society Summit 2024 &mdash; Roll-Up','p',1)"><img src="https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png" alt="TBA Wealth Society Summit 2024 &mdash; Roll-Up" loading="lazy"><div class="ccap"><b>TBA Wealth Society Summit 2024 &mdash; Roll-Up</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic &mdash; Roll-Up Banner','p',2)"><img src="https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png" alt="TBA Generic &mdash; Roll-Up Banner" loading="lazy"><div class="ccap"><b>TBA Generic &mdash; Roll-Up Banner</b><small>Print &middot; Roll-Up</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership Programme 2025','p',3)"><img src="https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png" alt="TAB Senior Leadership Programme 2025" loading="lazy"><div class="ccap"><b>TAB Senior Leadership Programme 2025</b><small>Print &middot; Event</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global &mdash; Generic Print','p',4)"><img src="https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png" alt="TAB Global &mdash; Generic Print" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Generic Print</b><small>Print &middot; Signage</small></div></div>
+      <div class="card" onclick="openLb('https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global &mdash; Roll-Up Series','p',5)"><img src="https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_600,h_600,q_85,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png" alt="TAB Global &mdash; Roll-Up Series" loading="lazy"><div class="ccap"><b>TAB Global &mdash; Roll-Up Series</b><small>Print &middot; Roll-Up</small></div></div>
     </div>
-    <div class="pf-cta rev"><div><h4>Complete portfolio archive</h4><p>All 24+ projects with full campaign files in Google Drive</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="pf-drive-btn">Open Google Drive Portfolio ↗</a></div>
+    <div class="dcta rev"><div><h4>Complete portfolio archive</h4><p>All 24+ projects with full campaign files in Google Drive</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="dbtn">Open Google Drive Portfolio &#x2197;</a></div>
   </div>
 </section>
 
-<!-- ====== PROCESS ====== -->
-<section id="s-process" style="background:var(--slate)">
-  <div class="sec-eye rev">Process &amp; Thinking</div>
-  <h2 class="sec-title rev d1">How I <em>Solve</em> Design Problems</h2>
-  <p class="sec-lead rev d2">Senior designers are hired for process, not just output. Two case studies — brief to measurable outcome.</p>
-  <div class="case-grid">
-    <div class="case-card rev"><div class="case-head"><div class="case-num">01</div><span class="case-tag">Finance · Publishing</span><div class="case-title">Scaling TAB Global's Design System Across 4 International Platforms</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands with different tones and global C-suite audiences.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">50–80 posts/month, one designer, zero template system. Brand inconsistency eroding credibility with senior banking professionals worldwide.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Audited all 4 brand identities. Built modular InDesign template library with locked brand zones. Integrated Adobe Firefly for rapid, IP-safe image generation.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Per-post production time cut dramatically. Visual consistency restored company-wide. System still in active use across all 4 brands.</span></div><div class="case-metric"><div class="cm-n">4×</div><div class="cm-d">Brands unified — The Asian Banker, TABInsights, Wealth &amp; Society, The Banking Academy</div></div></div></div>
-    <div class="case-card rev d1"><div class="case-head"><div class="case-num">02</div><span class="case-tag">FMCG · Retail</span><div class="case-title">Nutrimetics Monthly POSM Pipeline — Concept to Shelf in 7 Days</div></div><div class="case-body"><div class="cs-item"><span class="cs-l">Brief</span><span class="cs-v">Monthly full POSM suite with aggressive deadlines and Art Director + GM sign-off every cycle.</span></div><div class="cs-item"><span class="cs-l">Challenge</span><span class="cs-v">Coordinating across Art Director, General Manager, and external print vendors within a rigid 7-day cycle.</span></div><div class="cs-item"><span class="cs-l">Approach</span><span class="cs-v">Built a repeatable design-to-print workflow. Created master templates with swappable photography zones. Managed photography in-house.</span></div><div class="cs-item"><span class="cs-l">Result</span><span class="cs-v">Every monthly cycle delivered on time. Zero print recalls across entire tenure.</span></div><div class="case-metric"><div class="cm-n">0</div><div class="cm-d">Print recalls across entire tenure at Nutrimetics</div></div></div></div>
+<section id="s-process" class="sec" style="background:var(--sl)">
+  <div class="eye rev">Process &amp; Thinking</div>
+  <h2 class="rev d1">How I <em>Solve</em> Design Problems</h2>
+  <p class="lead rev d2">Senior designers are hired for process, not just output. Two case studies &mdash; brief to measurable outcome.</p>
+  <div class="cases">
+    <div class="cc rev"><div class="ch"><div class="cbig">01</div><span class="clbl">Finance &middot; Publishing</span><div class="ctitle">Scaling TAB Global&#39;s Design System Across 4 International Platforms</div></div><div class="cb"><div class="ci"><span class="cil">Brief</span><span class="civ">Consistent visual identity across LinkedIn, WeChat, Instagram and email for 4 publishing brands with different tones and global C-suite audiences.</span></div><div class="ci"><span class="cil">Challenge</span><span class="civ">50&ndash;80 posts/month, one designer, zero template system. Brand inconsistency eroding credibility with senior banking professionals worldwide.</span></div><div class="ci"><span class="cil">Approach</span><span class="civ">Audited all 4 brand identities. Built modular InDesign template library. Integrated Adobe Firefly for rapid, IP-safe image generation.</span></div><div class="ci"><span class="cil">Result</span><span class="civ">Production time cut dramatically. Visual consistency restored company-wide. System still in active use across all 4 brands.</span></div><div class="cstat"><div class="cnum">4&#xD7;</div><div class="cdesc">Brands unified &mdash; The Asian Banker, TABInsights, Wealth &amp; Society, The Banking Academy</div></div></div></div>
+    <div class="cc rev d1"><div class="ch"><div class="cbig">02</div><span class="clbl">FMCG &middot; Retail</span><div class="ctitle">Nutrimetics Monthly POSM Pipeline &mdash; Concept to Shelf in 7 Days</div></div><div class="cb"><div class="ci"><span class="cil">Brief</span><span class="civ">Monthly full POSM suite with aggressive deadlines and Art Director + GM sign-off every cycle.</span></div><div class="ci"><span class="cil">Challenge</span><span class="civ">Coordinating across Art Director, General Manager, and external print vendors within a rigid 7-day cycle.</span></div><div class="ci"><span class="cil">Approach</span><span class="civ">Built a repeatable design-to-print workflow. Master templates with swappable photography zones. Managed photography in-house.</span></div><div class="ci"><span class="cil">Result</span><span class="civ">Every monthly cycle delivered on time. Zero print recalls across entire tenure.</span></div><div class="cstat"><div class="cnum">0</div><div class="cdesc">Print recalls across entire tenure at Nutrimetics</div></div></div></div>
   </div>
 </section>
 
-<!-- ====== SKILLS ====== -->
-<section id="s-skills" style="background:#fff">
-  <div class="sec-eye rev">Capabilities</div>
-  <h2 class="sec-title rev d1">Skills &amp; <em>AI Stack</em></h2>
-  <p class="sec-lead rev d2">The differentiator most senior designers cannot match — a fully integrated AI + Video AI + Web production stack running on live client work today.</p>
-  <div class="skills-wrap">
+<section id="s-skills" class="sec" style="background:#fff">
+  <div class="eye rev">Capabilities</div>
+  <h2 class="rev d1">Skills &amp; <em>AI Stack</em></h2>
+  <p class="lead rev d2">A fully integrated AI + Video AI + Web production stack running on live client work today.</p>
+  <div class="skwrap">
     <div class="rev d1">
-      <p class="ai-intro-text">"Most senior designers list Adobe CC. I run a live AI production pipeline that delivers faster output at higher quality — on real client work."</p>
-      <p class="ai-body" style="margin-top:1rem">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems — this stack is a genuine salary-justifying differentiator.</p>
-      <div class="skill-tbl" style="margin-top:2rem">
-        <div class="skill-tbl-head"><span>Skill</span><span>Level</span><span>Rating</span></div>
-        <div class="sk-row"><span>Brand &amp; Identity Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="98"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>Print &amp; Publication Layout</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>POSM &amp; Retail Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="96"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>Social Media Design</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="95"></div></div><span class="sk-lv">Expert</span></div>
-        <div class="sk-row"><span>AI Workflow Integration</span><div class="sk-bar-wrap"><div class="sk-bar amb" data-w="88"></div></div><span class="sk-lv a">Advanced</span></div>
-        <div class="sk-row"><span>Video &amp; Motion (Pr / Ae)</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="82"></div></div><span class="sk-lv">Proficient</span></div>
-        <div class="sk-row"><span>Web Design / HTML CSS</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="78"></div></div><span class="sk-lv">Proficient</span></div>
-        <div class="sk-row"><span>Photography</span><div class="sk-bar-wrap"><div class="sk-bar" data-w="80"></div></div><span class="sk-lv">Proficient</span></div>
+      <p class="aiq">"Most senior designers list Adobe CC. I run a live AI production pipeline that delivers faster output at higher quality &mdash; on real client work."</p>
+      <p class="aib">From Midjourney-assisted concepting and Runway ML motion content to Claude.ai-powered copy and GitHub version-controlled design systems.</p>
+      <div class="sktbl">
+        <div class="skh"><span>Skill</span><span>Level</span><span>Rating</span></div>
+        <div class="skr"><span>Brand &amp; Identity Design</span><div class="bw"><div class="bar" data-w="98"></div></div><span class="slv">Expert</span></div>
+        <div class="skr"><span>Print &amp; Publication Layout</span><div class="bw"><div class="bar" data-w="96"></div></div><span class="slv">Expert</span></div>
+        <div class="skr"><span>POSM &amp; Retail Design</span><div class="bw"><div class="bar" data-w="96"></div></div><span class="slv">Expert</span></div>
+        <div class="skr"><span>Social Media Design</span><div class="bw"><div class="bar" data-w="95"></div></div><span class="slv">Expert</span></div>
+        <div class="skr"><span>AI Workflow Integration</span><div class="bw"><div class="bar a" data-w="88"></div></div><span class="slv a">Advanced</span></div>
+        <div class="skr"><span>Video &amp; Motion (Pr / Ae)</span><div class="bw"><div class="bar" data-w="82"></div></div><span class="slv">Proficient</span></div>
+        <div class="skr"><span>Web Design / HTML CSS</span><div class="bw"><div class="bar" data-w="78"></div></div><span class="slv">Proficient</span></div>
+        <div class="skr"><span>Photography</span><div class="bw"><div class="bar" data-w="80"></div></div><span class="slv">Proficient</span></div>
       </div>
     </div>
-    <div class="ai-cats rev d2">
-      <div class="ai-cat"><div class="ach">◆ Image AI</div><div class="achips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
-      <div class="ai-cat"><div class="ach">◆ Video AI</div><div class="achips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
-      <div class="ai-cat"><div class="ach">◆ AI Assistants</div><div class="achips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
-      <div class="ai-cat"><div class="ach">◆ Web &amp; Dev</div><div class="achips"><span>GitHub</span><span>HTML / CSS / JS</span><span>Webflow</span><span>Netlify</span></div></div>
-      <div class="ai-cat"><div class="ach">◆ Adobe Creative Suite</div><div class="achips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
-      <div class="ai-cat"><div class="ach">◆ Productivity</div><div class="achips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Engineering</span></div></div>
+    <div class="aigrid rev d2">
+      <div class="aicat"><div class="ailbl">&#9670; Image AI</div><div class="chips"><span>Midjourney</span><span>Adobe Firefly</span><span>DALL-E</span></div></div>
+      <div class="aicat"><div class="ailbl">&#9670; Video AI</div><div class="chips"><span>Runway ML</span><span>Kling AI</span><span>Sora</span></div></div>
+      <div class="aicat"><div class="ailbl">&#9670; AI Assistants</div><div class="chips"><span>Claude.ai</span><span>ChatGPT</span><span>Grok</span></div></div>
+      <div class="aicat"><div class="ailbl">&#9670; Web &amp; Dev</div><div class="chips"><span>GitHub</span><span>HTML / CSS / JS</span><span>Webflow</span><span>Netlify</span></div></div>
+      <div class="aicat"><div class="ailbl">&#9670; Adobe Creative Suite</div><div class="chips"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Premiere Pro</span><span>After Effects</span></div></div>
+      <div class="aicat"><div class="ailbl">&#9670; Productivity</div><div class="chips"><span>ElevenLabs</span><span>Notion AI</span><span>AI Analytics</span><span>Prompt Engineering</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ====== EXPERIENCE ====== -->
-<section id="s-exp" style="background:var(--slate)">
-  <div class="sec-eye rev">Career History</div>
-  <h2 class="sec-title rev d1"><em>15+ Years</em> of Industry Experience</h2>
-  <p class="sec-lead rev d2">Across creative agencies, FMCG, international retail, and global publishing — growing scope and responsibility at every stage.</p>
-  <div class="exp-list">
-    <div class="exp-item current rev"><div class="exp-period">2018 – Now</div><div><div class="exp-role">Senior Graphic Designer</div><div class="exp-co">TAB Global (Innotribe Solutions) · Selangor</div><ul class="exp-pts"><li>Lead designer for TAB Global — international finance publishing group, C-suite audiences in 30+ countries.</li><li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, The Banking Academy.</li><li>Pioneered AI integration — generative design tools for high-volume publishing layouts.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2020 – 2021</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Alliance Teamwork Marketing · Selangor</div><ul class="exp-pts"><li>POSM design suite — brochures, booklets, magazines, and event collateral.</li><li>Content development and translation for marketing materials.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2012 – 2018</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">Macy Home Furnishings · Selangor</div><ul class="exp-pts"><li>Retail campaigns across digital and print; e-commerce website UX.</li><li>In-house product photography and videography.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2009 – 2010</div><div><div class="exp-role">Communicative Executive / Graphic Designer</div><div class="exp-co">Nutrimetics Worldwide · Selangor</div><ul class="exp-pts"><li>Monthly catalogues, packaging, and POSM for a global premium beauty brand.</li><li>Collaborated directly with Art Director and General Manager.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2008 – 2009</div><div><div class="exp-role">Graphic / Website Designer</div><div class="exp-co">ATN Media &amp; Advertising · Selangor</div><ul class="exp-pts"><li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li></ul></div></div>
-    <div class="exp-item rev"><div class="exp-period">2002 – 2007</div><div><div class="exp-role">Copywriter / Instructional Designer / Graphic Designer</div><div class="exp-co">Wannastation · Selangor</div><ul class="exp-pts"><li>E-learning modules for Telekom Malaysia's Smart School collaboration.</li><li>E-Terjemah English literacy platform for rural primary school students.</li></ul></div></div>
+<section id="s-exp" class="sec" style="background:var(--sl)">
+  <div class="eye rev">Career History</div>
+  <h2 class="rev d1"><em>15+ Years</em> of Industry Experience</h2>
+  <p class="lead rev d2">Across creative agencies, FMCG, international retail, and global publishing.</p>
+  <div class="exlist">
+    <div class="ex cur rev"><div class="eyr">2018 &ndash; Now</div><div><div class="er">Senior Graphic Designer</div><div class="eco">TAB Global (Innotribe Solutions) &middot; Selangor</div><ul class="eps"><li>Lead designer for TAB Global &mdash; international finance publishing, C-suite audiences in 30+ countries.</li><li>Visual assets for The Asian Banker, TABInsights, Wealth and Society, The Banking Academy.</li><li>Pioneered AI integration &mdash; generative design tools for high-volume publishing layouts.</li></ul></div></div>
+    <div class="ex rev"><div class="eyr">2020 &ndash; 2021</div><div><div class="er">Communicative Executive / Graphic Designer</div><div class="eco">Alliance Teamwork Marketing &middot; Selangor</div><ul class="eps"><li>POSM design suite &mdash; brochures, booklets, magazines, and event collateral.</li><li>Content development and translation for marketing materials.</li></ul></div></div>
+    <div class="ex rev"><div class="eyr">2012 &ndash; 2018</div><div><div class="er">Graphic / Website Designer</div><div class="eco">Macy Home Furnishings &middot; Selangor</div><ul class="eps"><li>Retail campaigns across digital and print; e-commerce website UX.</li><li>In-house product photography and videography.</li></ul></div></div>
+    <div class="ex rev"><div class="eyr">2009 &ndash; 2010</div><div><div class="er">Communicative Executive / Graphic Designer</div><div class="eco">Nutrimetics Worldwide &middot; Selangor</div><ul class="eps"><li>Monthly catalogues, packaging, and POSM for a global premium beauty brand.</li><li>Collaborated directly with Art Director and General Manager.</li></ul></div></div>
+    <div class="ex rev"><div class="eyr">2008 &ndash; 2009</div><div><div class="er">Graphic / Website Designer</div><div class="eco">ATN Media &amp; Advertising &middot; Selangor</div><ul class="eps"><li>Billboards, backdrops, magazines, and books. Supervised large-format print installation.</li></ul></div></div>
+    <div class="ex rev"><div class="eyr">2002 &ndash; 2007</div><div><div class="er">Copywriter / Instructional Designer / Graphic Designer</div><div class="eco">Wannastation &middot; Selangor</div><ul class="eps"><li>E-learning modules for Telekom Malaysia&#39;s Smart School collaboration.</li><li>E-Terjemah English literacy platform for rural primary school students.</li></ul></div></div>
   </div>
 </section>
 
-<!-- ====== TESTIMONIAL ====== -->
-<section class="quote-sec">
+<section class="quote">
   <div class="rev">
-    <span class="q-icon">"</span>
+    <span class="qi">&#x201C;</span>
     <blockquote>Yussaimee has a rare ability to understand complex financial topics and translate them into visual narratives that resonate with senior banking professionals globally. A genuine strategic asset to any design team.</blockquote>
-    <p class="q-attr">— Colleague · TAB Global · LinkedIn Recommendation</p>
+    <p class="qa">&mdash; Colleague &middot; TAB Global &middot; LinkedIn Recommendation</p>
   </div>
 </section>
 
-<!-- ====== CONTACT ====== -->
-<section id="s-contact" style="background:#fff">
-  <div class="sec-eye rev">Get In Touch</div>
-  <h2 class="sec-title rev d1">Let's Work <em>Together.</em></h2>
-  <p class="sec-lead rev d2">Open to senior roles at RM 6,000+, freelance projects, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
-  <div class="contact-wrap">
+<section id="s-contact" class="sec" style="background:#fff">
+  <div class="eye rev">Get In Touch</div>
+  <h2 class="rev d1">Let&#39;s Work <em>Together.</em></h2>
+  <p class="lead rev d2">Open to senior roles at RM 6,000+, freelance, and brand consulting across FMCG, Finance, Events, Tech and AI-enhanced creative work.</p>
+  <div class="ctwrap">
     <div class="rev">
-      <div class="contact-info-title">Yussaimee Ahmad</div>
-      <p class="contact-intro">Senior Graphic Designer with 15+ years of proven delivery for global brands. Based in Banting, Selangor — available for full-time roles, freelance, and consulting.</p>
+      <div class="ctitle">Yussaimee Ahmad</div>
+      <p class="ctintro">Senior Graphic Designer with 15+ years of proven delivery. Based in Banting, Selangor &mdash; available for full-time roles, freelance, and consulting.</p>
       <div>
-        <div class="ci-item"><span class="ci-lbl">Phone</span><span class="ci-val"><a href="tel:+60112360 8193">011 2360 8193</a></span></div>
-        <div class="ci-item"><span class="ci-lbl">Email</span><span class="ci-val"><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></div>
-        <div class="ci-item"><span class="ci-lbl">LinkedIn</span><span class="ci-val"><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></span></div>
-        <div class="ci-item"><span class="ci-lbl">GitHub</span><span class="ci-val"><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></span></div>
-        <div class="ci-item"><span class="ci-lbl">Location</span><span class="ci-val">Banting, Selangor, Malaysia</span></div>
-        <div class="ci-item"><span class="ci-lbl">Resume</span><span class="ci-val"><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF ↗</a></span></div>
+        <div class="ctrow"><span class="ctlbl">Phone</span><span class="ctval"><a href="tel:+60112360 8193">011 2360 8193</a></span></div>
+        <div class="ctrow"><span class="ctlbl">Email</span><span class="ctval"><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></div>
+        <div class="ctrow"><span class="ctlbl">LinkedIn</span><span class="ctval"><a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">linkedin.com/in/yussaimee-ahmad</a></span></div>
+        <div class="ctrow"><span class="ctlbl">GitHub</span><span class="ctval"><a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">github.com/yussaimee-source</a></span></div>
+        <div class="ctrow"><span class="ctlbl">Location</span><span class="ctval">Banting, Selangor, Malaysia</span></div>
+        <div class="ctrow"><span class="ctlbl">Resume</span><span class="ctval"><a href="https://1cf5ab8e-dae4-4989-9c65-b5717cf60b19.filesusr.com/ugd/cb8121_b61efa958c064d54a0d7beec407a51d3.pdf" target="_blank" rel="noopener">Download PDF &#x2197;</a></span></div>
       </div>
     </div>
-    <form class="c-form rev d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <div class="c-2col">
-        <div><label>First Name</label><input type="text" name="fn" placeholder="Sarah" required></div>
-        <div><label>Last Name</label><input type="text" name="ln" placeholder="Tan" required></div>
-      </div>
+    <form class="cform rev d2" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="c2"><div><label>First Name</label><input type="text" name="fn" placeholder="Sarah" required></div><div><label>Last Name</label><input type="text" name="ln" placeholder="Tan" required></div></div>
       <div><label>Email</label><input type="email" name="em" placeholder="hiring@company.com" required></div>
-      <div><label>Enquiry Type</label>
-        <select name="type">
-          <option>Full-time Role</option><option>Freelance Project</option>
-          <option>Brand Consulting</option><option>AI Design Project</option><option>Collaboration</option>
-        </select>
-      </div>
+      <div><label>Enquiry Type</label><select name="type"><option>Full-time Role</option><option>Freelance Project</option><option>Brand Consulting</option><option>AI Design Project</option><option>Collaboration</option></select></div>
       <div><label>Message</label><textarea name="msg" rows="4" placeholder="Tell me about the role or project..." required></textarea></div>
-      <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+      <button type="submit" class="btn-p" style="width:100%;justify-content:center">Send Message &#x2192;</button>
     </form>
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
 <footer>
-  <span class="footer-name">Yussaimee<span>.</span></span>
-  <span class="footer-copy">© 2026 · Senior Graphic Designer · Banting, Selangor, Malaysia</span>
-  <div class="footer-links">
+  <span class="fn">Yussaimee<span>.</span></span>
+  <span class="fc">&copy; 2026 &middot; Senior Graphic Designer &middot; Banting, Selangor, Malaysia</span>
+  <div class="fl">
     <a href="mailto:yussaimee@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="https://github.com/yussaimee-source" target="_blank" rel="noopener">GitHub</a>
     <a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener">Portfolio</a>
   </div>
 </footer>
-
-<!-- ====== LIGHTBOX — native <dialog> ====== -->
-<dialog id="lb">
-  <button id="lb-close" onclick="document.getElementById('lb').close()">×</button>
+<div id="lb">
+  <button id="lb-x" onclick="closeLb()">&#xD7;</button>
   <img id="lb-img" src="" alt="">
   <div id="lb-bar">
-    <span id="lb-title"></span>
-    <div class="lb-nav">
-      <button onclick="lbNav(-1)">‹</button>
-      <span id="lb-cnt"></span>
-      <button onclick="lbNav(1)">›</button>
+    <span id="lb-t"></span>
+    <div class="lbnav">
+      <button onclick="lbNav(-1)">&#x2039;</button>
+      <span id="lb-c"></span>
+      <button onclick="lbNav(1)">&#x203a;</button>
     </div>
   </div>
-</dialog>
+</div>
 
 <script>
-/* =============================================
-   ALL JAVASCRIPT
-   All functions are global scope — called inline
-   from onclick attributes on HTML elements.
-   No addEventListener() needed for core features.
-   ============================================= */
-
-/* ── Lightbox data ── */
 var D = {
-  s:[
-    ['https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png','TAB Global — Social Media'],
-    ['https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png','Transwarp'],
-    ['https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png','MYbank'],
-    ['https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png','Huawei Shanghai Qingpu R&D Centre'],
-    ['https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png','Douyin — Future of Social Media'],
-    ['https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png','Dingtalk'],
-    ['https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png','TBA Shanghai Tour — Decision Maker'],
-    ['https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png','TBA Shanghai Tour — Retreat & Peer Exchange'],
-    ['https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png','TBA AI Bootcamp Asia'],
-    ['https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png','TAB Summit 2026 — Quote Card']
-  ],
-  d:[
-    ['https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png','The Great Transition — EDM Banner'],
-    ['https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png','Kevin Rudd — Giving Tuesday Banner'],
-    ['https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png','TAB DigiFinMasterClass 2023 — Web Banner'],
-    ['https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png','Finance Innovation Summit 2026 — EDM'],
-    ['https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png','Finance Innovation Summit 2026 — Alt'],
-    ['https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png','Money 2020 — Book Invitation Banner'],
-    ['https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png','TAB Bootcamp MEA — Web Banner'],
-    ['https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png','TAB Bootcamp ASIA — Web Banner']
-  ],
-  p:[
-    ['https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png','TBA Wealth Society Tour 2024 — Roll-Up'],
-    ['https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png','TBA Wealth Society Summit 2024 — Roll-Up'],
-    ['https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png','TBA Generic — Roll-Up Banner'],
-    ['https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png','TAB Senior Leadership Programme 2025'],
-    ['https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png','TAB Global — Generic Print'],
-    ['https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png','TAB Global — Roll-Up Series']
-  ]
+  s:[["https://static.wixstatic.com/media/cb8121_7529f107c26149699a128f535efa2f82~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7529f107c26149699a128f535efa2f82~mv2.png", "TAB Global \u2014 Social Media"], ["https://static.wixstatic.com/media/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_5fa7827a77fd4c84aa7ef9cd9c9faa6d~mv2.png", "Transwarp"], ["https://static.wixstatic.com/media/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e0d4c60eaf5f42f1942f9a98319b3086~mv2.png", "MYbank"], ["https://static.wixstatic.com/media/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2cdecfff9fc4442fbaeb163c009c8d51~mv2.png", "Huawei Shanghai R&D Centre"], ["https://static.wixstatic.com/media/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1e4d2cdb055b407d87baada7b33ffdcf~mv2.png", "Douyin \u2014 Future of Social Media"], ["https://static.wixstatic.com/media/cb8121_67f910650d7a4601856101f72759393f~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_67f910650d7a4601856101f72759393f~mv2.png", "Dingtalk"], ["https://static.wixstatic.com/media/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2697568bf2ab49c7ba4fa2665a5c8628~mv2.png", "TBA Shanghai \u2014 Decision Maker"], ["https://static.wixstatic.com/media/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9121f3e01bd43d4a0891ae3218a8aec~mv2.png", "TBA Shanghai \u2014 Retreat & Peer Exchange"], ["https://static.wixstatic.com/media/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_1478cd1f75db461484180d9dc6082436~mv2.png", "TBA AI Bootcamp Asia"], ["https://static.wixstatic.com/media/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_7838cf2449fa46f6a55e586ce3f6bb12~mv2.png", "TAB Summit 2026 \u2014 Quote Card"]],
+  d:[["https://static.wixstatic.com/media/cb8121_be16b4bea844470d9b565320796ed928~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_be16b4bea844470d9b565320796ed928~mv2.png", "The Great Transition \u2014 EDM"], ["https://static.wixstatic.com/media/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_c5933476b65e4cfe8641190066fc29c8~mv2.png", "Kevin Rudd \u2014 Giving Tuesday"], ["https://static.wixstatic.com/media/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_2b4d86c6606d4a99b244fe46fd517cea~mv2.png", "TAB DigiFinMasterClass 2023"], ["https://static.wixstatic.com/media/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_4b1699d3831540e59c170aad9e202963~mv2.png", "Finance Innovation Summit 2026 \u2014 EDM"], ["https://static.wixstatic.com/media/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d9afd104365f4c06b240c6b8f4115dc6~mv2.png", "Finance Innovation Summit 2026 \u2014 Alt"], ["https://static.wixstatic.com/media/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_d29ff30e17b447548c73e5858d73905c~mv2.png", "Money 2020 \u2014 Book Invitation"], ["https://static.wixstatic.com/media/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_ba2b71d165e747c4aed6caeaa493aaf0~mv2.png", "TAB Bootcamp MEA \u2014 Web Banner"], ["https://static.wixstatic.com/media/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_fda0c46927e947cdb622dfb6ba6c3612~mv2.png", "TAB Bootcamp ASIA \u2014 Web Banner"]],
+  p:[["https://static.wixstatic.com/media/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_56e98750591f4d7f9767afbf22c30f91~mv2.png", "TBA Wealth Society Tour 2024 \u2014 Roll-Up"], ["https://static.wixstatic.com/media/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_62b0008927dc4a599fa45ef550b2c0da~mv2.png", "TBA Wealth Society Summit 2024 \u2014 Roll-Up"], ["https://static.wixstatic.com/media/cb8121_248e242443994936abc6259e1edf8424~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_248e242443994936abc6259e1edf8424~mv2.png", "TBA Generic \u2014 Roll-Up Banner"], ["https://static.wixstatic.com/media/cb8121_77243f0917394b08926442bdc34163f5~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_77243f0917394b08926442bdc34163f5~mv2.png", "TAB Senior Leadership Programme 2025"], ["https://static.wixstatic.com/media/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_6ad6cbb45ae148b794dae0022b617094~mv2.png", "TAB Global \u2014 Generic Print"], ["https://static.wixstatic.com/media/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png/v1/fill/w_1200,h_1200,q_90,enc_avif,quality_auto/cb8121_e3ab734c6b964f6c998dd3d9f28f1ee7~mv2.png", "TAB Global \u2014 Roll-Up Series"]]
 };
-/* "a" = all combined */
 D.a = D.s.concat(D.d).concat(D.p);
 
-var lbEl  = document.getElementById('lb');
-var lbImg = document.getElementById('lb-img');
-var lbTit = document.getElementById('lb-title');
-var lbCnt = document.getElementById('lb-cnt');
-var cSet  = 's';
-var cIdx  = 0;
+var cSet='s', cIdx=0;
+var el  = document.getElementById('lb');
+var img = document.getElementById('lb-img');
+var tEl = document.getElementById('lb-t');
+var cEl = document.getElementById('lb-c');
 
-function openLb(src, title, set, idx) {
-  cSet = set; cIdx = idx;
-  lbImg.src = src;
-  lbImg.alt = title;
-  lbTit.textContent = title;
-  lbCnt.textContent = (idx+1) + ' / ' + D[set].length;
-  lbEl.scrollTop = 0;
-  lbEl.showModal();
+function openLb(src,title,set,idx){
+  cSet=set; cIdx=idx;
+  img.src=src; img.alt=title;
+  tEl.textContent=title;
+  cEl.textContent=(idx+1)+' / '+D[set].length;
+  el.scrollTop=0;
+  el.classList.add('open');
+  document.body.style.overflow='hidden';
 }
-
-function lbNav(dir) {
-  var arr = D[cSet];
-  cIdx = (cIdx + dir + arr.length) % arr.length;
-  lbImg.src = arr[cIdx][0];
-  lbImg.alt = arr[cIdx][1];
-  lbTit.textContent = arr[cIdx][1];
-  lbCnt.textContent = (cIdx+1) + ' / ' + arr.length;
-  lbEl.scrollTop = 0;
+function closeLb(){
+  el.classList.remove('open');
+  document.body.style.overflow='';
 }
-
-/* Close on backdrop click */
-lbEl.addEventListener('click', function(e){ if(e.target===lbEl) lbEl.close(); });
-
-/* Keyboard navigation */
-document.addEventListener('keydown', function(e){
-  if (!lbEl.open) return;
-  if (e.key === 'Escape')      lbEl.close();
-  if (e.key === 'ArrowRight')  lbNav(1);
-  if (e.key === 'ArrowLeft')   lbNav(-1);
+function lbNav(dir){
+  var arr=D[cSet];
+  cIdx=(cIdx+dir+arr.length)%arr.length;
+  img.src=arr[cIdx][0]; img.alt=arr[cIdx][1];
+  tEl.textContent=arr[cIdx][1];
+  cEl.textContent=(cIdx+1)+' / '+arr.length;
+  el.scrollTop=0;
+}
+el.addEventListener('click',function(e){if(e.target===el)closeLb();});
+document.addEventListener('keydown',function(e){
+  if(!el.classList.contains('open'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowRight')lbNav(1);
+  if(e.key==='ArrowLeft')lbNav(-1);
 });
 
-/* ── Portfolio tabs ── */
-function pfTab(btn, panelId) {
-  var tabs   = document.querySelectorAll('.pf-tab');
-  var panels = document.querySelectorAll('.pf-panel');
-  for (var i=0; i<tabs.length; i++)   tabs[i].classList.remove('act');
-  for (var i=0; i<panels.length; i++) panels[i].classList.remove('act');
-  btn.classList.add('act');
-  document.getElementById(panelId).classList.add('act');
+function showTab(btn,id){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on')});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+  btn.classList.add('on');
+  document.getElementById(id).classList.add('on');
   initRev();
 }
-
-/* ── Navigation ── */
-function gH() { window.scrollTo({top:0, behavior:'smooth'}); }
-function goTo(id) {
-  var el = document.getElementById(id);
-  if (el) el.scrollIntoView({behavior:'smooth'});
+function gH(){window.scrollTo({top:0,behavior:'smooth'});}
+function goTo(id){var e=document.getElementById(id);if(e)e.scrollIntoView({behavior:'smooth'});}
+function toggleMenu(){
+  var m=document.getElementById('mob'),b=document.getElementById('burg');
+  var o=m.classList.toggle('on');b.classList.toggle('x',o);
 }
-function toggleMob() {
-  var mm   = document.getElementById('mob-menu');
-  var nbtn = document.getElementById('nbtn');
-  var open = mm.classList.toggle('show');
-  nbtn.classList.toggle('x', open);
+function closeMenu(){
+  document.getElementById('mob').classList.remove('on');
+  document.getElementById('burg').classList.remove('x');
 }
-function closeMob() {
-  document.getElementById('mob-menu').classList.remove('show');
-  document.getElementById('nbtn').classList.remove('x');
-}
-
-/* Sticky nav shadow */
-window.addEventListener('scroll', function(){
-  document.getElementById('nav').classList.toggle('nb', window.scrollY > 50);
-}, {passive:true});
-
-/* ── Scroll reveal ── */
+window.addEventListener('scroll',function(){
+  document.getElementById('nav').style.boxShadow=window.scrollY>10?'0 2px 16px rgba(27,42,74,.1)':'0 1px 10px rgba(27,42,74,.06)';
+},{passive:true});
 var ro;
-function initRev() {
-  if (ro) ro.disconnect();
-  ro = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if (e.isIntersecting) {
+function initRev(){
+  if(ro)ro.disconnect();
+  ro=new IntersectionObserver(function(en){
+    en.forEach(function(e){
+      if(e.isIntersecting){
         e.target.classList.add('in');
-        if (e.target.querySelectorAll) {
-          e.target.querySelectorAll('.sk-bar[data-w]').forEach(function(b){
-            b.style.width = b.getAttribute('data-w') + '%';
-          });
-        }
+        e.target.querySelectorAll&&e.target.querySelectorAll('.bar[data-w]').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%';});
       }
     });
-  }, {threshold: 0.07});
-  document.querySelectorAll('.rev').forEach(function(el){ ro.observe(el); });
+  },{threshold:0.07});
+  document.querySelectorAll('.rev').forEach(function(e){ro.observe(e);});
 }
 initRev();
-
-/* Trigger reveals and skill bars on load */
-window.addEventListener('load', function(){
+window.addEventListener('load',function(){
   setTimeout(function(){
-    document.querySelectorAll('.rev').forEach(function(el){ el.classList.add('in'); });
-    document.querySelectorAll('.sk-bar[data-w]').forEach(function(b){
-      b.style.width = b.getAttribute('data-w') + '%';
-    });
-  }, 250);
+    document.querySelectorAll('.rev').forEach(function(e){e.classList.add('in');});
+    document.querySelectorAll('.bar[data-w]').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%';});
+  },250);
 });
 </script>
 </body>
