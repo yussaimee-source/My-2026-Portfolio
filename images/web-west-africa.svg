@@ -1,0 +1,45 @@
+<svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#062b22"/>
+<stop offset="55%" stop-color="#0a4334"/>
+<stop offset="100%" stop-color="#0e5a44"/>
+</linearGradient>
+</defs>
+<rect width="800" height="42" fill="#e4eaf1"/>
+<circle cx="22" cy="21" r="6" fill="#ff5f57"/>
+<circle cx="42" cy="21" r="6" fill="#febc2e"/>
+<circle cx="62" cy="21" r="6" fill="#28c840"/>
+<rect x="90" y="9" width="600" height="24" rx="12" fill="#fff" stroke="#d0dae6" stroke-width="1"/>
+<path d="M104 17 a4 4 0 0 1 8 0 v3 h-8z" fill="none" stroke="#7a90a8" stroke-width="1.2"/>
+<rect x="102" y="20" width="12" height="9" rx="1.5" fill="none" stroke="#7a90a8" stroke-width="1.2"/>
+<text x="122" y="25" font-family="monospace" font-size="11" fill="#4a5e7a">yussaimee-source.github.io/Finance-West-Africa-2026&#8230;</text>
+<rect x="0" y="42" width="800" height="478" fill="url(#g3)"/>
+<g stroke="#f5c542" stroke-width="0.7" opacity="0.3">
+<line x1="500" y1="42" x2="800" y2="180"/>
+<line x1="560" y1="42" x2="800" y2="120"/>
+<line x1="620" y1="42" x2="800" y2="80"/>
+</g>
+<!-- skyline silhouette -->
+<g fill="#06231b" opacity="0.55">
+<rect x="0" y="420" width="40" height="100"/>
+<rect x="50" y="380" width="34" height="140"/>
+<rect x="92" y="400" width="28" height="120"/>
+<rect x="128" y="360" width="38" height="160"/>
+<rect x="174" y="395" width="26" height="125"/>
+<rect x="206" y="370" width="30" height="150"/>
+</g>
+<text x="60" y="135" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="2" fill="#f5c542">14 OCT 2026 &#183; LAGOS, NIGERIA</text>
+<text x="58" y="205" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#ffffff">Finance</text>
+<text x="58" y="263" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#ffffff">West Africa</text>
+<text x="58" y="313" font-family="Georgia, serif" font-size="40" font-weight="700" font-style="italic" fill="#f5c542">2026</text>
+<text x="60" y="350" font-family="DM Sans, sans-serif" font-size="15" fill="#cfe9de">Banking at Scale: Trust, Rails &amp; Intelligence</text>
+<g font-family="JetBrains Mono, monospace" font-size="10.5" letter-spacing="0.5">
+<rect x="60" y="378" width="148" height="28" rx="14" fill="rgba(245,197,66,.14)" stroke="#f5c542" stroke-width="0.8"/>
+<text x="134" y="396" text-anchor="middle" fill="#f5c542">AI CREDIT SCORING</text>
+<rect x="218" y="378" width="130" height="28" rx="14" fill="rgba(245,197,66,.14)" stroke="#f5c542" stroke-width="0.8"/>
+<text x="283" y="396" text-anchor="middle" fill="#f5c542">CBDC PILOT</text>
+</g>
+<line x1="60" y1="440" x2="740" y2="440" stroke="#1a6b52" stroke-width="1"/>
+<text x="60" y="468" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1" fill="#7fc4a8">1,200+ DELEGATES &#183; 80+ SPEAKERS &#183; 30+ NATIONS</text>
+</svg>
