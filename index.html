@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Yussaimee Ahmad - Senior Graphic Designer. 15+ years FMCG Finance Events AI. Banting Selangor. Open to senior roles RM6000+.">
-<title>Yussaimee Ahmad &mdash; Senior Graphic Designer</title>
+<meta name="description" content="Yussaimee Ahmad - Graphic, Video & Animation Designer with AI-Augmented Capabilities. 15+ years FMCG Finance Events. Banting Selangor. Open to senior roles RM6000+.">
+<title>Yussaimee Ahmad &mdash; Graphic, Video &amp; Animation Designer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -100,6 +100,12 @@ h2 em{font-style:italic;color:var(--am)}
 .ccap small{font-size:10px;font-family:var(--M);color:var(--tx3);letter-spacing:.06em;text-transform:uppercase}
 .card::after{content:"Expand";position:absolute;top:10px;right:10px;background:rgba(27,42,74,.82);color:#fff;font-size:10px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:100px;opacity:0;transform:translateY(-4px);transition:opacity .2s,transform .2s;pointer-events:none}
 .card:hover::after{opacity:1;transform:none}
+/* Website Development — distinct showcase grid (live links, not lightbox) */
+.web-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;margin-top:1.5rem}
+.card.webcard{display:block}
+.card.webcard::after{content:"Visit Live Site \2197"}
+.card.webcard .ccap{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.webcard-tag{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--am);padding:3px 9px;border-radius:100px;white-space:nowrap;flex-shrink:0}
 .sec2-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(232,128,10,.1);border:1px solid rgba(232,128,10,.3);padding:5px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--am);margin-bottom:1rem;width:fit-content}
 .dcta{margin-top:2.5rem;padding:2rem 2.5rem;background:var(--navy);border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
 .dcta h4{font-family:var(--S);font-size:20px;font-weight:700;color:#fff;margin-bottom:4px}
@@ -237,7 +243,7 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
   <div class="hero-wrap">
     <div class="hero-l">
       <div class="badge"><span class="dot"></span>Available for Senior Roles &middot; RM 6,000+</div>
-      <h1>Senior Graphic<br>Designer &amp;<br><em>AI Integrator</em></h1>
+      <h1>Graphic, Video &amp;<br>Animation Designer<br><em>with AI-Augmented Capabilities</em></h1>
       <p class="htag"><strong>Yussaimee Ahmad</strong> &mdash; 15+ years crafting high-impact visual systems for global finance publishers, FMCG brands, and large-scale events. Now integrating <strong>Generative AI, Video AI &amp; Web</strong> into live production workflows.</p>
       <div class="hmeta">
         <div class="hm"><span>Location</span><span>Banting, Selangor</span></div>
@@ -298,7 +304,7 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
           <text x="53" y="408" text-anchor="middle" fill="#5ba4ff" opacity="0">FIREFLY<animate attributeName="opacity" values="0;.9;.9;0" dur="5s" begin="4.5s" repeatCount="indefinite"/></text>
         </g>
       </svg>
-      <div class="hlabel"><strong>Yussaimee Ahmad</strong><span>Senior Graphic Designer &middot; Banting, Selangor</span></div>
+      <div class="hlabel"><strong>Yussaimee Ahmad</strong><span>Graphic, Video &amp; Animation Designer &middot; Banting, Selangor</span></div>
       <div class="abar"></div>
     </div>
   </div>
@@ -315,13 +321,14 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
 <section id="s-p2" class="sec" style="background:#fff">
   <div class="eye rev">Selected Work</div>
   <h2 class="rev d1">Real Work. <em>Real Clients.</em></h2>
-  <p class="lead rev d2">25 projects across social media, event promotions, large-format backdrops, conference materials and digital EDM banners. Click any image to view full size.</p>
+  <p class="lead rev d2">25 design projects across social media, event promotions, large-format backdrops, conference materials and digital EDM banners &mdash; plus 6 live website builds. Click any image to view full size, or click a website thumbnail to open the live site.</p>
   <div class="ptabs">
     <button class="tab on" onclick="showTab(this,'p2a')">Shanghai AI Tour <span class="n">9</span></button>
     <button class="tab"    onclick="showTab(this,'p2b')">Event Promos <span class="n">3</span></button>
     <button class="tab"    onclick="showTab(this,'p2c')">Event Backdrops <span class="n">4</span></button>
     <button class="tab"    onclick="showTab(this,'p2d')">Conference 2023 <span class="n">3</span></button>
     <button class="tab"    onclick="showTab(this,'p2e')">EDM Banners <span class="n">6</span></button>
+    <button class="tab"    onclick="showTab(this,'p2f')">Website Development <span class="n">6</span></button>
     <button class="tab"    onclick="showTab(this,'p2all')">All 25 <span class="n">25</span></button>
   </div>
 
@@ -393,6 +400,41 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
 <div class="card" onclick="openLb('images/Special_Message_from_the_Hon__Kevin_Rudd_About_Giving_Tuesday.png','Kevin Rudd — Giving Tuesday Special Message','edm',4)"><img src="images/Special_Message_from_the_Hon__Kevin_Rudd_About_Giving_Tuesday.png" alt="Kevin Rudd — Giving Tuesday Special Message" loading="lazy"><div class="ccap"><b>Kevin Rudd — Giving Tuesday Special Message</b><small>EDM Banner · Finance</small></div></div>
 <div class="card" onclick="openLb('images/The-Great-Transition-EDM-banner.png','The Great Transition — EDM Banner','edm',5)"><img src="images/The-Great-Transition-EDM-banner.png" alt="The Great Transition — EDM Banner" loading="lazy"><div class="ccap"><b>The Great Transition — EDM Banner</b><small>EDM Banner · Finance</small></div></div></div>
     <div class="dcta rev"><div><h4>View all digital campaigns</h4><p>Full EDM and web banner archives across all TAB Global campaigns</p></div><a href="https://drive.google.com/drive/folders/1_P7RTkTX7PhVZzXimafQZJoFrPHNpu88?usp=drive_link" target="_blank" rel="noopener" class="dbtn">Google Drive Portfolio &#x2197;</a></div>
+  </div>
+
+  <div id="p2f" class="panel">
+    <div class="pintro rev">
+      <h3>Website Development</h3>
+      <p>End-to-end website builds for international finance summits and a creative agency brand &mdash; designed and developed from concept through to live, responsive deployment. Each thumbnail links to the actual live website. Click to open it in a new tab.</p>
+      <div class="ptags"><span class="ptag">Web Design</span><span class="ptag">Responsive Build</span><span class="ptag">Event Microsites</span><span class="ptag">Brand Sites</span></div>
+    </div>
+    <div class="web-grid">
+      <a class="card webcard" href="https://yussaimee-source.github.io/Global-AI-Regulators-Summit-2026-Draft/" target="_blank" rel="noopener">
+        <img src="images/web-ai-regulators.svg" alt="Global AI Regulators Summit 2026 — London" loading="lazy">
+        <div class="ccap"><b>Global AI Regulators Summit 2026</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+      <a class="card webcard" href="https://yussaimee-source.github.io/Demo_SUMMIT2027/" target="_blank" rel="noopener">
+        <img src="images/web-summit2027.svg" alt="The Asian Banker Summit 2026 — Imagining the AI Bank" loading="lazy">
+        <div class="ccap"><b>The Asian Banker Summit 2026</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+      <a class="card webcard" href="https://yussaimee-source.github.io/Finance-West-Africa-2026/" target="_blank" rel="noopener">
+        <img src="images/web-west-africa.svg" alt="Finance West Africa 2026 — Lagos" loading="lazy">
+        <div class="ccap"><b>Finance West Africa 2026</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+      <a class="card webcard" href="https://yussaimee-source.github.io/Finance-PhilippinesV3/" target="_blank" rel="noopener">
+        <img src="images/web-philippines.svg" alt="Finance Philippines 2026 — Manila" loading="lazy">
+        <div class="ccap"><b>Finance Philippines 2026</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+      <a class="card webcard" href="https://yussaimee-source.github.io/StudioTaha/" target="_blank" rel="noopener">
+        <img src="images/web-studiotaha.svg" alt="StudioTaha — Creative Agency" loading="lazy">
+        <div class="ccap"><b>StudioTaha &mdash; Creative Agency</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+      <a class="card webcard" href="https://yussaimee-source.github.io/StudioTaha/salaam.html" target="_blank" rel="noopener">
+        <img src="images/web-assalamualaikum.svg" alt="Assalamualaikum by StudioTaha — Product Line" loading="lazy">
+        <div class="ccap"><b>Assalamualaikum by StudioTaha</b><span class="webcard-tag">Live Site</span></div>
+      </a>
+    </div>
+    <div class="dcta rev"><div><h4>Need a website built?</h4><p>From event microsites to full brand sites &mdash; designed, built and deployed end-to-end</p></div><a href="#s-contact" onclick="goTo('s-contact');return false;" class="dbtn">Get In Touch &#x2197;</a></div>
   </div>
 
   <div id="p2all" class="panel">
@@ -520,7 +562,7 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
   <div class="ctwrap">
     <div class="rev">
       <div class="ctitle">Yussaimee Ahmad</div>
-      <p class="ctintro">Senior Graphic Designer with 15+ years of proven delivery. Based in Banting, Selangor &mdash; available for full-time roles, freelance, and consulting.</p>
+      <p class="ctintro">Graphic, Video &amp; Animation Designer with 15+ years of proven delivery. Based in Banting, Selangor &mdash; available for full-time roles, freelance, and consulting.</p>
       <div>
         <div class="ctrow"><span class="ctlbl">Phone</span><span class="ctval"><a href="tel:+60112360 8193">011 2360 8193</a></span></div>
         <div class="ctrow"><span class="ctlbl">Email</span><span class="ctval"><a href="mailto:yussaimee@gmail.com">yussaimee@gmail.com</a></span></div>
@@ -542,7 +584,7 @@ footer{background:var(--navy);padding:28px 5vw;display:flex;justify-content:spac
 
 <footer>
   <span class="fn">Yussaimee<span>.</span></span>
-  <span class="fc">&copy; 2026 &middot; Senior Graphic Designer &middot; Banting, Selangor, Malaysia</span>
+  <span class="fc">&copy; 2026 &middot; Graphic, Video &amp; Animation Designer &middot; Banting, Selangor, Malaysia</span>
   <div class="fl">
     <a href="mailto:yussaimee@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/yussaimee-ahmad-5a572939a/" target="_blank" rel="noopener">LinkedIn</a>
